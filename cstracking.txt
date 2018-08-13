@@ -1,10 +1,12 @@
 TODAY 8/13
 
+-DNS Server for Joe
 -Project to address Internal Cloud Services, 29
 -Email DELL/EMC about drives***
 -Weekly report
 -Rubrik Cost Savings for Mark
 -Draft Justification of VxRails for DR
+  +ABC
 -RFR feedback from Mark???
 -Review priorities
 -Review purchases
