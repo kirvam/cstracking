@@ -1,13 +1,13 @@
 TODAY 8/13
 
--DNS Server for Joe
--Project to address Internal Cloud Services, 29
--Email DELL/EMC about drives***
+-DNS Server for Joe	
+-Project to address Internal Cloud Services, 29??
+-Email DELL/EMC about drives***  -Email sent..
 -Weekly report
 -Rubrik Cost Savings for Mark
 -Draft Justification of VxRails for DR
   +ABC
--RFR feedback from Mark???
+-RFR feedback from Mark???  -86'd it.
 -Review priorities
 -Review purchases
 -Landesk tickets open???
@@ -23,6 +23,8 @@ TODAY 8/13
   +Review packet
 
 -Lunch with Claus
+-Swarm
+-NGNIX???
 
 -JUD Datamover cut-over.
   +Jim needs IP..  Dan by end of Day..
