@@ -1,0 +1,141 @@
+TODAY 8/13
+
+-Project to address Internal Cloud Services, 29
+-Email DELL/EMC about drives***
+-Weekly report
+-Rubrik Cost Savings for Mark
+-Draft Justification of VxRails for DR
+-RFR feedback from Mark???
+-Review priorities
+-Review purchases
+-Landesk tickets open???
+
+-Dylan/AOT cross-training
+  +coverage expectations email to Mark
+-Aaron touch base:
+  +hours
+  +Ansible
+  +How are things going?
+
+-Prepare TAX meeting  -It is this WED, 8/15
+  +Review packet
+
+-Lunch with Claus
+
+-JUD Datamover cut-over.
+  +Jim needs IP..  Dan by end of Day..
+  +Need disk from Kelsey/Dell/EMC
+  +13GB /15 minutes..
+  +Jim out next Tuesday 7/21 for 7 to 10 days...  See you on the 4th...
+
+-Azure Enrollment email with MS...  -Scheduled for Monday, 7/30
+
+-Rubrik capacity???
+-Migration emails!
+  +ANR  -Done
+  +AHS  -Done
+  +TAX  -Done
+  +ERP  -Done
+    -NFS server -Done
+
+-Send Security heads-up in Landesk case..  about needing them for migrations...  -Done
+-DLC Meeting email...  Meeting next week... during staff meeting...  -Done
+  +Dongle
+  +usb/network
+  +Modem bank  same subnet as the rest of their stuff..  change his IP...
+  +phone lines
+  +DEC device
+  +Virtual switch?
+
+-JUD email:
+  +6 to 8 hours
+  +suggesetd dates
+    8/25,26
+    9/1, 2
+
+-Migration list.  -Done.
+-VMware license dates?  -Need Landesk cases...
+-VDI Hardware expenses and dates?
+  ---<snip>---
+  Licenses - 9/26 68,000
+  Hardware -2/1 and 2/5 26,000
+  Total 94,000
+  ---<snip>---
+-Azure billing automation
+-AWS billing automation.
+-CISO to get more scan reports and details if possible?  -Done
+
+-iUs??  -Done, Jon handed over.
+
+-Bills
+  +test second running.
+-Migration Schedule
+  +finish develop list of migrations that need Security's assistance.
+  +finish meetings
+-Firewall Project  -Meet with Jon and Aaron on Ansible process to instantiate...
+  +Need to succesfully create one.
+  +Need list of customers.
+  +Need plan, design document.
+  +Schedule meetings.
+
+------------------------------------------------
+-JUD
+  +Touch base with Jeff.
+  +Open case.  -Done
+  +Open items:
+    -Cloud Team
+      +CFO feedback for DR Capex
+      +Modify design to include:
+       -Tyler E-file and
+       -Border Firewalls/gateways
+    -JUD Team:
+      +JUD will work with Tyler Odyssey to slim down DR design  -Done
+      +JUD will review with Tyler Odyssey DR fail-over details  -Pending?
+      +JUD will consider Security testing/review options  -Pending
+      +JUD will supply disk sizes for the following servers.  -Done
+-Security
+  +Develop list of migrations that need Security's assistance and Alert Security.  -Done
+-ACCD
+  +Develop some dates?
+-Security EMC email?  -Done
+-Seamus request?  -Done
+-DPS Capex
+-pfSense Lab
+-Ansible/AWX testing
+
+-CFO
+  +Pre-bills  -Done
+  +Do Final Bills, Meet with Kate
+  +Waiting for feedback from CFO regarding data book and narrative for DR plan for secondary Data Center at National Life.
+  +Cpntracts list
+  +Metrics/Automation
+
+-Security Training  -Done
+-Bills:
+  +test second running.
+-Storage for Encrypted Backups, Data Mover replacement, DPS & AHS
+  +Compare Physical to AWS.
+
+-POC for Commercial Cloud
+-POC for Zerto
+-POC for AWS migration capability
+-Cloud Services, Hybrid/POC/Commercial Cloud value PPT?
+-----------------------------------------------
+# MIGRATION STEPS (Critical Path):
+1 Sysadmins  -Turn-off servers.
+2 Backup servers, Rubrik.
+3 Cloud Service  -Runs vShield script.
+4 Networking/Security  -Makes appropriate changes to Network/Firewall settings (as applicable per customer).
+5 Cloud Services -Restore servers on the new infrastructure mounting to the Rubrik...
+6 Sysadmins  -Restart servers.
+7 "Sysadmins and Testers  -Test and confirm server operations.
+    -Address and resolve any complications, if any and if possible."
+8 Agency Leadership, Sysadmins, and Testers  -Determine STAY or FAIL BACK?
+9 "If ALL GOOD; STAY
+  OR
+If NOT GOOD; FALL BACK  -See FALL BACK steps."
+
+# FALL BACK STEPS:
+1 Networking/Security  -Reverse Network/Firewall settings (as applicable per customer).
+2 Cloud Services  -Restart original servers.
+-----------------------------------------------
