@@ -1,6 +1,8 @@
 TODAY 8/13
 
--DNS Server for Joe	
+-Docker Server for Mark???
+-DNS Server for Joe, Landesk case 190118.  -working
+-Jon and Dan Review.
 -Project to address Internal Cloud Services, 29??
 -Email DELL/EMC about drives***  -Email sent..
 -Weekly report
