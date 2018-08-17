@@ -1,11 +1,17 @@
-TODAY 8/13
+TODAY 8/13, 8/15, 8/17
 
--Docker Server for Mark???
+-VMware Licenses
+  +3 week lead time.
+-JUD still waiting for SEC to config for DMZ..
+-Weekly report  -Done
+-Docker Server for Mark???  -Working
+-Email DELL/EMC about drives***  -Working
+-Ansible lab.
+-pfSense lab.
 -DNS Server for Joe, Landesk case 190118.  -working
 -Jon and Dan Review.
 -Project to address Internal Cloud Services, 29??
 -Email DELL/EMC about drives***  -Email sent..
--Weekly report
 -Rubrik Cost Savings for Mark
 -Draft Justification of VxRails for DR
   +ABC
