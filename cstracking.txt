@@ -1,20 +1,25 @@
-TODAY 8/13, 8/15, 8/17
+TODAY 8/13, 8/15, 8/17, 8/20 880 -|-
 
+-Prepare for ANR Meeeting
+-Prepare for TAX Meeting
+
+-Draft Justification of VxRails for DR
+  +ABC
+-Docker Server for Mark???  -Working
 -VMware Licenses
   +3 week lead time.
 -JUD still waiting for SEC to config for DMZ..
 -Weekly report  -Done
--Docker Server for Mark???  -Working
+
 -Email DELL/EMC about drives***  -Working
 -Ansible lab.
 -pfSense lab.
--DNS Server for Joe, Landesk case 190118.  -working
+-DNS Server for Joe, Landesk case 190118.  -Working
 -Jon and Dan Review.
 -Project to address Internal Cloud Services, 29??
--Email DELL/EMC about drives***  -Email sent..
+
 -Rubrik Cost Savings for Mark
--Draft Justification of VxRails for DR
-  +ABC
+
 -RFR feedback from Mark???  -86'd it.
 -Review priorities
 -Review purchases
@@ -151,3 +156,25 @@ If NOT GOOD; FALL BACK  -See FALL BACK steps."
 1 Networking/Security  -Reverse Network/Firewall settings (as applicable per customer).
 2 Cloud Services  -Restart original servers.
 -----------------------------------------------
+
+
+
+We have five DNS servers, which have the following roles.
+
+ns0: SOA for all of our public zones
+ns1, ns2: authoritative servers for all of our public zones
+ns3, ns4: internal recursive resolvers
+
+Ns1-ns4 receive their datums from ns0. Ns1 & ns2 are authoritative for those zones, but ns3 & ns4 are (or should be) configured as stealth slaves, so they should not have to query ns1 & ns2 for records in those zones.
+
+The internet receives answers about our authoritative zones from ns1 & ns2.
+
+Ideally, internal DNS queries would be handled by ns3 & ns4, but a large number of clients still query ns1 & ns2.
+
+What you are asking about is basically queries from the internet for our authoritative zones. That question addresses accessibility of DNS servers if our internet connections are all down (though there are apparently DNS misconfigurations causing resource records to time out prematurely, the correction of which would also address this issue).
+
+But another important question is whether there are clients (or recursive resolvers) that are issuing requests to DNS servers on the internet, rather than sending those requests through ns3 & ns4 (where they can be aggregated into caches). Similarly, all guest network DNS queries are sent to servers that we configure by means of DHCP. Both of these latter issues impact internet bandwidth utilization. (It should be noted that DNS queries are our #1 source of traffic, when measured by number of sessions.)
+
+Anyway, it is tricky to measure the actual relevant traffic, but a general baseline is about 100 MB/hour to each of ns1 & ns2 from hosts outside of our WAN, in the form of about 300,000 distinct queries (per hour).
+
+
