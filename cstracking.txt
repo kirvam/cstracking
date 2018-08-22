@@ -1,24 +1,48 @@
-TODAY 8/13, 8/15, 8/17, 8/20 880 -|-
+TODAY 8/13, 8/15, 8/17, 8/20, 8/22 882 -|-
 
--Prepare for ANR Meeeting
--Prepare for TAX Meeting
+-Dan Review.  -Draft and review complete.  Sent to DAn for final review... 
+-Jon Review.  -Working on...
+
+-DLC Migration
+  +usb/network
+  +Modem bank  same subnet as the rest of their stuff..  change his IP...
+  +phone lines
+  +DEC device
+  +Virtual switch?
+
+-Rubrik capacity???
+
+-CFO meeting Tour via PPT.
+-Prepare for AHS Meeting?
+  +What is progress with Re-IP'ing/vShield
+  
+-TAX email.  -Done
+-Weekly report.  -Done
+
+-Prepare follow-up for ANR Meeting
+-Prepare follow-up for TAX Meeting
+
+-ERP implications to "not moving":
+  +doubles the effort for staff.
+  +increases risk
+  +forces the following expenditures:
+    -
 
 -Draft Justification of VxRails for DR
   +ABC
+  
 -Docker Server for Mark???  -Working
 -VMware Licenses
   +3 week lead time.
--JUD still waiting for SEC to config for DMZ..
--Weekly report  -Done
 
--Email DELL/EMC about drives***  -Working
+-Email DELL/EMC about drives***  -Signed. Documents sent to Kelsey at DELL/EMC.
 -Ansible lab.
 -pfSense lab.
--DNS Server for Joe, Landesk case 190118.  -Working
--Jon and Dan Review.
+-DNS Server for Joe, Landesk case 190118.  -Add a pair and check usage...
+
 -Project to address Internal Cloud Services, 29??
 
--Rubrik Cost Savings for Mark
+-Rubrik Cost Savings for Mark???
 
 -RFR feedback from Mark???  -86'd it.
 -Review priorities
@@ -26,16 +50,16 @@ TODAY 8/13, 8/15, 8/17, 8/20 880 -|-
 -Landesk tickets open???
 
 -Dylan/AOT cross-training
-  +coverage expectations email to Mark
+  +coverage expectations email to Mark???  -verbally shared...
 -Aaron touch base:
   +hours
   +Ansible
   +How are things going?
 
--Prepare TAX meeting  -It is this WED, 8/15
+-Prepare TAX compliance meeting  -It is this WED, 8/15
   +Review packet
 
--Lunch with Claus
+-Lunch with Claus  -Done
 -Swarm
 -NGNIX???
 
@@ -47,7 +71,6 @@ TODAY 8/13, 8/15, 8/17, 8/20 880 -|-
 
 -Azure Enrollment email with MS...  -Scheduled for Monday, 7/30
 
--Rubrik capacity???
 -Migration emails!
   +ANR  -Done
   +AHS  -Done
@@ -56,19 +79,6 @@ TODAY 8/13, 8/15, 8/17, 8/20 880 -|-
     -NFS server -Done
 
 -Send Security heads-up in Landesk case..  about needing them for migrations...  -Done
--DLC Meeting email...  Meeting next week... during staff meeting...  -Done
-  +Dongle
-  +usb/network
-  +Modem bank  same subnet as the rest of their stuff..  change his IP...
-  +phone lines
-  +DEC device
-  +Virtual switch?
-
--JUD email:
-  +6 to 8 hours
-  +suggesetd dates
-    8/25,26
-    9/1, 2
 
 -Migration list.  -Done.
 -VMware license dates?  -Need Landesk cases...
