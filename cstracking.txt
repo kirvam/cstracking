@@ -3,6 +3,10 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22 882 -|-
 -Dan Review.  -Draft and review complete.  Sent to Dan for final review... 
 -Jon Review.  -Working on...
 
+-Rubrik to get with Dan to collect data to make case for loaners..
+
+-Clean up Docker server?
+
 -DLC Migration
   +usb/network
   +Modem bank  same subnet as the rest of their stuff..  change his IP...
