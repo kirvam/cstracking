@@ -1,20 +1,25 @@
-TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27 887  -|-
+TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28 888 -|-
 
 03:00
   +3:26
 04:00
 
+-ERP costs
+
+-Vion
+
 -Rubrik to get with Dan to collect data to make case for loaners..
 
 -Aaron, Ansible...
   +AWS environment lab
-  
+
+-Thank you to C2...  
   
 -pfsense lab
   +ec2-54-147-12-113.compute-1.amazonaws.com
   +  $c/-`J;l^U1%b9H
 
--VMWARE vRealize impact
+-VMWARE vRealize impact pricing change with Advanced
 
 -Migration check-sheet.  
 
