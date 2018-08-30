@@ -1,12 +1,17 @@
-TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28 888 -|-
+TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30 890	 -|-
 
 03:00
   +3:26
 04:00
 
+-Cisco Upgrade
+
+-Cloud PPT
+-VDI Costs
 -ERP costs
 
 -Vion
+  +server document
 
 -Rubrik to get with Dan to collect data to make case for loaners..
 
