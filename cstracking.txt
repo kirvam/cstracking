@@ -1,12 +1,27 @@
-TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30 890	 -|-
+TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/31 891  -|-
+
+10:00
+
+11:00
+
+12:00
+
+01:00
+
+02:00
 
 03:00
-  +3:26
+
 04:00
 
--Cisco Upgrade
+-Schedule cost modeling for 2 weeks with Kate and Rebecca...
 
--Cloud PPT
+-Cisco Upgrade??
+
+-Send documents to Kate and Rebecca...
+-Gather data for VION...
+
+-Cloud PPT  -Finish it.
 -VDI Costs
 -ERP costs
 
