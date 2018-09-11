@@ -1,4 +1,10 @@
-TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/31 891  -|-
+TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/31 891,  9/1, 9/4, 9/5, 9/6, 9/7 898 9/8 
+9/9 9/10 901 -|-
+
+
+8:00
+
+9:00
 
 10:00
 
@@ -9,31 +15,106 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 01:00
 
 02:00
+  2:04  
 
 03:00
 
 04:00
 
--Schedule cost modeling for 2 weeks with Kate and Rebecca...
+-AHS tickets...
+
+-14,000 for Salesforce???
+
+-VNX6700 quotes for 01 & 02  -Jim developing
+
+-Mike to get me questions for Joshua H., 190462  -Contact by noon...  -Done**
+
+-Case of the missing EDU server -A Nancy Drew Mystery
+  +check box issues, Make sure you check the box
+
+-DAN meet via Skype in PM to discuss TAX
+-VION
+-AOT
+-DLC  -next week
+
+
+--<tax>---
+ADDRESSABBLE ISSUES  -The following issues will need to be addressed.
+ -Possible movement of subnets.
+ -Way to address dongle issue.
+ -Plan for load balancers  -Looks to be pfSense
+ -Address firewall rules and collapsing of firewalls/rules?
+ -Examination of:
+  +migration with 1 downtime events 
+  +or 2 downtimes events.
+
+ACTION ITEMS:
+ -Cloud Services (CS) will reach out to TAX to plan a way to make progress with pfSense next week.
+ -CS to deliver spreadsheet server list to TAX.
+ -TAX to review spreadsheet server list and identify order, priority, and vlan issues.
+ -TAX to get rules from SECURITY.
+ -CS to setup meeting next week.
+
+NOTES:
+ -According to Kelly, 2 to 3 hours to test...  
+ -There is non-vtax and vtax.
+ -All VTAX goes together...
+ -Best case 14 hours.  Worst case 22 hours.
+ -These dates work:
+     
+     10/12-13  -OK  not working for DF's schedule..
+     11/02-04  -OK
+--<tax>---
+
+
+-Rubrik  -Status?
+-Data for VION...
+   +VxRails 
+-Zerto response...  -Have pricing...
+-ERP costs  -Working
+
+-ABC Justification of VxRails for DR
+
+-Bills
+
+-VMware Licenses
+  +3 week lead time.
+
+-Rubrik to get with Dan to collect data to make case for loaners..  -Status?
+-Gather data for VION...  -Today with Dan...
+
+
+
+-Dan Review.  -Finished, Kristy forwarding...  
+-Jon Review.  -Finished, Kristy forwarding... 
+
+-Connect with Dylan next week...
+-Dylan/AOT cross-training  -Next week??
+  +coverage expectations email to Mark???  -verbally shared...
+
+-DLC Migration  -Paul and Aaron
+  +usb/network
+  +Modem bank  same subnet as the rest of their stuff..  change his IP...
+  +phone lines
+  +DEC device
+  +Virtual switch?
+
+-Schedule cost modeling for 2 weeks (9/11 with Kate and Rebecca...
+-Send Budget documents to Kate and Rebecca...  -Which ones?
+
+-JUD post migration de-brief
+  +Report
+  +Lessons learned meeting..
 
 -Cisco Upgrade??
 
--Send documents to Kate and Rebecca...
--Gather data for VION...
-
--Cloud PPT  -Finish it.
--VDI Costs
--ERP costs
-
--Vion
-  +server document
-
--Rubrik to get with Dan to collect data to make case for loaners..
+-Cloud PPT  -Need to clean-up and finish...
+-VDI Costs  -Waiting for Nick and Potter and Angela...
 
 -Aaron, Ansible...
   +AWS environment lab
 
--Thank you to C2...  
+-Thank you to C2...  -Done! 
   
 -pfsense lab
   +ec2-54-147-12-113.compute-1.amazonaws.com
@@ -43,21 +124,7 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 
 -Migration check-sheet.  
 
--JUD post migration de-brief
-  +Report
-  +Lessons learned meeting..
-
--Dan Review.  -Draft and review complete.  Sent to Dan for final review...  
--Jon Review.  -Finished..  Sent to Jon..
-
 -Clean up Docker server?
-
--DLC Migration
-  +usb/network
-  +Modem bank  same subnet as the rest of their stuff..  change his IP...
-  +phone lines
-  +DEC device
-  +Virtual switch?
 
 -Rubrik capacity???
 
@@ -75,14 +142,6 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
   +doubles the effort for staff.
   +increases risk
   +forces the following expenditures:
-    -
-
--Draft Justification of VxRails for DR
-  +ABC
-  
--Docker Server for Mark???  -Working
--VMware Licenses
-  +3 week lead time.
 
 -Email DELL/EMC about drives***  -Signed. Documents sent to Kelsey at DELL/EMC.
 -Ansible lab.
@@ -98,27 +157,26 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 -Review purchases
 -Landesk tickets open???
 
--Dylan/AOT cross-training
-  +coverage expectations email to Mark???  -verbally shared...
+
 -Aaron touch base:
   +hours
   +Ansible
   +How are things going?
 
--Prepare TAX compliance meeting  -It is this WED, 8/15
+-Prepare TAX compliance meeting  -It is this WED, 8/15  -Done
   +Review packet
 
 -Lunch with Claus  -Done
 -Swarm
 -NGNIX???
 
--JUD Datamover cut-over.
+-JUD Datamover cut-over.  -Done
   +Jim needs IP..  Dan by end of Day..
   +Need disk from Kelsey/Dell/EMC
   +13GB /15 minutes..
   +Jim out next Tuesday 7/21 for 7 to 10 days...  See you on the 4th...
 
--Azure Enrollment email with MS...  -Scheduled for Monday, 7/30
+-Azure Enrollment email with MS...  -Scheduled for Monday, 7/30  -On-going...
 
 -Migration emails!
   +ANR  -Done
@@ -237,3 +295,70 @@ But another important question is whether there are clients (or recursive resolv
 Anyway, it is tricky to measure the actual relevant traffic, but a general baseline is about 100 MB/hour to each of ns1 & ns2 from hosts outside of our WAN, in the form of about 300,000 distinct queries (per hour).
 
 
+
+NOTES
+-------------------------------
+--< 'id','parent','name','type','detail','parent_id' >--
+  1 : Modes of Transport,[TOP],MOT
+    2 : Aircraft,[Strategy],Flying machines.
+      3 : P38,[Initiative],P38 Lightning
+        4 : Metric1,[Note],133 recorded kills.
+        5 : Note1,[Note],Fighter Bomber.
+        6 : Note2,[Note],Twin boom.
+        7 : Metric2,[Note],Top speed is 443.
+        15 : Repair Wing,[Project],Need to repair wing.
+          17 : Note1,[Note],Parts ordered.
+        16 : Repair Wheel,[Project],Need to repair wheel.
+            18 : Note1,[Note],Parts back-ordered.
+            19 : Note2,[Note],Parts now on order after delay.
+      8 : P51,[Initiative],P51 Mustang
+          9 : Metric1,[Note],Top speed is 437 mph.
+          10 : Note1,[Note],Fastest plane.
+          11 : Note2,[Note],Versatile.
+          12 : Note3,[Note],Bomber escort.
+          13 : Note4,[Note],Intercepror.
+          14 : Metric2,[Note],10000 deployed.
+          20 : Repair Wing,[Project],Need to repair wing.
+            21 : Note1,[Note],Parts ordered.
+            22 : Note2,[Note],Parts installed.
+    23 : Vehicles,[Strategy],Land vehicles.
+        24 : M4,[Initiative],M4 Sherman.
+          26 : Note1,[Note],Produced in mass quatitites.
+          27 : Note2,[Note],Gasoline engine.
+        25 : M3,[Initiative],M3 Stuart.
+            28 : Note1,[Note],Light Tank.
+--< 'id','parent','name','type','detail','parent_id' >--
+
+
+
+What have I got?
+
+What do I need?
+
+<button class="accordion" title="Strategy 1">Strategy 1</button>
+<div class="panel">
+  <p>DATA Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+     <button class="accordion1" title="Initiative 1">Initiative 1</button>
+      <div class="panel1">
+       <p>Sub Section is the most important...</p>
+      <!--  -->
+         <button class="accordion2" title="Project 1">Project 1</button>
+         <div class="panel1">
+         <p>Sub Section is the most important...</p>
+         </div>
+         <button class="accordion2" title="Project 2">Project 2</button>
+       <div class="panel1">
+         <p>Sub Section 2 is the most important...</p>
+       </div>
+     <!-- -->
+    </div>
+    <button class="accordion1" title="Initiative 2">Initative 2</button>
+     <div class="panel1">
+     <p>Sub Section 2 is the most important...</p>
+    </div>
+</div>
+
+
+
+-------------------------------
