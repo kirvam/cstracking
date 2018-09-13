@@ -21,7 +21,75 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 
 04:00
 
--AHS tickets...
+-Purcahses:
+  +splunk
+  +M&O
+  +symantec
+  
+-Weekly Report  -Done
+-ERP costs  -Done and sent to Mark!
+
+-VMware Licenses
+  +3 week lead time.
+--<snip>--
+AOT VMWARE Licenses
+1, VMware vCenter Server 6 Standard for vSphere 6 (Per Instance), Production Support and Subscription, 1
+2, VMware vSphere 6 Enterprise Plus for 1 processor, Production Support and Subscription, 2 
+3, VMware vSphere 6 Enterprise Plus for 1 processor, Production Support and Subscription, 4
+4, VMware vSphere 6 Enterprise Plus for 1 processor, Production Support and Subscription, 2 
+5, VMware vSphere 6 Enterprise Plus for 1 processor, Production Support and Subscription, 4
+--<snip>--
+
+-Consolidation report
+---<snip>---
+AOT procurement approach
+
+NOTES:
+-AOT, 18 physical servers+/-, mixed dates..  some cloud...  some physcical...  
+-VMWARE licensing, JAN, 1/2019,  -Will be included in the VPC licensing.
+-Symantec licensing, SEPT, 9/2018,  -Being procured.
+-Backup, VEEAM, OCT, 10/2018,
+-BackupExec, DEC, 12/2018
+-Citrix Licenses, JUL, 7/2018, -Has been conslidated with ADS?  -What does that mean?
+-Windows Server Licensing, MAY, 5/2019  -Did last year.
+
+VMWARE CLUSTERS
+[AOT] -KNAPP 
+[AOT] -NL
+
+[ERP] -NL  -EOL
+
+[DPS] -WATERBURY  -EOL
+
+[TV]  -RESOURCE, TV, VxRack
+
+[VDI] -NL  -EOL
+
+Managment only
+[MGS-NL] -NL
+[MGS-TV] -TV
+---<snip>---
+  
+  
+-Mark email to Security about ACCD...
+
+-Visual Studio Pro..  -Not sure what this is?
+
+-Rubrik and loaners  -Dan working, waiting for Rubrik
+
+-ABC Justification of VxRails for DR REvision...
+
+-Data for VION  -Sent, They will also do an Azure quote as well.
+   +VxRails
+   
+-Zerto response...  -Have pricing...  Still need to meet..
+
+-Bills
+
+-Rubrik to get with Dan to collect data to make case for loaners..  -Status?
+-Gather data for VION...  -Today with Dan...
+
+-AHS tickets.  -Done
 
 -14,000 for Salesforce???
 
@@ -36,6 +104,37 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 -VION
 -AOT
 -DLC  -next week
+
+
+---<AOT>---
+AOT procurement approach
+
+NOTES:
+-AOT, 18 physical servers+/-, mixed dates..
+-VMWARE licensing, JAN, 1/2019,  -Will be included in the VPC licensing.
+-Symantec licensing, SEPT, 9/2018,  -Being procured.
+-Backup, VEEAM, OCT, 10/2018,
+-BackupExec, DEC, 12/2018
+-Citrix Licenses, JUL, 7/2018, -Has been conslidated with ADS?  -What does that mean?
+-Windows Server Licensing, MAY, 5/2019  -Did last year.
+
+	
+Suggested Operational Plan
+-Develop list from AOT
+-Map out AOT spend
+-Proceed (me) to manage procurements same as Cloud procurements
+-Seek confirmation from Tom B. of AOT with an encumbered list.
+-Work with Kate on ADS reimbursement in the Annual SLA.
+
+
+-Does this work?
+-Are you Ok with me seeking approval from Tom B.?
+-Are you Ok with me working with Kate on the reimbursement.
+-What do you wan to do with other agencies, example ANR?
+-What about AOT IT budget?
+  +How will ADS ensure no IT spend?
+-What are your thoughts on the AOT Cost Model?  
+---<AOT>---
 
 
 --<tax>---
@@ -66,29 +165,6 @@ NOTES:
      11/02-04  -OK
 --<tax>---
 
-
--Rubrik  -Status?
--Data for VION...
-   +VxRails 
--Zerto response...  -Have pricing...
--ERP costs  -Working
-
--ABC Justification of VxRails for DR
-
--Bills
-
--VMware Licenses
-  +3 week lead time.
-
--Rubrik to get with Dan to collect data to make case for loaners..  -Status?
--Gather data for VION...  -Today with Dan...
-
-
-
--Dan Review.  -Finished, Kristy forwarding...  
--Jon Review.  -Finished, Kristy forwarding... 
-
--Connect with Dylan next week...
 -Dylan/AOT cross-training  -Next week??
   +coverage expectations email to Mark???  -verbally shared...
 
