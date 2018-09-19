@@ -27,7 +27,12 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 
 04:00
 
--Weekly Report
+
+-Weekly Report  -Done
+
+-TAX DR suggestion.
+
+-Meet with Aaron and Jon on Virtual Firewalling...
 
 -Meet with Dan and Aaron on VHC project...
 
@@ -41,7 +46,7 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 -Meet with Dan about Isilon?
 -Meet with Dan about Gathering storage reports?
 
--Consolidation report
+-Consolidation report***
 
 -VMware Licenses
   +3 week lead time.
