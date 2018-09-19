@@ -1,12 +1,18 @@
 TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/31 891,  9/1, 9/4, 9/5, 9/6, 9/7 898 9/8 
 9/9 9/10 901 -|-
 
+9/13 904 -|-
+9/17 908 -|-
+9/18 909 -|-
 
-8:00
 
-9:00
 
-10:00
+8:00 x
+
+9:00 x
+
+10:00 x
+  10:22 x
 
 11:00
 
@@ -21,26 +27,49 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 
 04:00
 
+-Weekly Report
+
+-Meet with Dan and Aaron on VHC project...
+
+-Investigate Splunk usage decrease. Check with Dan.  Did the VxRack impact it?  -Email sent.
+
+-Digi Anywhere at TV***
+
+-Determine impact to keep DLC operational till February***
+-Meet with Dan about moving a submet for TAX.
+
+-Meet with Dan about Isilon?
+-Meet with Dan about Gathering storage reports?
+
+-Consolidation report
+
+-VMware Licenses
+  +3 week lead time.
+
+-Purchases:
+  +splunk
+  +M&O
+  +symantec  -Done
+
+-DLC Migration  -Need to plan...
+  +identify cost implications
+
+-10.80.22.18 case in Landesk...  -What to do?
+
+-Email to Mark:  -Email sent.
+  +Were we able to confirm who owns the AOT Servers/Storage? 
+  +AOT approver
+
+-Billing in the cloud?
+
 -Purcahses:
   +splunk
   +M&O
   +symantec
   
--Weekly Report  -Done
 -ERP costs  -Done and sent to Mark!
 
--VMware Licenses
-  +3 week lead time.
---<snip>--
-AOT VMWARE Licenses
-1, VMware vCenter Server 6 Standard for vSphere 6 (Per Instance), Production Support and Subscription, 1
-2, VMware vSphere 6 Enterprise Plus for 1 processor, Production Support and Subscription, 2 
-3, VMware vSphere 6 Enterprise Plus for 1 processor, Production Support and Subscription, 4
-4, VMware vSphere 6 Enterprise Plus for 1 processor, Production Support and Subscription, 2 
-5, VMware vSphere 6 Enterprise Plus for 1 processor, Production Support and Subscription, 4
---<snip>--
 
--Consolidation report
 ---<snip>---
 AOT procurement approach
 
