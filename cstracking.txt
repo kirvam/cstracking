@@ -31,7 +31,26 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 ?Ccc@/;!9d;L
 
 
+-AHS case...
 
+-AHS:
+  +just dev environment
+
+-Procured AOT stuff  -Done
+-Procured CS stuff...
+  +Resource Cluster Servers/blades?
+  +VNX01
+  +VNX02
+  
+
+-Costs!!!
+  +VMWare Licenses
+  +M&O on NL Resource
+  +
+  
+  +VDI -But they will pay for it.
+  
+-Adjust JUD timeline.
 
 -AHS 
  +Tips and Tricks
@@ -574,13 +593,13 @@ none; Project; 06-13-2018; 11 Cloud OPS; Team; Routine operation work on the Pri
 11 Cloud OPS; Project; 09-10-2018; 11 Cloud OPS; Dan; VxRack, ESXi host need to be replaced to ensure integrity of VxRack.  Dan worked with onsite DELL/EMC technicians to perform install.  DELL/EMC made mistake by installing incorrect version VMWARE causing some servers to move and require restart.  Impact was minor.
 11 Cloud OPS; Project; 09-13-2018; 11 Cloud OPS; Dan; Replacement of ESXi host in VxRack has been completed.  Minor issues were encountered due to vendor mistakes around VMWARE versions taking a total of 15 hours, #192944.   
 11 Cloud OPS; Project; 09-17-2018; 11 Cloud OPS; Aaron; Working to resolve issue with Data Movers as reported by Shared Services, #194042.
-11 Cloud OPS; Project; 09-18-2018; 11 Cloud OPS; Aaron; Work continues to support VHC capability in Private Cloud is being worked on, #190462
+11 Cloud OPS; Project; 09-18-2018; 11 Cloud OPS; Aaron; Work continues to support VHC project to move some assets into Private Cloud from Optum is being worked on, #190462
 11 Cloud OPS; Project; 09-19-2018; 11 Cloud OPS; Paul; Microsoft is still looking how to fix our Azure enrollment, unable to create subscription, no charges reflected, and GOV enrollment still operational. Case # REG:118091218994576.  Jon Huber taking point.
-11 Cloud OPS; Project; 09-21-2018; 11 Cloud OPS; Dan; Replaced host # 9 in the VxRack.
+11 Cloud OPS; Project; 09-20-2018; 11 Cloud OPS; Dan; Replaced host # 9 in the VxRack.
+11 Cloud OPS; Project; 09-21-2018; 11 Cloud OPS; Paul; JUD has been given Plan B costs for keeping VDI running for 50 users for 6 months.  Waiting for JUD to approve.
+11 Cloud OPS; Project; 09-18-2018; 11 Cloud OPS; Aaron; Current issue is determining their Network design.  They are not clear on this.  VHC project to move some assets into Private Cloud from Optum,#190462
 11 Cloud OPS; Project; 09-24-2018; 11 Cloud OPS; Paul; Microsoft Case # REG:118091218994576.  Microsoft is requesting Angela to add my ID back to the new enrollment.  It is not clear whether this will work.
 11 Cloud OPS; Project; 09-24-2018; 11 Cloud OPS; Aaron; Engaging in IRS 1075 preparations and Audit activities.  Meeting with Auditor Wednesday 9/26/2018.
-
-
 none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 07-04-2018; 10 Cloud Staffing; Paul; Amendment to contract for C2 migration tool still routing for signature.
 10 Cloud Staffing; Project; 07-09-2018; 10 Cloud Staffing; Paul; Staffing is at more normal levels.
@@ -596,7 +615,8 @@ none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 08-29-2018; 10 Cloud Staffing; Paul; Dan and Jon's reviews complete.  Cloud Service team is current for Performance Evaluations.
 10 Cloud Staffing; Project; 09-04-2018; 10 Cloud Staffing; Paul; Kristy routing paper copies of Dan and Jon's reviews.
 10 Cloud Staffing; Project; 09-17-2018; 10 Cloud Staffing; Paul; Awaiting signed copies from Kristy.
-
+10 Cloud Staffing; Project; 09-24-2018; 10 Cloud Staffing; Paul; Still awaiting signed copies from Kristy.  Jon and Dan need their signed copies.
+10 Cloud Staffing; Project; 09-17-2018; 10 Cloud Staffing; Paul; Cloud team's staff resources will be significantly reduced (by about 33%) during (probably) the next 2 weeks.  This will impact the Virtual Firewalling project and roll-out.  Jon will be out week of 9/30 and probably much of the following week, 10/7.
 none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 09-10-2018; 12 Procurement; Paul; Meeting with Dylan to address necessary Symantec procurement and other AOT infrastructure need over the next year.
 12 Procurement; Project; 09-11-2018; 12 Procurement; Paul; Meeting planned with CTO to suggest proposed process to include AOT forward and seek approval.
@@ -604,7 +624,7 @@ none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 09-14-2018; 12 Procurement; Paul; Purchase Order submitted to consolidate and procure Symantec licenses for Cloud and AOT.  Consolidation resulted in better pricing, # 192660.
 12 Procurement; Project; 09-17-2018; 12 Procurement; Paul; Working to procure annual VMWare licensing.  We are consolidating with AOT at this time.
 12 Procurement; Project; 09-19-2018; 12 Procurement; Paul; Working to procure the following for AOT, VEEAM, M and O for some physical servers.
-
+12 Procurement; Project; 09-24-2018; 12 Procurement; Paul; Still working to procure AOT the following, AOT, VEEAM, M and O for some physical servers, and working on process integration.
 none; Project; 06-27-2018; 13 TAX DR plan; Team; Meet with TAX.  TAX to come back with slimmed down DR design.  
 13 TAX DR plan; Project; 06-27-2018; 13 TAX DR plan; Team; Next meeting planned for 2nd week July.
 13 TAX DR plan; Project; 07-03-2018; 13 TAX DR plan; Team; Data book and Narrative completed.  Waiting for CFO feedback.  
@@ -618,8 +638,8 @@ none; Project; 06-27-2018; 13 TAX DR plan; Team; Meet with TAX.  TAX to come bac
 13 TAX DR plan; Project; 08-27-2018; 13 TAX DR plan; Paul; Still waiting on materials from TAX which identify the server resources desired for a DR solution.
 13 TAX DR plan; Project; 08-29-2018; 13 TAX DR plan; Paul; ABC completed and shared with CTO.  CTO has offered feedback concerning "due diligence".  Working though these now.  To be delivered next week.
 13 TAX DR plan; Project; 09-10-2018; 13 TAX DR plan; Paul; No word yet from Tax about a possible design.
-13 TAX DR plan; Project; 09-10-2018; 13 TAX DR plan; Paul; Sent email reminder request.
-
+13 TAX DR plan; Project; 09-10-2018; 13 TAX DR plan; Paul; Sent email reminder request for DR plan.
+13 TAX DR plan; Project; 09-25-2018; 13 TAX DR plan; Paul; Discussed with Kelly R.  Tax desires a subset of production.  Plan has been developed but not fully vetted internally.  Kelly will try to engage new director Dean and connect with the Cloud team.  Tax would expect any DR solution to be ready by March 2019.
 none; Project; 06-27-2018; 14 AHS Encrypted Storage; Dan; Meet with C2.  Meet with Shared Service to discuss File Service in the future after Data Movers retired.
 14 AHS Encrypted Storage; Project; 06-26-2018; 14 AHS Encrypted Storage; Dan; Reviewing materials to present to CTO.
 14 AHS Encrypted Storage; Project; 07-03-2018; 14 AHS Encrypted Storage; Dan; May be option for DPS and Body-Cams?
@@ -628,8 +648,7 @@ none; Project; 06-27-2018; 14 AHS Encrypted Storage; Dan; Meet with C2.  Meet wi
 14 AHS Encrypted Storage; Project; 08-09-2018; 14 AHS Encrypted Storage; Dan; Focus will continue after migration.  Targeting January 2019.
 14 AHS Encrypted Storage; Project; 08-22-2018; 14 AHS Encrypted Storage; Dan; Meeting with C2 to discuss Isilon held today, 8/22.
 14 AHS Encrypted Storage; Project; 08-29-2018; 14 AHS Encrypted Storage; Paul; Planning meeting with CTO.
-
-
+14 AHS Encrypted Storage; Project; 09-24-2018; 14 AHS Encrypted Storage; Paul; This issue is being raised by Shared Services as they proceed with their SharePoint file management strategy and plans.  Meeting planned for week of 9/30.  We have numbers are looking to get approval from CTO.
 none; Project; 06-25-2018; 15 JUD; Paul; Meet with JUD again.  Reviewed slimmed down DR design.  Reviewing justification with CFO.
 15 JUD; Project; 06-27-2018; 15 JUD; Paul; Reviewing justification with CFO.
 15 JUD; Project; 06-27-2018; 15 JUD; Dan; Meet with C2 to size VxRails solution.
@@ -642,7 +661,6 @@ none; Project; 06-25-2018; 15 JUD; Paul; Meet with JUD again.  Reviewed slimmed 
 15 JUD; Project; 08-22-2018; 15 JUD; Jon; Team still working on JUD's new environment, Landesk #186798.
 15 JUD; Project; 08-22-2018; 15 JUD; Paul; JUD's new environment case closed.  Requesting updated timeline.
 15 JUD; Project; 09-19-2018; 15 JUD; Paul; Follow-up questions regarding timeline have been sent.
-
 none; Project; 06-25-2018; 16 CFO; Paul; Meet with CFO again.  Working on JUD, ERP, TAX, justification.
 16 CFO; Project; 06-27-2018; 16 CFO; Paul; Meet with CFO again.  Working on Pre-bill for Private Cloud.
 16 CFO; Project; 06-25-2018; 16 CFO; Paul; Working on Metrics.
@@ -656,12 +674,11 @@ none; Project; 06-25-2018; 16 CFO; Paul; Meet with CFO again.  Working on JUD, E
 16 CFO; Project; 08-13-2018; 16 CFO; Paul; Follow-up meeting being planned.  Scripts being run to create final bill for CFO.
 16 CFO; Project; 08-22-2018; 16 CFO; Paul; Working to finalize bill.  Weekly meeting with CFO scheduled.
 16 CFO; Project; 08-29-2018; 16 CFO; Paul; Work to finalize SLA bills continues.  Friday meeting with CFO scheduled.
-16 CFO; Project; 08-30-2018; 16 CFO; Paul; Continue to work to finalize SLA bills continues.  Meeting with CTO very successful.  Presented PPT of Cloud Operation and Cloud Services.
-16 CFO; Project; 09-06-2018; 16 CFO; Paul; Discussed with CTO approach to procurement of Symantec licenses for AOT in the short term.
+16 CFO; Project; 08-30-2018; 16 CFO; Paul; Continue to work to finalize SLA bills continues.  Meeting with CFO very successful.  Presented PPT of Cloud Operation and Cloud Services.
+16 CFO; Project; 09-06-2018; 16 CFO; Paul; Discussed with CFO approach to procurement of Symantec licenses for AOT in the short term.
 16 CFO; Project; 09-10-2018; 16 CFO; Paul; Work to finalize SLA bills continues.  Meeting scheduled for 9/21.
 16 CFO; Project; 09-19-2018; 16 CFO; Paul; Continue to work to finalize SLA bills.
-
-
+16 CFO; Project; 09-21-2018; 16 CFO; Paul; CFO unavailable for meeting on 9/21.  Work continues finalize SLA bills.  This will now include charge back for AOT purchases.
 none; Project; 06-25-2018; 17 CTO Issues; Paul; Meet with CTO again.  Working on JUD, ERP, TAX, justification.
 17 CTO Issues; Project; 06-25-2018; 17 CTO Issues; Paul; DPS Gear End of Life in 2019.  Will require Cap ex if they cannot be included in new environment.
 17 CTO Issues; Project; 07-31-2018; 17 CTO Issues; Paul; Developing rationale and preparing for meeting with CTO to gain approval from ADS SEC.
@@ -669,12 +686,13 @@ none; Project; 06-25-2018; 17 CTO Issues; Paul; Meet with CTO again.  Working on
 17 CTO Issues; Project; 08-21-2018; 17 CTO Issues; Paul; Seeking guidance from CTO regarding ERP deigning to migrate.  CTO has set up meeting to discuss with them.
 17 CTO Issues; Project; 08-22-2018; 17 CTO Issues; Paul; Still working on ABC will meet with CTO to finalize.  Would like to go to RFQ by September 1.
 17 CTO Issues; Project; 08-29-2018; 17 CTO Issues; Paul; ABC completed and shared with CTO.  CTO has offered feedback concerning "due diligence".  Working though these now.  To be delivered next week.
-17 CTO Issues; Project; 08-30-2018; 17 CTO Issues; Paul; Enagaged VION to pursue case study to determine efficaciousness of a hosted DR solution.  Work continues. 
+17 CTO Issues; Project; 08-30-2018; 17 CTO Issues; Paul; Engaged VION to pursue case study to determine efficaciousness of a hosted DR solution.  Work continues. 
 17 CTO Issues; Project; 09-04-2018; 17 CTO Issues; Paul; Developing cost impact numbers for ERP migration delay.
 17 CTO Issues; Project; 09-11-2018; 17 CTO Issues; Paul; Case study with VION and Zerto being developed.  VION sent specifications.  They will produce 2 options, one with physical gear and one Azure VM's.
-17 CTO Issues; Project; 09-12-2018; 17 CTO Issues; Paul; CTO wants us to initiate a preliminary plan/design document for the Secretary and leadership that details the following.  Possible consolidation of infrastructure (that currently is dedicated), Data Centers, and licensing.  Examination of possible consolidation scenarios which includes Commercial Cloud providers like VION, GCP, and Azure for DR and DRaaS.
-
-
+17 CTO Issues; Project; 09-12-2018; 17 CTO Issues; Paul; CTO wants us to initiate a preliminary plan/design document (Consolidation Plan) for the Secretary and leadership that details the following.  Possible consolidation of infrastructure (that currently is dedicated), Data Centers, and licensing.  Examination of possible consolidation scenarios which includes Commercial Cloud providers like VION, GCP, and Azure for DR and DRaaS.
+17 CTO Issues; Project; 09-20-2018; 17 CTO Issues; Paul; Consolidation Plan framework has been mostly developed.  Waiting for data from vendors as well.  November 1st is the target date for delivery of first draft if not sooner.  Have engaged Zero as well as VION.
+17 CTO Issues; Project; 09-21-2018; 17 CTO Issues; Paul; CTO has been informed that due to the delays experienced in the migration project over the past 8 months or so (Procurement, Nexus, Firewalls, Staff Resources, etc), there is a need to purchase an extra 32 VMWare licenses, costing approximately an extra $78K.  Additionally, it is expected that further unplanned expenses for hardware M&O is expected.  Developing numbers to share soon.  Lastly, DPS consolidation analysis needs to take place due to End of Life status of their 4 host cluster.
+17 CTO Issues; Project; 09-24-2018; 17 CTO Issues; Paul; Azure configuration for the ADS tenant is still not fixed.  Which means we are blind to any costs being incurred by the users in the Terraform subscription.  As noted, issued being worked on by MS.
 none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RRI). Rubrik
 28 RRI Rubrik; Project; 06-27-2018; 28 RRI Rubrik; Dan; Rubrik.  Joe working with ANR and Linux admin to test Self-Service and Rubrik client.  Following-up with Joe this week.  Joe working with Aaron.
 28 RRI Rubrik; Project; 07-03-2018; 28 RRI Rubrik; Dan; Rubrik.  Meeting set with DPS to prepare and cut-over.
@@ -688,7 +706,8 @@ none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RR
 28 RRI Rubrik; Project; 08-28-2018; 28 RRI Rubrik; Joe; Rubrik.  DPS still being engaged.  EDU training is next.
 28 RRI Rubrik; Project; 09-04-2018; 28 RRI Rubrik; Dan; Rubrik.  Rubrik engaged to request 2 more Rubrik devices due to compression issues.  Dan findings to report to Rubrik.
 28 RRI Rubrik; Project; 09-18-2018; 28 RRI Rubrik; Dan; Rubrik.  Follow-up call with Rubrik and update shared with CTO.  Rubrik and Cloud Services still examining data and trying to formulate a request.
-
+28 RRI Rubrik; Project; 09-24-2018; 28 RRI Rubrik; Dan; Rubrik.  Dan still working with Matt.  We have reported storage capacity risk situation with CTO (more gear will be needed) and have established a standing weekly meeting with Rubrik.
+28 RRI Rubrik; Project; 09-25-2018; 28 RRI Rubrik; Dan; Rubrik.  It is important to note as was shared with CTO, the migration cannot complete with out further storage devices from Rubrik.
 none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initiative, (RRI). Virtual Firewalling
 29 RRI Virtual Firewall; Project; 06-27-2018; 29 RRI Virtual Firewall; Dan; Virtual Firewalling.  Aaron joining in this effort.  He is building pfSense test environment. 
 29 RRI Virtual Firewall; Project; 07-03-2018; 29 RRI Virtual Firewall; Team; Virtual Firewalling.  Work continues.
@@ -703,11 +722,9 @@ none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initi
 29 RRI Virtual Firewall; Project; 08-14-2018; 29 RRI Virtual Firewall; Aaron; Aaron working on automated build and implementation with Ansible.
 29 RRI Virtual Firewall; Project; 08-22-2018; 29 RRI Virtual Firewall; Aaron; Work continues.
 29 RRI Virtual Firewall; Project; 08-28-2018; 29 RRI Virtual Firewall; Paul; Work continues.  Aaron and Jon taking technical lead.  C2 to modify VShield tool to assist with automation/facilitation of VShield rules into pfSense Firewalls.
-
-
+29 RRI Virtual Firewall; Project; 08-28-2018; 29 RRI Virtual Firewall; Aaron; Work continues.  However it will slow with Jon's planned absence.  After the migration of ANR this will be the highest priority and focus for the Cloud Services team.
 none; Initiative; 06-25-2018; 2 RRI; Paul; Resource Refresh Initiative, (RRI).
-2 RRI; Note; 07-03-2018; 2 RRI; Paul; Thes Resource Refresh Initiative has the following projects: Migrations, Rubrik, Virtual Firewalling, VMWARE Upgrade, and Data Mover.
-
+2 RRI; Note; 07-03-2018; 2 RRI; Paul; The Resource Refresh Initiative has the following projects: Migrations, Rubrik, Virtual Firewalling, VMWARE Upgrade, and Data Mover.
 none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiative, (RRI). Migration Plan
 20 RRI Migration Plan; Project; 07-03-2018; 20 RRI Migration Plan; Paul; Meetings planned for other agencies: AGR, AGO, and VVH.  More meetings being planned for DPS, BGS, EDU, VLC, and SAS.
 20 RRI Migration Plan; Project; 07-04-2018; 20 RRI Migration Plan; Dan; Migrations meetings being planned for E911, DLC, and EDU.
@@ -740,34 +757,38 @@ none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiat
 20 RRI Migration Plan; Project; 09-10-2018; 20 RRI Migration Plan; Dan; Work continues with ACCD to plan for their migration on 9/23.
 20 RRI Migration Plan; Project; 09-10-2018; 20 RRI Migration Plan; Dan; ANR, NRB migration as been moved back to 9/28.
 20 RRI Migration Plan; Project; 09-19-2018; 20 RRI Migration Plan; Dan; Work continues with ACCD to plan for their migration on 9/23.  CTO has given Security heads-up regarding being available this Sunday.
+20 RRI Migration Plan; Project; 09-20-2018; 20 RRI Migration Plan; Aaron; Performed site assessment for DLC and have determined that due to DLC's planned decommissioning of their current application planned for January 2019 they will not be migrated.  Reviewing decision and will then advise. 
 20 RRI Migration Plan; Project; 09-23-2018; 20 RRI Migration Plan; Dan; The Cloud Services (CS) team collaborating with its technical partners in ADS, Networking and Security, successfully completed the ACCD migration this past Sunday.  All partners were very responsive and critical to the success.
-
-
-
-
+20 RRI Migration Plan; Project; 09-25-2018; 20 RRI Migration Plan; Dan; The Cloud Services (CS) team is proceeding to prepare for the final migration with ANR this Friday, 9/28.
 none; Project; 06-25-2018; 21 RRI Data Mover Migration; Paul; RRI Data Mover Migration.  This project will proceed to decommission NL VNX's (at EOL) and move data from NL to Tech Vault (TV).
 21 RRI Data Mover Migration; Project; 08-13-2018; 21 RRI Data Mover Migration; Dan; Dan and C2 have planned to test replication from NL to TV.
 21 RRI Data Mover Migration; Project; 08-15-2018; 21 RRI Data Mover Migration; Paul; Loaner disks on order with DELL/EMC.  Status should be available today.
 21 RRI Data Mover Migration; Project; 08-21-2018; 21 RRI Data Mover Migration; Paul; Paperwork signed and forward to Kelsey of DELL/EMC for loaner disks.  The cost is $23K.  Due to compliance we will purchase in 2019.
 21 RRI Data Mover Migration; Project; 09-05-2018; 21 RRI Data Mover Migration; Paul; Still waiting for drives.  Planning next data mover migrations.
-21 RRI Data Mover Migration; Project; 09-10-2018; 21 RRI Data Mover Migration; Paul; Data Mover project is moving slower than anticipated due to some scheduling and technical issues.  Have informed CTO to that a significant expense is expected in November due to this delay.  Currenlty securing quotes.
+21 RRI Data Mover Migration; Project; 09-10-2018; 21 RRI Data Mover Migration; Paul; Data Mover project is moving slower than anticipated due to some scheduling and technical issues.  Have informed CTO to that a significant expense is expected in November due to this delay.  Currently securing quotes.
 21 RRI Data Mover Migration; Project; 09-19-2018; 21 RRI Data Mover Migration; Paul; DELL/EMC is about to or has shipped needed drives.
-
 none; Initiative; 06-25-2018; 3 Special Projects; Team; Special Projects
 3 Special Projects; Note; 07-13-2018; 3 Special Projects; Team; Special Projects contains: CRM project, Proof of Concept (POC) and DR-BC projects.
-
-
 none; Project; 06-25-2018; 32 CRM Project; Mike; CRM project, Proof of Concept (POC).
 32 CRM Project; Project; 07-13-2018; 32 CRM Project; Mike; Engaging Salesforce and other States in knowledge transfer sessions.
 32 CRM Project; Project; 07-13-2018; 32 CRM Project; Mike; Planning continues.
 32 CRM Project; Project; 07-24-2018; 32 CRM Project; Mike; Salesforce Demo was attended and being evaluated by Michael.
-
 none; Project; 08-20-2018; 33 DR-BC Project; Ken; DR-BC project.
 33 DR-BC Project; Project; 08-29-2018; 33 DR-BC Project; Ken; I have been reviewing and gathering notes on Agency coop plans  and assembling a spreadsheet about ¾ done reviewing COOP plans, and ½ on the Spreadsheet. I have been identifying Agency COOP reps to meet with to translate essential functions to systems that will be needed in a continuity situation.
 33 DR-BC Project; Project; 09-10-2018; 33 DR-BC Project; Ken; Ken attending State run BC table top exercises this week.
 33 DR-BC Project; Project; 09-13-2018; 33 DR-BC Project; Ken; Attended the FEMA COOP exercise in Burlington. Multiple scenarios were covered and many Local, State, and Fed agencies in attendance. 
-33 DR-BC Project; Project; 09-13-2018; 33 DR-BC Project; Ken; Have been invited to speak IT Leaders Meeting on Thursday.  I am preparing a slideshow presentation on where I am at with COOP stuff.  I am working on updating the ADS COOP Plan.  I have been reviewing and gathering notes on Agency coop plans  and assembling a spreadsheet about 80% done reviewing COOP plans, and little over half on the Spreadsheet. I have been identifying Agency COOP reps to meet with to translate essential functions to systems that will be needed in a continuity situation. 
+33 DR-BC Project; Project; 09-13-2018; 33 DR-BC Project; Ken; Have been invited to speak IT Leaders Meeting on Thursday.  I am preparing a slide show presentation on where I am at with COOP stuff.  I am working on updating the ADS COOP Plan.  I have been reviewing and gathering notes on Agency coop plans  and assembling a spreadsheet about 80% done reviewing COOP plans, and little over half on the Spreadsheet. I have been identifying Agency COOP reps to meet with to translate essential functions to systems that will be needed in a continuity situation. 
 
 
 
 ---<09-25-2018>---
+
+
+STORAGE 
+INORMATION
+
+
+Name        | Location | Model   | File Software Version |  Block Software Version
+eagmcsvnx01 |  NL      | VNX5700 |  7.1.80-8             |  05.32.000.5.221   	
+eagmcsvnx02 |  NL      | VNX5700 |  7.1.80-8             |  -Not showing, not clear why?
+eagmcsvnx04 |  TV      | VNX5800 |  8.1.9-155            |  05.33.009.5.155
