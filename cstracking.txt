@@ -7,6 +7,9 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 9/19 910 -|-
 9/20 911 -|-
 9/21 912 -|-
+9/25 916 -|-
+9/26 917 -|-
+
 
 
 
@@ -29,12 +32,13 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 04:00
 
 ?Ccc@/;!9d;L
+YGC2F9hKh5kVwh8N1TnHSbml:0102
 
+-TV ASA's EOL move behind 4110's
 
--AHS case...
+-Aaron 6 month review, 12/18/2018.
 
--AHS:
-  +just dev environment
+-AHS case...  -Aaron working.
 
 -Procured AOT stuff  -Done
 -Procured CS stuff...
@@ -534,6 +538,10 @@ Consolidation outline
   
   
 -Prevailing assumptions:
+
+focus on IaaS
+flexibility
+
   +Decisions regarding consolidation must strive to establish or maintain "Standardization"
     -ENV
     -UI
@@ -759,7 +767,7 @@ none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiat
 20 RRI Migration Plan; Project; 09-19-2018; 20 RRI Migration Plan; Dan; Work continues with ACCD to plan for their migration on 9/23.  CTO has given Security heads-up regarding being available this Sunday.
 20 RRI Migration Plan; Project; 09-20-2018; 20 RRI Migration Plan; Aaron; Performed site assessment for DLC and have determined that due to DLC's planned decommissioning of their current application planned for January 2019 they will not be migrated.  Reviewing decision and will then advise. 
 20 RRI Migration Plan; Project; 09-23-2018; 20 RRI Migration Plan; Dan; The Cloud Services (CS) team collaborating with its technical partners in ADS, Networking and Security, successfully completed the ACCD migration this past Sunday.  All partners were very responsive and critical to the success.
-20 RRI Migration Plan; Project; 09-25-2018; 20 RRI Migration Plan; Dan; The Cloud Services (CS) team is proceeding to prepare for the final migration with ANR this Friday, 9/28.
+20 RRI Migration Plan; Project; 09-25-2018; 20 RRI Migration Plan; Dan; The Cloud Services (CS) team is proceeding to prepare for the final migration with ANR.  This may occur this Friday, 9/28 or within the next 2 weeks this is still being decided per ANR.
 none; Project; 06-25-2018; 21 RRI Data Mover Migration; Paul; RRI Data Mover Migration.  This project will proceed to decommission NL VNX's (at EOL) and move data from NL to Tech Vault (TV).
 21 RRI Data Mover Migration; Project; 08-13-2018; 21 RRI Data Mover Migration; Dan; Dan and C2 have planned to test replication from NL to TV.
 21 RRI Data Mover Migration; Project; 08-15-2018; 21 RRI Data Mover Migration; Paul; Loaner disks on order with DELL/EMC.  Status should be available today.

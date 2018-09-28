@@ -1,0 +1,256 @@
+----------< response to IRS >----------------------------------------------------
+
+Hi Tina,
+
+Here are the pending information and responses for the San Storage Audit:
+
+SAN Storage: 
+
+VNX's
+ Name        | Location | Model   | File Software Version |  Block Software Version 
+ eagmcsvnx01 |  NL      | VNX5700 |  7.1.80-8             |  05.32.000.5.221     
+ eagmcsvnx02 |  NL      | VNX5700 |  7.1.80-8             |  05.32.000.5.221 
+ eagmcsvnx04 |  TV      | VNX5800 |  8.1.9-155            |  05.33.009.5.155 
+
+Here is a list of all the backup devices:
+   DD2500  NL
+   DD2500  TV
+   DD670  NL
+   DD670  TV
+   DD670  NL
+   DD670  TV
+   Rubrik1 NL
+   Rubrik2 NL
+   Rubrik3 NL
+   Rubrik4 NL
+   Rubrik1 TV
+   Rubrik2 TV
+   Rubrik3 TV
+   Rubrik4 TV
+
+-Remember server hosts cannot access them.  Only the backup server can access.
+ -See Topology.
+
+Here are the specific responses open from yesterday.
+
+#1.  Updates and Security patches
+
+Answer:
+ -We are still trying to track down the last time we did patches for the SAN devices.
+ -We believe this was done within the last 6 months.  
+ -The next one is planned for this October 2018.
+
+ #2. See attached Storage Account creation and Review procedure.
+
+Answer:  See attached.
+
+#3. SAN fiber channel protocols:
+
+Answer:  FC protocols we think.  Still trying to get more detail.
+
+#4.  Default password.
+
+Answer:  Yes, changed.
+
+#5.  SAN-20, password complexity...  
+
+Answer:
+ This is not possible ion the device.  We are mitigating with the policy/procedure.  See attached.
+
+#6.  SAN-23, PKI..  
+ Answer:  There is no PKI infrastructure.
+
+#7.  SSL for GUI.
+ Answer:  We believe this is version 3 or better.  We are still checking.  We may have to log a ticket with vendor.
+
+#7.1  CLI?
+ Answer:  There is a CLI.  We do not use it.   SSH is version 2:
+ ----<snip>-----
+2018-09-26 15:18:26 Looking up host "X.X.X.X"
+ 2018-09-26 15:18:26 Connecting to X.X.X.X port 22
+ 2018-09-26 15:18:26 Server version: SSH-2.0-OpenSSH_5.1
+ 2018-09-26 15:18:26 Using SSH protocol version 2
+ 2018-09-26 15:18:26 We claim version: SSH-2.0-PuTTY_Release_0.62
+ 2018-09-26 15:18:26 Doing Diffie-Hellman group exchange
+ 2018-09-26 15:18:26 Doing Diffie-Hellman key exchange with hash SHA-256
+ 2018-09-26 15:18:27 Host key fingerprint is:
+ 2018-09-26 15:18:27 ssh-rsa 2048 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ 2018-09-26 15:18:27 Initialised AES-256 SDCTR client->server encryption
+ 2018-09-26 15:18:27 Initialised HMAC-SHA1 client->server MAC algorithm
+ 2018-09-26 15:18:27 Initialised AES-256 SDCTR server->client encryption
+ 2018-09-26 15:18:27 Initialised HMAC-SHA1 server->client MAC algorithm
+ ----<snip>-----
+
+#8.  SAN 27, 
+ Answer:  Alerts may be thrown from logs for errors determined to be Critical and Warn.
+
+#9.  Log review.
+ Answer:  Logs reviewed via email alerts and whenever accessing the SAN system about once a month.
+
+#10.  Topology.
+ Answer:  See attached.
+
+#11.  Warning banner.
+ Answer:  We have created and added the following to the GUI:
+ ---<snip>----
+###########################  WARNING #############
+ You are entering a state government computing environment. Only people with authorized need and use for the information contained herein should proceed beyond this point.
+ This system may contain government information, which is restricted to authorized users only. Unauthorized access, use, misuse, or modification of this computer system or of the data contained herein or in transit to/from this system constitutes a violation of Title 18, United States Code, Section 1030, and may subject the individual to Criminal and Civil penalties pursuant to Title 26, United States Code, Section 7213, 7213A and 7431.
+ This system and equipment are subject to monitoring to ensure proper performance of applicable security features or procedures. Such monitoring may result in acquisition, recording and analysis of all data being communicated, transmitted, processed or stored in this system by a user. If monitoring reveals possible evidence of criminal activity, such evidence may be provided to Law Enforcement Personnel.
+ ###########################  WARNING #############
+ ---<snip>----
+
+
+#12 The Storage infrastructure accounts:
+ Answer: We have actually have 6 infrastructure admin users and 3 system accounts for testing and support.
+ ---<snip>----
+ VNX01: aschwartz,dgwozdz,phaigh,jhosford,jkheintz,svcvnx01,systemadmin,sysadmin,emc,mlapera
+  VNX02: aschwartz,dgwozdz,phaigh,jhosford,jkheintz,svcvnx01,systemadmin,sysadmin,emc,mlapera
+  VNX04: aschwartz,dgwozdz,phaigh,sysadmin,EMC
+ ---<snip>----
+
+Did I answer all you open questions?
+
+
+Sincerely,
+
+-Paul
+
+----------< response to IRS >----------------------------------------------------
+
+--------<follow-up responses >-------------------------------------------
+
+	#1.  Update and Security patches for VNX's (3), Rubrik's, and Backup Data Domains:
+	Answer:
+	-The next Upgrade of VNX SAN STORAGE:  October 2018
+	-Last Upgrade of VNX SAN STORAGE:  October 2017
+
+	-Last Upgrade of Rubrik:  April 2018
+
+	-Last Upgarde of Data Domains:  October 2017
+
+
+	#3. SAN fiber channel protocols:
+	Answer:  The protocol is FCP.
+
+	#7.  SSL for GUI.
+	Answer:  SSL for GUI: It's using TLS 1.0 (TLS_RSA_WITH_AES_128_CBC_SHA). You can click the TLS button in your web browser to see details.
+
+---< check off from IRS list>------------------------------------------
+
+SAN-03 Please provide a current drawing of the site’s SAN topology that includes all external and internal links, zones, and all interconnected equipment is being maintained.  -Done
+
+SAN-04 Please provide documented procedures regarding the account management process for access.  -Done
+
+SAN-06 Are privileged SAN accounts reviewed at least semi-annually for compliance with account management procedures?  -Done see proceedure...
+
+SAN-11 Provide either the local configuration or account management settings showing system accounts are locked after three consecutive incorrect attempts?  -Done, mitigated through proceedure...
+
+SAN-13 Are user sessions terminated after no more than 30 minutes of inactivity?  -Done, it was set to 30 min.
+
+SAN-17 What protocols are in use for Fibre Channel Security Protocol (FC-CP) for mutual authentication?  There are three FC-SP authentication protocols are:  Fibre Channel Authentication Protocol (FCAP), Diffie Hellman Challenge Handshake Authentication Protocol (DH-CHAP) and Fibre Channel Password Authentication Protocol (FCPAP).  -Done FCP
+
+SAN-20 Provide screenshots showing password requirements (authentication server and/or local) meet the following requirements:  -Done not possible.  Done through proceedure...
+
+a) Minimum password length of 8 characters
+b) Passwords must contain at least one number or special character, and a combination of at least one lower and uppercase letter
+c) Maximum password age of 60 days for privileged user
+d) Minimum password age of 1 day
+e) Password history for the previous 24 passwords 
+f) Users are forced to change their initial password during their first logon
+
+SAN-24 Provide SAN array and switch configurations showing that management sessions (both CLI and GUI) are encrypted using FIPS 140-2 validated encryption.  -Done, SSH2, TLS 2
+
+---< check off from IRS list>------------------------------------------
+
+---------------------------< NOTES >-------------------------------------------------------------------------------  
+ VNX's have 6 admins
+ 
+ 1. mlapera
+ 2. jkheintz
+ 3. jhosford
+ 4. phaigh
+ 5. dgwozdz
+ 6. aschwartz
+ 
+ 1. emc
+ 2. sysadmin
+ 3. systemadmin
+ 4. svcnx01
+
+###########################  WARNING #############
+You are entering a state government computing environment. Only people with authorized need and use for the information contained herein should proceed beyond this point.
+This system may contain government information, which is restricted to authorized users only. Unauthorized access, use, misuse, or modification of this computer system or of the data contained herein or in transit to/from this system constitutes a violation of Title 18, United States Code, Section 1030, and may subject the individual to Criminal and Civil penalties pursuant to Title 26, United States Code, Section 7213, 7213A and 7431.
+This system and equipment are subject to monitoring to ensure proper performance of applicable security features or procedures. Such monitoring may result in acquisition, recording and analysis of all data being communicated, transmitted, processed or stored in this system by a user. If monitoring reveals possible evidence of criminal activity, such evidence may be provided to Law Enforcement Personnel.
+###########################  WARNING #############
+
+-Updates and Security patches  -Dan to check log!!!
+  +VNX's when last update?  Next is October 2018.
+  +DD update patches
+  +Rubrik versions
+
+-Do we have a Topology?  -Look for that -YES created!!!
+  +servers
+  +DD
+  +VNX's
+  +Rubrik's
+
+-Make procedure to Add users/and Review Accounts to give to Tina...  -Paul working on!!!
+
+-Dan do we have a list of accounts in the SAN...  -Yes, see next...
+VNX01: aschwartz,dgwozdz,phaigh,jhosford,jkheintz,svcvnx01,systemadmin,sysadmin,emc,mlapera
+VNX02: aschwartz,dgwozdz,phaigh,jhosford,jkheintz,svcvnx01,systemadmin,sysadmin,emc,mlapera
+VNX04: aschwartz,dgwozdz,phaigh,sysadmin,EMC
+
+-Check with DAN on REVIEW of SAN accounts  SAN-06  -See above!!!
+?
+
+-DAN, ask about zoning and presenting..  can we show auditor...
+ANSWER:  Soft zoning - storage network is physically separate from user networks.  Connectivity only exists between servers, storage devices, backup devices, and associated switching.
+
+-Timeout  -shows no?  can we fix?  -Fixed to 30 minutes!!!
+Remediated for both GUI and CLI per document:
+https://community.emc.com/docs/DOC-23228
+https://www.emc.com/collateral/TechnicalDocument/docu48491.pdf
+
+
+-Warning banner
+* Only configurable for CLI and GUI.  Is in place, can capture.  -FIXED!!!
+
+###########################  WARNING #############
+You are entering a state government computing environment. Only people with authorized need and use for the information contained herein should proceed beyond this point.
+This system may contain government information, which is restricted to authorized users only. Unauthorized access, use, misuse, or modification of this computer system or of the data contained herein or in transit to/from this system constitutes a violation of Title 18, United States Code, Section 1030, and may subject the individual to Criminal and Civil penalties pursuant to Title 26, United States Code, Section 7213, 7213A and 7431.
+This system and equipment are subject to monitoring to ensure proper performance of applicable security features or procedures. Such monitoring may result in acquisition, recording and analysis of all data being communicated, transmitted, processed or stored in this system by a user. If monitoring reveals possible evidence of criminal activity, such evidence may be provided to Law Enforcement Personnel.
+###########################  WARNING #############
+
+-SAN fiber channel protocols???  -Ues, FC?
+FC is the protocol (?)
+
+-DAN, was there default  password and was it changed?  I think yes?  -Yes Changed.
+* Yes, default passwords have been changed
+
+-SAN-20, password complexity...  parameters/settings...  screen shot...  They need to see...  -Policy will address this.
+* Only possible via AD/LDAP integration
+
+-SAN-23, PKI..  Keys were created during the install..  We don't use PKI infrastructure.  No users can get this from the WAN..  -We need to researh further.
+-SSL for GUI CLI?  version 3 and above is accepted...
+2018-09-26 15:18:26	Looking up host "X.X.X.X"
+2018-09-26 15:18:26	Connecting to X.X.X.X port 22
+2018-09-26 15:18:26	Server version: SSH-2.0-OpenSSH_5.1
+2018-09-26 15:18:26	Using SSH protocol version 2
+2018-09-26 15:18:26	We claim version: SSH-2.0-PuTTY_Release_0.62
+2018-09-26 15:18:26	Doing Diffie-Hellman group exchange
+2018-09-26 15:18:26	Doing Diffie-Hellman key exchange with hash SHA-256
+2018-09-26 15:18:27	Host key fingerprint is:
+2018-09-26 15:18:27	ssh-rsa 2048 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2018-09-26 15:18:27	Initialised AES-256 SDCTR client->server encryption
+2018-09-26 15:18:27	Initialised HMAC-SHA1 client->server MAC algorithm
+2018-09-26 15:18:27	Initialised AES-256 SDCTR server->client encryption
+2018-09-26 15:18:27	Initialised HMAC-SHA1 server->client MAC algorithm
+
+-SAN 27, Alerts may be thrown from logs... what is criteria  -DONE
++Alert on WARN and CRITICAL.
++See logs every time we log into SAN.
++Recieve Alerts with log info weekly.
+---------------------------< NOTES >-------------------------------------------------------------------------------  
+
