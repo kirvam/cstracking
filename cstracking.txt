@@ -32,7 +32,19 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 04:00
 
 ?Ccc@/;!9d;L
+
+8uQOxb18ygchZPIHUtFLEecz 
+2YLzbjdJg94UQ2B1b6wrJXPr 
+
 YGC2F9hKh5kVwh8N1TnHSbml:0102
+nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Filesystem","Ckpt savvol","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
+
+nas_fs -query:type=vpfs -fields:BackupOf,Blocks,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %30s %20s\n","Filesystem","Blocks","Ckpt savvol","Size in MB ")} {printf("%30s %30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
+
+nas_fs -query:type=vpfs -format:"%-30s %15s %s %15s KB\n" -fields:BackupOf,Blocks,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %30s %20s\n","Filesystem","Blocks","Ckpt savvol","Size in MB ")} {printf("%30s %30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
+
+nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Blocks", "Filesystem","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
+
 
 -TV ASA's EOL move behind 4110's
 
