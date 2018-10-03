@@ -37,6 +37,7 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 2YLzbjdJg94UQ2B1b6wrJXPr 
 
 YGC2F9hKh5kVwh8N1TnHSbml:0102
+
 nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Filesystem","Ckpt savvol","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
 
 nas_fs -query:type=vpfs -fields:BackupOf,Blocks,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %30s %20s\n","Filesystem","Blocks","Ckpt savvol","Size in MB ")} {printf("%30s %30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
@@ -45,6 +46,19 @@ nas_fs -query:type=vpfs -format:"%-30s %15s %s %15s KB\n" -fields:BackupOf,Block
 
 nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Blocks", "Filesystem","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
 
+-Firewalls to TAX
+  +Aaron
+
+-Aaron SKU/Template proposal
+  +Get him average
+  
+-Azure Portal still broken...  -email sent to MS.
+-Email to Lane of DLC...  -Done
+-Weekly Report...  -Done
+
+-SLA BILLS  -Working.  Meeting set with Kate!!!
+
+-Data Mover Reports  
 
 -TV ASA's EOL move behind 4110's
 
@@ -620,6 +634,11 @@ none; Project; 06-13-2018; 11 Cloud OPS; Team; Routine operation work on the Pri
 11 Cloud OPS; Project; 09-18-2018; 11 Cloud OPS; Aaron; Current issue is determining their Network design.  They are not clear on this.  VHC project to move some assets into Private Cloud from Optum,#190462
 11 Cloud OPS; Project; 09-24-2018; 11 Cloud OPS; Paul; Microsoft Case # REG:118091218994576.  Microsoft is requesting Angela to add my ID back to the new enrollment.  It is not clear whether this will work.
 11 Cloud OPS; Project; 09-24-2018; 11 Cloud OPS; Aaron; Engaging in IRS 1075 preparations and Audit activities.  Meeting with Auditor Wednesday 9/26/2018.
+11 Cloud OPS; Project; 09-27-2018; 11 Cloud OPS; Team; Engaged with IRS Audit team and performed audits, provided responses, made corrections where applicable.
+11 Cloud OPS; Project; 09-28-2018; 11 Cloud OPS; Aaron; Meet with Joshua last week to revolve some open questions regarding the VHC project to move some assets into Private Cloud from Optum, #190462.
+11 Cloud OPS; Project; 10-02-2018; 11 Cloud OPS; Paul; TAX Mitigation plan to Address IRS Critical Findings completed and shared with Dana B. the coordinator.
+11 Cloud OPS; Project; 10-02-2018; 11 Cloud OPS; Aaron; Built and delivered AHS OnBase project development servers per Case # 194330.
+11 Cloud OPS; Project; 10-03-2018; 11 Cloud OPS; Paul; Azure Portal still broken.  Need ability to create subscription and see usage which is currently not reflected.  Case # REG:118091218994576.
 none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 07-04-2018; 10 Cloud Staffing; Paul; Amendment to contract for C2 migration tool still routing for signature.
 10 Cloud Staffing; Project; 07-09-2018; 10 Cloud Staffing; Paul; Staffing is at more normal levels.
@@ -637,6 +656,8 @@ none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 09-17-2018; 10 Cloud Staffing; Paul; Awaiting signed copies from Kristy.
 10 Cloud Staffing; Project; 09-24-2018; 10 Cloud Staffing; Paul; Still awaiting signed copies from Kristy.  Jon and Dan need their signed copies.
 10 Cloud Staffing; Project; 09-17-2018; 10 Cloud Staffing; Paul; Cloud team's staff resources will be significantly reduced (by about 33%) during (probably) the next 2 weeks.  This will impact the Virtual Firewalling project and roll-out.  Jon will be out week of 9/30 and probably much of the following week, 10/7.
+10 Cloud Staffing; Project; 10-02-2018; 10 Cloud Staffing; Paul; Team is short staffed this week due to medical leave.  In box is busy.
+10 Cloud Staffing; Project; 10-03-2018; 10 Cloud Staffing; Paul; Still awaiting signed copies for performance evaluation for Jon and Dan from Kristy.
 none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 09-10-2018; 12 Procurement; Paul; Meeting with Dylan to address necessary Symantec procurement and other AOT infrastructure need over the next year.
 12 Procurement; Project; 09-11-2018; 12 Procurement; Paul; Meeting planned with CTO to suggest proposed process to include AOT forward and seek approval.
@@ -645,6 +666,8 @@ none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 09-17-2018; 12 Procurement; Paul; Working to procure annual VMWare licensing.  We are consolidating with AOT at this time.
 12 Procurement; Project; 09-19-2018; 12 Procurement; Paul; Working to procure the following for AOT, VEEAM, M and O for some physical servers.
 12 Procurement; Project; 09-24-2018; 12 Procurement; Paul; Still working to procure AOT the following, AOT, VEEAM, M and O for some physical servers, and working on process integration.
+12 Procurement; Project; 09-28-2018; 12 Procurement; Paul; Per CTO integrating all of AOT's budget into the Private Cloud budget.
+12 Procurement; Project; 09-28-2018; 12 Procurement; Paul; Waiting for AOT VEEAM quotes.  Pursuing quotes for Splunk which include separate instance for ERP.
 none; Project; 06-27-2018; 13 TAX DR plan; Team; Meet with TAX.  TAX to come back with slimmed down DR design.  
 13 TAX DR plan; Project; 06-27-2018; 13 TAX DR plan; Team; Next meeting planned for 2nd week July.
 13 TAX DR plan; Project; 07-03-2018; 13 TAX DR plan; Team; Data book and Narrative completed.  Waiting for CFO feedback.  
@@ -669,6 +692,7 @@ none; Project; 06-27-2018; 14 AHS Encrypted Storage; Dan; Meet with C2.  Meet wi
 14 AHS Encrypted Storage; Project; 08-22-2018; 14 AHS Encrypted Storage; Dan; Meeting with C2 to discuss Isilon held today, 8/22.
 14 AHS Encrypted Storage; Project; 08-29-2018; 14 AHS Encrypted Storage; Paul; Planning meeting with CTO.
 14 AHS Encrypted Storage; Project; 09-24-2018; 14 AHS Encrypted Storage; Paul; This issue is being raised by Shared Services as they proceed with their SharePoint file management strategy and plans.  Meeting planned for week of 9/30.  We have numbers are looking to get approval from CTO.
+14 AHS Encrypted Storage; Project; 10-02-2018; 14 AHS Encrypted Storage; Paul; Discussed with Shared Services as they proceed with their SharePoint file management strategy and plans.  No solution has been decided upon.  Any savings dependent on depreciation of current Data Movers and the capacity of the storage solution chosen.
 none; Project; 06-25-2018; 15 JUD; Paul; Meet with JUD again.  Reviewed slimmed down DR design.  Reviewing justification with CFO.
 15 JUD; Project; 06-27-2018; 15 JUD; Paul; Reviewing justification with CFO.
 15 JUD; Project; 06-27-2018; 15 JUD; Dan; Meet with C2 to size VxRails solution.
@@ -681,6 +705,7 @@ none; Project; 06-25-2018; 15 JUD; Paul; Meet with JUD again.  Reviewed slimmed 
 15 JUD; Project; 08-22-2018; 15 JUD; Jon; Team still working on JUD's new environment, Landesk #186798.
 15 JUD; Project; 08-22-2018; 15 JUD; Paul; JUD's new environment case closed.  Requesting updated timeline.
 15 JUD; Project; 09-19-2018; 15 JUD; Paul; Follow-up questions regarding timeline have been sent.
+15 JUD; Project; 09-19-2018; 15 JUD; Paul; Updated timeline.
 none; Project; 06-25-2018; 16 CFO; Paul; Meet with CFO again.  Working on JUD, ERP, TAX, justification.
 16 CFO; Project; 06-27-2018; 16 CFO; Paul; Meet with CFO again.  Working on Pre-bill for Private Cloud.
 16 CFO; Project; 06-25-2018; 16 CFO; Paul; Working on Metrics.
@@ -699,6 +724,8 @@ none; Project; 06-25-2018; 16 CFO; Paul; Meet with CFO again.  Working on JUD, E
 16 CFO; Project; 09-10-2018; 16 CFO; Paul; Work to finalize SLA bills continues.  Meeting scheduled for 9/21.
 16 CFO; Project; 09-19-2018; 16 CFO; Paul; Continue to work to finalize SLA bills.
 16 CFO; Project; 09-21-2018; 16 CFO; Paul; CFO unavailable for meeting on 9/21.  Work continues finalize SLA bills.  This will now include charge back for AOT purchases.
+16 CFO; Project; 10-02-2018; 16 CFO; Paul; Meet with CFO.  Working to integrate AOT budget into Private Cloud per CFO.  Work continues to finalize SLA bills.  Have not gotten feedback from CFO yet.  Scheduled meeting for Thursday.  It is my understanding that SLA Bills are due 10/10.  If the CFO wants significant re-work we may not have time.  Just giving you a heads up.  Remember we have moved half of all our customers to the new environment which does not have a unified billing process.
+16 CFO; Project; 10-03-2018; 16 CFO; Paul; Working to develop Data Mover bills per Angela.  Since staff turnover, we have to re-learn this skill.  We are hoping to have for Angela late this week.
 none; Project; 06-25-2018; 17 CTO Issues; Paul; Meet with CTO again.  Working on JUD, ERP, TAX, justification.
 17 CTO Issues; Project; 06-25-2018; 17 CTO Issues; Paul; DPS Gear End of Life in 2019.  Will require Cap ex if they cannot be included in new environment.
 17 CTO Issues; Project; 07-31-2018; 17 CTO Issues; Paul; Developing rationale and preparing for meeting with CTO to gain approval from ADS SEC.
@@ -713,6 +740,9 @@ none; Project; 06-25-2018; 17 CTO Issues; Paul; Meet with CTO again.  Working on
 17 CTO Issues; Project; 09-20-2018; 17 CTO Issues; Paul; Consolidation Plan framework has been mostly developed.  Waiting for data from vendors as well.  November 1st is the target date for delivery of first draft if not sooner.  Have engaged Zero as well as VION.
 17 CTO Issues; Project; 09-21-2018; 17 CTO Issues; Paul; CTO has been informed that due to the delays experienced in the migration project over the past 8 months or so (Procurement, Nexus, Firewalls, Staff Resources, etc), there is a need to purchase an extra 32 VMWare licenses, costing approximately an extra $78K.  Additionally, it is expected that further unplanned expenses for hardware M&O is expected.  Developing numbers to share soon.  Lastly, DPS consolidation analysis needs to take place due to End of Life status of their 4 host cluster.
 17 CTO Issues; Project; 09-24-2018; 17 CTO Issues; Paul; Azure configuration for the ADS tenant is still not fixed.  Which means we are blind to any costs being incurred by the users in the Terraform subscription.  As noted, issued being worked on by MS.
+17 CTO Issues; Project; 09-28-2018; 17 CTO Issues; Paul; Reviewed Vermont Private Cloud (VPC) budget with CTO.  Our FY20 budget reflects a decrease from $3.2 mil in FY19 to $2.8 mil.  He approves.  
+17 CTO Issues; Project; 10-02-2018; 17 CTO Issues; Paul; Consolidation Plan effort is being delayed due to current level of activity around billing budget and migrations.  Still waiting to analyze VION proposal report and to receive ZERTO proposal.
+17 CTO Issues; Project; 10-03-2018; 17 CTO Issues; Paul; Discussed following current challenges, Rubrik capacity, pfSense Virtual Firewall implementation (58), VMWARE Upgrade to 6.5, TAX Migration and Schedule, and AHS Migration and Schedule.  These are the highest risk items.
 none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RRI). Rubrik
 28 RRI Rubrik; Project; 06-27-2018; 28 RRI Rubrik; Dan; Rubrik.  Joe working with ANR and Linux admin to test Self-Service and Rubrik client.  Following-up with Joe this week.  Joe working with Aaron.
 28 RRI Rubrik; Project; 07-03-2018; 28 RRI Rubrik; Dan; Rubrik.  Meeting set with DPS to prepare and cut-over.
@@ -728,6 +758,7 @@ none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RR
 28 RRI Rubrik; Project; 09-18-2018; 28 RRI Rubrik; Dan; Rubrik.  Follow-up call with Rubrik and update shared with CTO.  Rubrik and Cloud Services still examining data and trying to formulate a request.
 28 RRI Rubrik; Project; 09-24-2018; 28 RRI Rubrik; Dan; Rubrik.  Dan still working with Matt.  We have reported storage capacity risk situation with CTO (more gear will be needed) and have established a standing weekly meeting with Rubrik.
 28 RRI Rubrik; Project; 09-25-2018; 28 RRI Rubrik; Dan; Rubrik.  It is important to note as was shared with CTO, the migration cannot complete with out further storage devices from Rubrik.
+28 RRI Rubrik; Project; 10-03-2018; 28 RRI Rubrik; Dan; Rubrik.  Dan is scheduled to speak with Rubrik Technical Lead this week.  We are anxiously waiting for a conclusion.  It is important to note as was shared with CTO, the migration cannot complete with out further storage devices from Rubrik.  This is a high risk issue.
 none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initiative, (RRI). Virtual Firewalling
 29 RRI Virtual Firewall; Project; 06-27-2018; 29 RRI Virtual Firewall; Dan; Virtual Firewalling.  Aaron joining in this effort.  He is building pfSense test environment. 
 29 RRI Virtual Firewall; Project; 07-03-2018; 29 RRI Virtual Firewall; Team; Virtual Firewalling.  Work continues.
@@ -742,7 +773,8 @@ none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initi
 29 RRI Virtual Firewall; Project; 08-14-2018; 29 RRI Virtual Firewall; Aaron; Aaron working on automated build and implementation with Ansible.
 29 RRI Virtual Firewall; Project; 08-22-2018; 29 RRI Virtual Firewall; Aaron; Work continues.
 29 RRI Virtual Firewall; Project; 08-28-2018; 29 RRI Virtual Firewall; Paul; Work continues.  Aaron and Jon taking technical lead.  C2 to modify VShield tool to assist with automation/facilitation of VShield rules into pfSense Firewalls.
-29 RRI Virtual Firewall; Project; 08-28-2018; 29 RRI Virtual Firewall; Aaron; Work continues.  However it will slow with Jon's planned absence.  After the migration of ANR this will be the highest priority and focus for the Cloud Services team.
+29 RRI Virtual Firewall; Project; 09-28-2018; 29 RRI Virtual Firewall; Aaron; Work continues.  However it will slow with Jon's planned absence.  After the migration of ANR this will be the highest priority and focus for the Cloud Services team.
+29 RRI Virtual Firewall; Project; 09-28-2018; 29 RRI Virtual Firewall; Aaron; Team meeting this week to continue planning.
 none; Initiative; 06-25-2018; 2 RRI; Paul; Resource Refresh Initiative, (RRI).
 2 RRI; Note; 07-03-2018; 2 RRI; Paul; The Resource Refresh Initiative has the following projects: Migrations, Rubrik, Virtual Firewalling, VMWARE Upgrade, and Data Mover.
 none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiative, (RRI). Migration Plan
@@ -780,6 +812,7 @@ none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiat
 20 RRI Migration Plan; Project; 09-20-2018; 20 RRI Migration Plan; Aaron; Performed site assessment for DLC and have determined that due to DLC's planned decommissioning of their current application planned for January 2019 they will not be migrated.  Reviewing decision and will then advise. 
 20 RRI Migration Plan; Project; 09-23-2018; 20 RRI Migration Plan; Dan; The Cloud Services (CS) team collaborating with its technical partners in ADS, Networking and Security, successfully completed the ACCD migration this past Sunday.  All partners were very responsive and critical to the success.
 20 RRI Migration Plan; Project; 09-25-2018; 20 RRI Migration Plan; Dan; The Cloud Services (CS) team is proceeding to prepare for the final migration with ANR.  This may occur this Friday, 9/28 or within the next 2 weeks this is still being decided per ANR.
+20 RRI Migration Plan; Project; 09-25-2018; 20 RRI Migration Plan; Dan; Per ANR's wishes, the Cloud Services (CS) team is proceeding to prepare for the final migration with ANR which will occur on Friday, 10/12.
 none; Project; 06-25-2018; 21 RRI Data Mover Migration; Paul; RRI Data Mover Migration.  This project will proceed to decommission NL VNX's (at EOL) and move data from NL to Tech Vault (TV).
 21 RRI Data Mover Migration; Project; 08-13-2018; 21 RRI Data Mover Migration; Dan; Dan and C2 have planned to test replication from NL to TV.
 21 RRI Data Mover Migration; Project; 08-15-2018; 21 RRI Data Mover Migration; Paul; Loaner disks on order with DELL/EMC.  Status should be available today.
@@ -787,12 +820,14 @@ none; Project; 06-25-2018; 21 RRI Data Mover Migration; Paul; RRI Data Mover Mig
 21 RRI Data Mover Migration; Project; 09-05-2018; 21 RRI Data Mover Migration; Paul; Still waiting for drives.  Planning next data mover migrations.
 21 RRI Data Mover Migration; Project; 09-10-2018; 21 RRI Data Mover Migration; Paul; Data Mover project is moving slower than anticipated due to some scheduling and technical issues.  Have informed CTO to that a significant expense is expected in November due to this delay.  Currently securing quotes.
 21 RRI Data Mover Migration; Project; 09-19-2018; 21 RRI Data Mover Migration; Paul; DELL/EMC is about to or has shipped needed drives.
+21 RRI Data Mover Migration; Project; 10-02-2018; 21 RRI Data Mover Migration; Dan; DELL/EMC drives have arrived.
 none; Initiative; 06-25-2018; 3 Special Projects; Team; Special Projects
 3 Special Projects; Note; 07-13-2018; 3 Special Projects; Team; Special Projects contains: CRM project, Proof of Concept (POC) and DR-BC projects.
 none; Project; 06-25-2018; 32 CRM Project; Mike; CRM project, Proof of Concept (POC).
 32 CRM Project; Project; 07-13-2018; 32 CRM Project; Mike; Engaging Salesforce and other States in knowledge transfer sessions.
 32 CRM Project; Project; 07-13-2018; 32 CRM Project; Mike; Planning continues.
 32 CRM Project; Project; 07-24-2018; 32 CRM Project; Mike; Salesforce Demo was attended and being evaluated by Michael.
+32 CRM Project; Project; 10-02-2018; 32 CRM Project; Mike; Meeting took place on Tuesday, 10/2.
 none; Project; 08-20-2018; 33 DR-BC Project; Ken; DR-BC project.
 33 DR-BC Project; Project; 08-29-2018; 33 DR-BC Project; Ken; I have been reviewing and gathering notes on Agency coop plans  and assembling a spreadsheet about ¾ done reviewing COOP plans, and ½ on the Spreadsheet. I have been identifying Agency COOP reps to meet with to translate essential functions to systems that will be needed in a continuity situation.
 33 DR-BC Project; Project; 09-10-2018; 33 DR-BC Project; Ken; Ken attending State run BC table top exercises this week.
@@ -800,8 +835,45 @@ none; Project; 08-20-2018; 33 DR-BC Project; Ken; DR-BC project.
 33 DR-BC Project; Project; 09-13-2018; 33 DR-BC Project; Ken; Have been invited to speak IT Leaders Meeting on Thursday.  I am preparing a slide show presentation on where I am at with COOP stuff.  I am working on updating the ADS COOP Plan.  I have been reviewing and gathering notes on Agency coop plans  and assembling a spreadsheet about 80% done reviewing COOP plans, and little over half on the Spreadsheet. I have been identifying Agency COOP reps to meet with to translate essential functions to systems that will be needed in a continuity situation. 
 
 
-
+---<10-03-2018>---
 ---<09-25-2018>---
+
+---<10-03-2018>---
+---<09-25-2018>---
+
+--------------
+[nasadmin@eagmcsvnx01 ~]$ nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Filesystem","Ckpt savvol","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
+                    Filesystem                    Ckpt savvol          Size in MB
+                        AHS-CO                          vp815              3870000
+                      AHS-DAIL                         vp1347               160000
+                       AHS-DCF                          vp995               710000
+                   AHS-DMH-VSH                          vp986               240000
+                       AHS-DOC                         vp1343              1040000
+                      AHS-DVHA                         vp1162               690000
+                       AHS-VDH                         vp1788              1060000
+                      JUD-Misc                         vp7339                20000
+                    JUD-Shares                         vp7342               130000
+                          Sum:                                            7920000
+[nasadmin@eagmcsvnx01 ~]$
+[nasadmin@eagmcsvnx01 ~]$
+[nasadmin@eagmcsvnx01 ~]$ nas_fs -query:type=fs -format:"%-30s %s %15s KB\n" -fields:Name,VolumeName,size|sort|grep -v root| grep -v vpfs|awk 'BEGIN {printf("%30s %30s %20s\n","FileSystem","VolumeName","Size in MB")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s %30s %20s\n","Sum:"," ",i) }'
+                    FileSystem                     VolumeName           Size in MB
+                        AHS-CO                           v606              4933945
+                      AHS-DAIL                           v608              1433409
+                       AHS-DCF                           v610              3860480
+                   AHS-DMH-VSH                           v616               795648
+                       AHS-DOC                           v612              4455207
+                      AHS-DVHA                           v614              2193097
+                       AHS-VDH                          v1646              8192000
+                 EAG-TEST2-FS1                         v13559                10240
+                 EAG-TEST2-FS2                         v13575                15360
+                      JUD-Misc                          v6665               409600
+                    JUD-Shares                          v4226              1024000
+                          Sum:                                            27322986
+
+
+
+--------------
 
 
 STORAGE 
