@@ -46,6 +46,11 @@ nas_fs -query:type=vpfs -format:"%-30s %15s %s %15s KB\n" -fields:BackupOf,Block
 
 nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Blocks", "Filesystem","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
 
+
+-pfSense for TAX
+
+-Shred Drives at NL
+
 -Firewalls to TAX
   +Aaron
 
@@ -639,6 +644,8 @@ none; Project; 06-13-2018; 11 Cloud OPS; Team; Routine operation work on the Pri
 11 Cloud OPS; Project; 10-02-2018; 11 Cloud OPS; Paul; TAX Mitigation plan to Address IRS Critical Findings completed and shared with Dana B. the coordinator.
 11 Cloud OPS; Project; 10-02-2018; 11 Cloud OPS; Aaron; Built and delivered AHS OnBase project development servers per Case # 194330.
 11 Cloud OPS; Project; 10-03-2018; 11 Cloud OPS; Paul; Azure Portal still broken.  Need ability to create subscription and see usage which is currently not reflected.  Case # REG:118091218994576.
+11 Cloud OPS; Project; 10-04-2018; 11 Cloud OPS; Paul; Still working with Microsoft, Case # REG:118091218994576.
+11 Cloud OPS; Project; 10-05-2018; 11 Cloud OPS; Dan; Experiencing issue with Rubrik node, Rubrik Support case 00046523.
 none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 07-04-2018; 10 Cloud Staffing; Paul; Amendment to contract for C2 migration tool still routing for signature.
 10 Cloud Staffing; Project; 07-09-2018; 10 Cloud Staffing; Paul; Staffing is at more normal levels.
@@ -658,6 +665,7 @@ none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 09-17-2018; 10 Cloud Staffing; Paul; Cloud team's staff resources will be significantly reduced (by about 33%) during (probably) the next 2 weeks.  This will impact the Virtual Firewalling project and roll-out.  Jon will be out week of 9/30 and probably much of the following week, 10/7.
 10 Cloud Staffing; Project; 10-02-2018; 10 Cloud Staffing; Paul; Team is short staffed this week due to medical leave.  In box is busy.
 10 Cloud Staffing; Project; 10-03-2018; 10 Cloud Staffing; Paul; Still awaiting signed copies for performance evaluation for Jon and Dan from Kristy.
+10 Cloud Staffing; Project; 10-10-2018; 10 Cloud Staffing; Paul; Still awaiting signed copies for performance evaluation for Jon and Dan from Kristy.
 none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 09-10-2018; 12 Procurement; Paul; Meeting with Dylan to address necessary Symantec procurement and other AOT infrastructure need over the next year.
 12 Procurement; Project; 09-11-2018; 12 Procurement; Paul; Meeting planned with CTO to suggest proposed process to include AOT forward and seek approval.
@@ -668,6 +676,9 @@ none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 09-24-2018; 12 Procurement; Paul; Still working to procure AOT the following, AOT, VEEAM, M and O for some physical servers, and working on process integration.
 12 Procurement; Project; 09-28-2018; 12 Procurement; Paul; Per CTO integrating all of AOT's budget into the Private Cloud budget.
 12 Procurement; Project; 09-28-2018; 12 Procurement; Paul; Waiting for AOT VEEAM quotes.  Pursuing quotes for Splunk which include separate instance for ERP.
+12 Procurement; Project; 10-08-2018; 12 Procurement; Paul; Jim Wood wanting to meet with CS, AOT, and CTO to discuss.
+12 Procurement; Project; 10-09-2018; 12 Procurement; Paul; Working on the following AOT VMWARE, SPLUNK for CS, and HP SERVER Support.
+12 Procurement; Project; 10-10-2018; 12 Procurement; Paul; Splunk quotes in for ERP.  Seeking ERP approval for bill back in 2020 SLA Demand bill.  
 none; Project; 06-27-2018; 13 TAX DR plan; Team; Meet with TAX.  TAX to come back with slimmed down DR design.  
 13 TAX DR plan; Project; 06-27-2018; 13 TAX DR plan; Team; Next meeting planned for 2nd week July.
 13 TAX DR plan; Project; 07-03-2018; 13 TAX DR plan; Team; Data book and Narrative completed.  Waiting for CFO feedback.  
@@ -726,6 +737,7 @@ none; Project; 06-25-2018; 16 CFO; Paul; Meet with CFO again.  Working on JUD, E
 16 CFO; Project; 09-21-2018; 16 CFO; Paul; CFO unavailable for meeting on 9/21.  Work continues finalize SLA bills.  This will now include charge back for AOT purchases.
 16 CFO; Project; 10-02-2018; 16 CFO; Paul; Meet with CFO.  Working to integrate AOT budget into Private Cloud per CFO.  Work continues to finalize SLA bills.  Have not gotten feedback from CFO yet.  Scheduled meeting for Thursday.  It is my understanding that SLA Bills are due 10/10.  If the CFO wants significant re-work we may not have time.  Just giving you a heads up.  Remember we have moved half of all our customers to the new environment which does not have a unified billing process.
 16 CFO; Project; 10-03-2018; 16 CFO; Paul; Working to develop Data Mover bills per Angela.  Since staff turnover, we have to re-learn this skill.  We are hoping to have for Angela late this week.
+16 CFO; Project; 10-05-2018; 16 CFO; Paul; Data Mover report, Private Cloud (VPC) budget, and AOT Expense list provide to CFO and Shared Services (SS) Deputy as requested.  At this time there are NO known deliverables or pending requests from the CFO or SS Deputy with regard to the 2020 budget, SLA BILL, or AOT Procumbent Process.
 none; Project; 06-25-2018; 17 CTO Issues; Paul; Meet with CTO again.  Working on JUD, ERP, TAX, justification.
 17 CTO Issues; Project; 06-25-2018; 17 CTO Issues; Paul; DPS Gear End of Life in 2019.  Will require Cap ex if they cannot be included in new environment.
 17 CTO Issues; Project; 07-31-2018; 17 CTO Issues; Paul; Developing rationale and preparing for meeting with CTO to gain approval from ADS SEC.
@@ -759,6 +771,7 @@ none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RR
 28 RRI Rubrik; Project; 09-24-2018; 28 RRI Rubrik; Dan; Rubrik.  Dan still working with Matt.  We have reported storage capacity risk situation with CTO (more gear will be needed) and have established a standing weekly meeting with Rubrik.
 28 RRI Rubrik; Project; 09-25-2018; 28 RRI Rubrik; Dan; Rubrik.  It is important to note as was shared with CTO, the migration cannot complete with out further storage devices from Rubrik.
 28 RRI Rubrik; Project; 10-03-2018; 28 RRI Rubrik; Dan; Rubrik.  Dan is scheduled to speak with Rubrik Technical Lead this week.  We are anxiously waiting for a conclusion.  It is important to note as was shared with CTO, the migration cannot complete with out further storage devices from Rubrik.  This is a high risk issue.
+28 RRI Rubrik; Project; 10-10-2018; 28 RRI Rubrik; Dan; Rubrik.  Meeting planned with Rubrik this week to start to finalize capacity discrepancies and plan future capacity.
 none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initiative, (RRI). Virtual Firewalling
 29 RRI Virtual Firewall; Project; 06-27-2018; 29 RRI Virtual Firewall; Dan; Virtual Firewalling.  Aaron joining in this effort.  He is building pfSense test environment. 
 29 RRI Virtual Firewall; Project; 07-03-2018; 29 RRI Virtual Firewall; Team; Virtual Firewalling.  Work continues.
@@ -775,6 +788,7 @@ none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initi
 29 RRI Virtual Firewall; Project; 08-28-2018; 29 RRI Virtual Firewall; Paul; Work continues.  Aaron and Jon taking technical lead.  C2 to modify VShield tool to assist with automation/facilitation of VShield rules into pfSense Firewalls.
 29 RRI Virtual Firewall; Project; 09-28-2018; 29 RRI Virtual Firewall; Aaron; Work continues.  However it will slow with Jon's planned absence.  After the migration of ANR this will be the highest priority and focus for the Cloud Services team.
 29 RRI Virtual Firewall; Project; 09-28-2018; 29 RRI Virtual Firewall; Aaron; Team meeting this week to continue planning.
+29 RRI Virtual Firewall; Project; 10-03-2018; 29 RRI Virtual Firewall; Aaron; CS and TAX meet to start the process of creating pfSense Firewalls for the TAX environment in preparation of their migration.  TAX to share rules. 
 none; Initiative; 06-25-2018; 2 RRI; Paul; Resource Refresh Initiative, (RRI).
 2 RRI; Note; 07-03-2018; 2 RRI; Paul; The Resource Refresh Initiative has the following projects: Migrations, Rubrik, Virtual Firewalling, VMWARE Upgrade, and Data Mover.
 none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiative, (RRI). Migration Plan
@@ -813,6 +827,7 @@ none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiat
 20 RRI Migration Plan; Project; 09-23-2018; 20 RRI Migration Plan; Dan; The Cloud Services (CS) team collaborating with its technical partners in ADS, Networking and Security, successfully completed the ACCD migration this past Sunday.  All partners were very responsive and critical to the success.
 20 RRI Migration Plan; Project; 09-25-2018; 20 RRI Migration Plan; Dan; The Cloud Services (CS) team is proceeding to prepare for the final migration with ANR.  This may occur this Friday, 9/28 or within the next 2 weeks this is still being decided per ANR.
 20 RRI Migration Plan; Project; 09-25-2018; 20 RRI Migration Plan; Dan; Per ANR's wishes, the Cloud Services (CS) team is proceeding to prepare for the final migration with ANR which will occur on Friday, 10/12.
+20 RRI Migration Plan; Project; 10-10-2018; 20 RRI Migration Plan; Dan; The Cloud Services (CS) team is proceeding to prepare for the final migration with ANR which will occur on Friday, 10/12.
 none; Project; 06-25-2018; 21 RRI Data Mover Migration; Paul; RRI Data Mover Migration.  This project will proceed to decommission NL VNX's (at EOL) and move data from NL to Tech Vault (TV).
 21 RRI Data Mover Migration; Project; 08-13-2018; 21 RRI Data Mover Migration; Dan; Dan and C2 have planned to test replication from NL to TV.
 21 RRI Data Mover Migration; Project; 08-15-2018; 21 RRI Data Mover Migration; Paul; Loaner disks on order with DELL/EMC.  Status should be available today.
@@ -821,6 +836,7 @@ none; Project; 06-25-2018; 21 RRI Data Mover Migration; Paul; RRI Data Mover Mig
 21 RRI Data Mover Migration; Project; 09-10-2018; 21 RRI Data Mover Migration; Paul; Data Mover project is moving slower than anticipated due to some scheduling and technical issues.  Have informed CTO to that a significant expense is expected in November due to this delay.  Currently securing quotes.
 21 RRI Data Mover Migration; Project; 09-19-2018; 21 RRI Data Mover Migration; Paul; DELL/EMC is about to or has shipped needed drives.
 21 RRI Data Mover Migration; Project; 10-02-2018; 21 RRI Data Mover Migration; Dan; DELL/EMC drives have arrived.
+21 RRI Data Mover Migration; Project; 10-10-2018; 21 RRI Data Mover Migration; Paul; Shared Service is planning meeting to discuss this issue.  They are interested in understanding options vis-a-vis Data Movers in light of their SharePoint plan.  Discussed with Angela, Deputy.
 none; Initiative; 06-25-2018; 3 Special Projects; Team; Special Projects
 3 Special Projects; Note; 07-13-2018; 3 Special Projects; Team; Special Projects contains: CRM project, Proof of Concept (POC) and DR-BC projects.
 none; Project; 06-25-2018; 32 CRM Project; Mike; CRM project, Proof of Concept (POC).
@@ -874,10 +890,45 @@ none; Project; 08-20-2018; 33 DR-BC Project; Ken; DR-BC project.
 
 
 --------------
+------------------------
+#
+# AUTH: PMH
+# DATE: 10/01/2018
+# NOTE: Script to create NAS Reports
+DATE=$(/bin/date +%F--%c)
+echo "DATE: $DATE"
+LOG="cs_nas_report.log"
+OUT="cs_nas_report.out"
+SNAME=$(hostname)
+echo "NAS: $SNAME"
 
+
+echo "-Running Data Alocated Script"
+if output=$(/nas/bin/nas_fs -query:type=fs -format:"%-30s %s %15s KB\n" -fields:Name,VolumeName,size|sort|grep -v root| grep -v vpfs|awk 'BEGIN {printf("%30s %30s %20s\n","FileSystem","VolumeName","Size in MB")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s %30s %20s\n","Sum:"," ",i) }'); then
+echo "-Commanded Succeeded."
+fi
+
+echo $output
+###  Here will go Check Point command.  ###
+sleep 10
+
+echo "-Running to Out File"
+echo "### $DATE ###" >> $LOG
+echo "### $DATE ###"> $OUT
+
+/nas/bin/nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Filesystem","Ckpt savvol","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }' > cs_nas_report.out
+
+sleep 10
+echo "-Running to Log File"
+/nas/bin/nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Filesystem","Ckpt savvol","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }' >> cs_nas_report.log
+
+ls -alt cs_nas_report.*
+
+echo "Done!"
+---------------------------------------
 
 STORAGE 
-INORMATION
+INFORMATION
 
 
 Name        | Location | Model   | File Software Version |  Block Software Version
