@@ -10,7 +10,7 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 9/25 916 -|-
 9/26 917 -|-
 10/11 932 -|-
-
+10/12 933 -|-
 
 
 
@@ -47,6 +47,11 @@ nas_fs -query:type=vpfs -format:"%-30s %15s %s %15s KB\n" -fields:BackupOf,Block
 
 nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Blocks", "Filesystem","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
 
+-rubrik extra backup over SLA of 14 days
+
+-AWS:
+  +deleted adjy
+  +deleted pfSense
 
 -Azure Overages Request for PO's
 
