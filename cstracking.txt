@@ -11,6 +11,9 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 9/26 917 -|-
 10/11 932 -|-
 10/12 933 -|-
+10/22 943 -|-
+
+
 
 
 
@@ -48,7 +51,42 @@ nas_fs -query:type=vpfs -format:"%-30s %15s %s %15s KB\n" -fields:BackupOf,Block
 nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Blocks", "Filesystem","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
 
 
+---
+https://nl-rubrik-proxy.ea.dii.state.vt.us/web/bin/index.html#/welcome
+
+https://tv-rubrik-proxy.ea.dii.state.vt.us/web/bin/index.html#/welcome
+
+use phaigh@ea.dii.state.vt.us username and password
+
+ ---
+
+
+-Rubik MEMO
+
 -root cause report..
+
+-ED project
+
+-Weekly
+
+-Rubrik procurement
+  +create PO
+  
+-Contract Rider waiver nonsense??
+-Meet with Angela, SS, about Isilon Data Mover substitute??
+
+
+-Work with Desktop to get Windows 10.
+
+-UAR for Landesk Analyst Access for Dylan
+
+-Angela DC request...
+
+-order from SHI, Azure Overages
+
+-check procurement
+
+
 
 -budget meeting with AOT 2 weeks..
 
@@ -477,7 +515,24 @@ If NOT GOOD; FALL BACK  -See FALL BACK steps."
 2 Cloud Services  -Restart original servers.
 -----------------------------------------------
 
-
+-------------------------<RBT Rubrik timeline>---------------------------------------------------------------------------------
+10/15 MON, Meeting with Rubrik.  They presented position.  We agreed we need more space.
+10/15 MON, Called Mark.  Dicussed need for Rubrik procurement.  Suggested purchase and reserve right to negotiate further.
+10/16 TUE
+10/17 WED, Spoke with Mark on Wednesday, he was having migrane.  Agreed to get him, RFP, Contract, and PO.  Ultimately, we devlivered that plus bidder response before the day was out.  There was no language to defend any 4:1 claim.
+10/18 THU, Spoke with Mark on phone again, we agreed to push PO Request into the System.  Purchasing requested approval from SEC and MEMO SEC of AoA requesting the Amending of previous Presidio/Rubrik Contract to add dollars.
+10/18 THU, Mark declined meeting at 11:14 due to being on call with FEDS.  Meeting was to discuss Rubrik being effectively out of space.
+10/19 FRI, MEMO drafted and sent to CTO and CFO.
+10/19 FRI, CTO, DAN and discussed requested report to break down cpacity of the past year: compression delta, planned, and unplanned growth.
+10/19 FRI, Discussed with CFO in person.
+10/19 FRI, Emailed CTO to say we are effectively out of space in the Rubrik backup solution and warned of risk to TAX, TAX migration, and AHS and ERP migrations.
+10/21 SUN, Texted and emailed CTO to warn of dangers (IRS disconect) and need to take action now to procure devices and that Rubrik is effectively out of space.  Also warned of need to inform TAX and partners about slipping of dates. 
+10/22 MON, Called Rubrik to update Michael on the procurement.  Rubrik lead times expected to go up to 4 to 5 weeks.  
+10/22 MON, Emailed CTO twice: once to respond to his email from SUN and to recap new information from Rubrik lead times expected to go up to 4 to 5 weeks.
+10/22 MON, Invited Mark to meeting for 2:20 PM, no response.
+10/22 MON, Texted Mark at 6:35 PM to encourage that he respond to emails, no response.
+10/23 TUE, Invited Mark to 11:00 AM meeting not response.
+-------------------------<RBT Rubrik timeline>---------------------------------------------------------------------------------
 
 We have five DNS servers, which have the following roles.
 
