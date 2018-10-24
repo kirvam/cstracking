@@ -12,7 +12,8 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 10/11 932 -|-
 10/12 933 -|-
 10/22 943 -|-
-
+10/23 944 -|-
+10/24 945 -|-
 
 
 
@@ -60,43 +61,48 @@ use phaigh@ea.dii.state.vt.us username and password
 
  ---
 
+-budget meeting with AOT 2 weeks..
 
--Rubik MEMO  -done
+-pfSense Rider and Waiver?
+
+-Azure request for owner powers?
+
+-Rubrik customer break down 
+
+-Rubrik MEMO  -done
 
 -root cause report..
 
--ED project
+-ED project  -done!
 
--Weekly
+-Weekly  -done!
 
--Rubrik procurement
+-Rubrik procurement  -done!
   +create PO
   
 -Contract Rider waiver nonsense??
--Meet with Angela, SS, about Isilon Data Mover substitute??
+  +Review all other procurements
+    -HP Blades
+    -Splunk  -Need Waiver?
+    -pfSEnse -Need Waiver?
+    -VMWare
+    -HP M&O, Advizex  -Waiver?  
+  
+-Meet with Angela, SS, about Isilon Data Mover substitute??  -done
 
+-Work with Desktop to get Windows 10.  -case to Potter
 
--Work with Desktop to get Windows 10.
+-UAR for Landesk Analyst Access for Dylan  -submitted
 
--UAR for Landesk Analyst Access for Dylan
+-Angela DC request...  -Hosford has it.  Making at NL.
 
--Angela DC request...
-
--order from SHI, Azure Overages
-
--check procurement
-
-
-
--budget meeting with AOT 2 weeks..
+-Orders from SHI, Azure Overages?  -Waiting on MS?
 
 -rubrik extra backup over SLA of 14 days
 
 -AWS:
   +deleted adjy
   +deleted pfSense
-
--Azure Overages Request for PO's
 
 -pfSense for TAX
 
