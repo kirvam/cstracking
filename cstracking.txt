@@ -27,12 +27,15 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 11/19 971 -|-
 11/20 972 -|-
 11/21 973 -|-
+11/26 978 -|-
+11/27 979 -|-
 
 
 8:00 
 
-9:00  X
--Work on Plan
+9:00  
+
+9:30  X
 
 10:00 
 
@@ -48,6 +51,11 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 
 04:00
 
+--------------------------------------------------
+VNX01 - https://10.246.14.14 
+VNX02 - https://10.246.14.15 
+VNX04 - https://10.216.14.14 
+--------------------------------------------------
 ?Ccc@/;!9d;L
 
 8uQOxb18ygchZPIHUtFLEecz 
@@ -64,20 +72,52 @@ nas_fs -query:type=vpfs -format:"%-30s %15s %s %15s KB\n" -fields:BackupOf,Block
 nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Blocks", "Filesystem","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
 
 
----
+----------------------------------------------
 https://nl-rubrik-proxy.ea.dii.state.vt.us/web/bin/index.html#/welcome
 
 https://tv-rubrik-proxy.ea.dii.state.vt.us/web/bin/index.html#/welcome
 
 use phaigh@ea.dii.state.vt.us username and password
 
----
+---------------------------------------------
 Migration process details:  https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/Migration%20process%20details.pdf
 Migration_Design_Plan_v1:  https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/Migration_Design_Plan_v1.pdf
----
+---------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
+   Data Domains DD670 & DD2500 Active Renewals + Disc Retention:  $48,543.99, $46,169.76
+   Data Domains DD670 & DD2500 Inactive Renewals: $7,441.49, $6,963.60
+   VNX 5300 + Disc Retention for DPS: $11,701.56, $11,051.50
+   VNX 5300 Inactive Renewals DPS: $338.95, $320.12
+   VNXE 3300 + Disc Retention for NL:  $4,692.62
+   VNX 5300 + Disc Retention for JUD:  $11,051.50
+   
+   Total:   $68,025.99 
+   
+   
+  -Data Domains DD670 & DD2500 Inactive Renewals: $7,441.49
+  -VNX 5300 Inactive Renewals DPS: $338.95
+  
+--------------------------<original>------------------------------
+  
+     Data Domains DD670 & DD2500 Active Renewals + Disc Retention:  $48,543.99
+     Data Domains DD670 & DD2500 Inactive Renewals: $7,441.49
+     VNX 5300 + Disc Retention for DPS: $11,701.56
+     VNX 5300 Inactive Renewals DPS: $338.95
+     Total:   $68,025.99 
+-------------------------------------------------------------------------------------------------------------------------
+AHS Suggestion
+
+-REBOOT CHECK
+-DEVELOP TEST CHECKLISTS:
+   +per system
+   +per application
+   +identify teams
+-----------------------------------------------------------------------------------------------------
+
+WIKI, Who's Who, Who's What doc...
 
 
----
+-----------------------------------------------------------------------------------------------------
 Rubrik Notes
 
 -Use TechVault?
@@ -89,23 +129,27 @@ Rubrik Notes
 -API
    https://nl-rubrik-proxy.ea.dii.state.vt.us/docs/v1/
    https://tv-rubrik-proxy.ea.dii.state.vt.us/docs/v1/
----
 
+--------< Metrics >---------------------------------------------------------------
 -Operational Metrics we track:
   +Outage events, number  
   +Impact Severity: Critical, Urgent, High, Medium, & Low
   +Outage Hours by Total and Per Event
   +Total Outage Hours per Year Not Including Planned Downtime/Maintenance.
   
-  ---
+--------< Metrics >---------------------------------------------------------------
+
+----< SLA Priorities >------------------------------------------------------------
   ADS defines its priorities:
   -Critical – Used when many people are affected by this incident and critical services are affected (example: Critical systems are Email, Network, Mainframe, Payroll (ERP), (any system as identified by the ADS COOP plan).
   -Urgent –Used only for tickets coming from the Governor's office, Agency Secretaries or Commissioners, appointed or elected officials.
   -High –Used when one or more customers are experiencing a problem that needs fairly quick attention. 
   -Medium – (Default priority used) Used when 1 or more customers are experiencing a problem that has a work around 
   -Low –Used when 1 or more customers are experiencing a problem that is not affecting their work, but they would like it fixed. 
+----< SLA Priorities >------------------------------------------------------------
 
-  ---
+
+---< EDU Notes>--------------------------------------------------------------------
 -EDU grant funds which expire in December could be used to pay for "Enterprise Data environment" which has been built already.
   +encumber funds.  
   +extend discount next billing cycle.
@@ -113,14 +157,16 @@ Rubrik Notes
     -verify sizing
     -prepare bill
   +State Longitudinal Data System (SLDS) at AWS could move to PC.  50% markup over AWS costs.
+---< EDU Notes>--------------------------------------------------------------------
 
--Splunk Rider...***
 
+------------< AOT charge >----------------------------------------------------------------------
 -AOT Charge backs To Date:
   +VEEAM, SHI, $4760.40, Landesk 194873
   +HP M&O for Physicals, SHI, $3981.00, Landesk 194875
   +Microsoft...
-  +
+  
+------------< AOT charge >----------------------------------------------------------------------
 
 -<snip>---
 Will be billed back to AOT in the Annual Demand Bill per AOT, CFO, and CFO.  -Paul
@@ -128,91 +174,86 @@ Will be billed back to AOT in the Annual Demand Bill per AOT, CFO, and CFO.  -Pa
 Landesk XXXXXX
 -<snip>---
 
--Prioritize!!!
--Finish DR Assessment...
--Schedule appointment with Mark
--Schedule JUD funding meeting with CFOs'
--Finish ERP DR plan
--Finish EDU plan
--Finish JUD plan
 
-
-
-Today 11/16/2018
-
+---------------<Software vendor >------------------------------------------------------
 Software vendor quote list:
   Jacob.Thompson@insight.com ; 
   andrew.arenella@cdwg.com ; 
   pcmgenpointeadmin@pcmg.com
+---------------<Software vendor >------------------------------------------------------
 
--Request for IT Requirements Nov 7, 2018 8.24am form for Splunk  -done...
-
--root cause report***  -done..  email after lunch...
--weekly report  -done
--5 week in-take for TAX***  -done, email sent to CTO...
--can we purchase cheap ASA's to speed up migration for TAX, AHS, and ERP
--PO for Backup Exec  -done
--VNX/EMC M&O payments/PO's***  -done
+11/30/2018
 
 
--Consolidation Plan (DR)!
--Data Plan!
-
--JUD DR document and review plan...
-  +Make CFO appointment
+-WIKI, Who's Who, Who's What doc...
+-Rubrik
+-Seamus CAB
+-Karen Clark request
+-TAX DR, Dean
+-EDU
+-ERP Funding
+-List of duties for CTO by Monday!
+-CAB request for Seamus
+-Budget break down.
+  +identify and track funds spent.
+  +map back to budget numbers.
+  +create flat table and perl script???
   
+-weekly  -done!
+-Remi Group quote...  -done, no response.
+
+
+-DR Assessment/Consolidation Plan (DR)
+  +Data Center Vision?
+-Virtual Firewall Migration Plan***
+-Data Plan
+-JUD DR 
+  +document and review plan...  -working...
+  +Make CFO appointment  -done, appotinment made.
+
 -EDU, Work with EDU to spend grant money.
 -ERP, Work to make plan and present.
 -TAX, wait till migration planned.
-
--C2 deal?  -done, CTO needs to reply to C2 commitment...
-
--Data Center Vision?
-
--Work with Dylan regarding Fed procurement rules questions?
-  +Need to plan another email:
-    -Assets/Ownership
-    -Data CEnter move?
-    -Control of Spend
-
--Virtual Firewall Migration Plan***
-
-
--Make edits to Strategy doc per Mark.  -done
-
--pfSense OSPF with Networking...
+-AOT Meeting...
+  +Assets/Ownership
+  +Data CEnter move?
+  +Control of Spend
 
 -VPC component spreadsheet??
-
--fix Data Mover Metric report maker?
--clean up Rubrick report maker?
-
--VMWare Licenses for AOT
-
--Finance approvals  -done
-  
+-Fix Data Mover Metric report maker?
+-Clean up Rubrick report maker?
+-VMWare Licenses for AOT  -working
 -pfSense Rider.  -Waiting for Jon P.
   +Netgate Scott Davis, pfSense "Rider".***
-
 -VDOL, Lori, example comparison document.
   +VM's versus Physicals
   +VM's versus AWS/Azure
+----------<old>-------------
 
+
+
+-Request for IT Requirements Nov 7, 2018 8.24am form for Splunk  -done...
+-root cause report***  -done..  email after lunch...
+-weekly report  -done
+-5 week in-take for TAX***  -done, email sent to CTO...
+-can we purchase cheap ASA's to speed up migration for TAX, AHS, and ERP???  -May not have to...
+-PO for Backup Exec  -done
+-VNX/EMC M&O payments/PO's***  -done
+-C2 deal?  -done, CTO needs to reply to C2 commitment...
+-Work with Dylan regarding Fed procurement rules questions?
+  +Need to plan another email:
+-Make edits to Strategy doc per Mark.  -done
+-Aaron 6 month review, 12/18/2018...  -working
+-pfSense OSPF with Networking...
+-Finance approvals  -done
 -Attach docs to AHS meeting  -done
-
 -Rubrik customer break down***  -done
-  
--Azure request for owner powers?  -Jon fixed.  Still need to plan consumption.
-
+-Azure request for owner powers?  -Jon fixed.  Still need to plan consumption.  -Done!
 -Rubrik MEMO  -done
-
 -ED project  -done!
-
 -Weekly  -done!
-
 -Rubrik procurement  -done!
   +create PO
-  
 -Contract Rider???
   +Review all other procurements
     -HP Blades
@@ -222,101 +263,65 @@ Software vendor quote list:
     -HP M&O, Advizex  -Waiver?  
 
 -budget meeting with AOT 2 weeks..  -Scheduled for 11/7/2018.  -done
-
 -Meet with Angela, SS, about Isilon Data Mover substitute??  -done
-
 -Work with Desktop to get Windows 10.  -case to Potter
-
 -UAR for Landesk Analyst Access for Dylan  -done
-
 -Angela DC request...  -Hosford has it.  Making at NL.
-
 -Orders from SHI, Azure Overages?  -Waiting on MS?
 
 -rubrik extra backup over SLA of 14 days
-
 -AWS:
   +deleted adjy
   +deleted pfSense
-
 -pfSense for TAX  -done, Jon and Aaron completed...
-
 -Shred Drives at NL
-
 -Aaron SKU/Template proposal
   +Get him average
-  
 -Azure Portal still broken...  -email sent to MS.
 -Email to Lane of DLC...  -Done
 -Weekly Report...  -Done
-
 -SLA BILLS  -Working.  Meeting set with Kate!!!
-
 -Data Mover Reports  
-
 -TV ASA's EOL move behind 4110's
-
--Aaron 6 month review, 12/18/2018.
-
 -AHS case...  -Aaron working.
-
 -Procured AOT stuff  -Done
 -Procured CS stuff...
   +Resource Cluster Servers/blades?
   +VNX01
   +VNX02
-  
-
 -Costs!!!
   +VMWare Licenses
   +M&O on NL Resource
-  +
-  
-  +VDI -But they will pay for it.
-  
+  +VDI -But they will pay for it.  
 -Adjust JUD timeline.
-
 -AHS 
  +Tips and Tricks
  +Migration plan
  +Meet next week.
 
--------------
+-------------------------------------------------------------------------------------------------
 VNX01 - https://10.246.14.14 
 VNX02 - https://10.246.14.15 
 VNX04 - https://10.216.14.14 
 I see a phaigh in there already, not sure if it's from your earlier time with the group...
 
--------------
+-------------------------------------------------------------------------------------------------
 
 -Weekly Report  -Done
-
 -Cost for Lane at DLC...
   +Determine impact to keep DLC operational till February***
-
 -Determine total impact of 
-
 -TAX Migration
 -AHS Migration
-
 -TAX DR suggestion... Speak with Kelly today...
-
 -Meet with Aaron and Jon on Virtual Firewalling...  Friday, 9/21
-
 -Meet with Dan and Aaron on VHC project...
-
 -Investigate Splunk usage decrease. Check with Dan.  Did the VxRack impact it?  -Email sent.
-
 -Digi Anywhere at TV***
-
-
 -Meet with Dan about moving a submet for TAX.
-
 -Meet with Dan about Isilon?
 -Meet with Dan about Gathering storage reports?
-
 -Consolidation report***
-
 -VMware Licenses
   +3 week lead time.
 
@@ -356,6 +361,7 @@ NOTES:
 -Citrix Licenses, JUL, 7/2018, -Has been conslidated with ADS?  -What does that mean?
 -Windows Server Licensing, MAY, 5/2019  -Did last year.
 
+---<snip>---------------------------------------------------------------------------------------------
 VMWARE CLUSTERS
 [AOT] -KNAPP 
 [AOT] -NL
@@ -371,35 +377,22 @@ VMWARE CLUSTERS
 Managment only
 [MGS-NL] -NL
 [MGS-TV] -TV
----<snip>---
+---<snip>---------------------------------------------------------------------------------------------
   
   
 -Mark email to Security about ACCD...
-
 -Visual Studio Pro..  -Not sure what this is?
-
 -Rubrik and loaners  -Dan working, waiting for Rubrik
-
 -ABC Justification of VxRails for DR REvision...
-
 -Data for VION  -Sent, They will also do an Azure quote as well.
    +VxRails
-   
 -Zerto response...  -Have pricing...  Still need to meet..
-
 -Bills
-
 -Rubrik to get with Dan to collect data to make case for loaners..  -Status?
 -Gather data for VION...  -Today with Dan...
-
 -AHS tickets.  -Done
-
--14,000 for Salesforce???
-
 -VNX6700 quotes for 01 & 02  -Jim developing
-
 -Mike to get me questions for Joshua H., 190462  -Contact by noon...  -Done**
-
 -Case of the missing EDU server -A Nancy Drew Mystery
   +check box issues, Make sure you check the box
 
@@ -409,7 +402,7 @@ Managment only
 -DLC  -next week
 
 
----<AOT>---
+---<AOT>----------------------------------------------------------------------------------------------------
 AOT procurement approach
 
 NOTES:
@@ -437,7 +430,7 @@ Suggested Operational Plan
 -What about AOT IT budget?
   +How will ADS ensure no IT spend?
 -What are your thoughts on the AOT Cost Model?  
----<AOT>---
+---<AOT>---------------------------------------------------------------------------------------------------------------------
 
 
 --<tax>---
@@ -470,31 +463,24 @@ NOTES:
 
 -Dylan/AOT cross-training  -Next week??
   +coverage expectations email to Mark???  -verbally shared...
-
 -DLC Migration  -Paul and Aaron
   +usb/network
   +Modem bank  same subnet as the rest of their stuff..  change his IP...
   +phone lines
   +DEC device
   +Virtual switch?
-
 -Schedule cost modeling for 2 weeks (9/11 with Kate and Rebecca...
 -Send Budget documents to Kate and Rebecca...  -Which ones?
 
 -JUD post migration de-brief
   +Report
   +Lessons learned meeting..
-
 -Cisco Upgrade??
-
 -Cloud PPT  -Need to clean-up and finish...
 -VDI Costs  -Waiting for Nick and Potter and Angela...
-
 -Aaron, Ansible...
   +AWS environment lab
-
 -Thank you to C2...  -Done! 
-  
 -pfsense lab
   +ec2-54-147-12-113.compute-1.amazonaws.com
   +  $c/-`J;l^U1%b9H
@@ -633,6 +619,7 @@ NOTES:
 -POC for Zerto
 -POC for AWS migration capability
 -Cloud Services, Hybrid/POC/Commercial Cloud value PPT?
+
 -----------------------------------------------
 # MIGRATION STEPS (Critical Path):
 1 Sysadmins  -Turn-off servers.
@@ -868,6 +855,7 @@ none; Project; 06-13-2018; 11 Cloud OPS; Team; Routine operation work on the Pri
 11 Cloud OPS; Project; 11-16-2018; 11 Cloud OPS; Team; October 10/15/2018 Outage report completed and sent to CTO and Shared Services Director.
 11 Cloud OPS; Project; 11-19-2018; 11 Cloud OPS; Team; Team working on a VMWARE reported issue Landesk 107399 regarding V-Motion, VMware ticket 18993028411 has been created.
 11 Cloud OPS; Project; 11-21-2018; 11 Cloud OPS; Paul; MS Azure team has made some progress on addressing the case REG:118091218994576 regarding admin access roles and enrollment configuration with CDWG, usage data.  MS is now working 2 cases internally.  Work continues.
+11 Cloud OPS; Project; 11-25-2018; 11 Cloud OPS; Dan; Successfully applied storage firmware upgrade during Maintenance window.
 none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 07-04-2018; 10 Cloud Staffing; Paul; Amendment to contract for C2 migration tool still routing for signature.
 10 Cloud Staffing; Project; 07-09-2018; 10 Cloud Staffing; Paul; Staffing is at more normal levels.
@@ -893,6 +881,7 @@ none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 10-31-2018; 10 Cloud Staffing; Paul; Cloud team short-handed till 11/5.
 10 Cloud Staffing; Project; 11-05-2018; 10 Cloud Staffing; Paul; Cloud team staffing back to normal levels.  Inbox and project activity level is high.
 10 Cloud Staffing; Project; 11-13-2018; 10 Cloud Staffing; Paul; Cloud team staffing back to normal levels.  Inbox and project activity level remains high.
+10 Cloud Staffing; Project; 11-26-2018; 10 Cloud Staffing; Paul; Six month review for Aaron has taken place.  Performance evaluation being completed.
 none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 09-10-2018; 12 Procurement; Paul; Meeting with Dylan to address necessary Symantec procurement and other AOT infrastructure need over the next year.
 12 Procurement; Project; 09-11-2018; 12 Procurement; Paul; Meeting planned with CTO to suggest proposed process to include AOT forward and seek approval.
@@ -919,6 +908,7 @@ none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 11-14-2018; 12 Procurement; Paul; Engaged in conversation with Splunk. Waiting on Contracting's response from pfSense's assertion they do not sell software only support.
 12 Procurement; Project; 11-19-2018; 12 Procurement; Paul; Splunk purchased approved by BGS.  PO generated.  Waiting to hear from vendor.
 12 Procurement; Project; 11-21-2018; 12 Procurement; Paul; Procurement of budgeted M&O for DELL/EMC Storage (DD's, DPS VNX, & Disk Retention) is waiting for response from to other vendors.
+12 Procurement; Project; 11-28-2018; 12 Procurement; Paul; C2 re-quoting M&O for DELL/EMC Storage (DD's, DPS VNX, & Disk Retention).
 none; Project; 06-27-2018; 13 TAX DR plan; Team; Meet with TAX.  TAX to come back with slimmed down DR design.  
 13 TAX DR plan; Project; 06-27-2018; 13 TAX DR plan; Team; Next meeting planned for 2nd week July.
 13 TAX DR plan; Project; 07-03-2018; 13 TAX DR plan; Team; Data book and Narrative completed.  Waiting for CFO feedback.  
@@ -970,6 +960,7 @@ none; Project; 06-25-2018; 15 JUD; Paul; Meet with JUD again.  Reviewed slimmed 
 15 JUD; Project; 11-07-2018; 15 JUD; Paul; Meeting scheduled with JUD to discussing funding for the Disaster Recovery capabilities as designed in the plan.
 15 JUD; Project; 11-14-2018; 15 JUD; Paul; Meeting scheduled with JUD on 11/15 to discussing funds for the DR capabilities as designed in the plan.  JUD is targeting February for testing and implementing DR at Secondary site.
 15 JUD; Project; 11-15-2018; 15 JUD; Paul; Meet with JUD.  They are interested.  Need to prepare a document to outline proposal.  Working on this now.  Need to schedule meeting with ADS CFO and JUD CFO.  Targeting next week.
+15 JUD; Project; 11-28-2018; 15 JUD; Paul; Second meeting with JUD held.  It included ADS CFO.  JUD checking into mechanism.  Wants us to quoute VxRail for a 4 node configuration that would support their DR.  Meetind being sceduled for next Monday.
 none; Project; 06-25-2018; 16 CFO; Paul; Meet with CFO again.  Working on JUD, ERP, TAX, justification.
 16 CFO; Project; 06-27-2018; 16 CFO; Paul; Meet with CFO again.  Working on Pre-bill for Private Cloud.
 16 CFO; Project; 06-25-2018; 16 CFO; Paul; Working on Metrics.
@@ -1019,6 +1010,7 @@ none; Project; 06-25-2018; 17 CTO Issues; Paul; Meet with CTO again.  Working on
 17 CTO Issues; Project; 11-13-2018; 17 CTO Issues; Paul; Efforts will continue on the "Consolidation Plan" (to include Data Center?), "Data Plan", and ERP DR plan.
 17 CTO Issues; Project; 11-20-2018; 17 CTO Issues; Paul; Efforts will continue on the "Consolidation Plan" (to include Data Center?), "Data Plan", and ERP DR plan.
 17 CTO Issues; Project; 11-21-2018; 17 CTO Issues; Paul; Disaster Recovery (DR) Plan/Assessment being developed to assess possible scenarios for Disaster Recovery as requested by JUD, ERP, and TAX.  Plan is to review with team and CTO in the next 7 days.  Meeting planned.
+17 CTO Issues; Project; 11-27-2018; 17 CTO Issues; Paul; Meeting with CTO and TAX held.  CTO will push BGS for update on Rubrik Amendment.
 none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RRI). Rubrik
 28 RRI Rubrik; Project; 06-27-2018; 28 RRI Rubrik; Dan; Rubrik.  Joe working with ANR and Linux admin to test Self-Service and Rubrik client.  Following-up with Joe this week.  Joe working with Aaron.
 28 RRI Rubrik; Project; 07-03-2018; 28 RRI Rubrik; Dan; Rubrik.  Meeting set with DPS to prepare and cut-over.
@@ -1041,6 +1033,7 @@ none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RR
 28 RRI Rubrik; Project; 10-31-2018; 28 RRI Rubrik; Jon; Rubrik.  The Rubrik system is effectively "out of space".  Still supporting and strongly advocating the procurement of 2 more devices as soon as possible.  Environment will not last till June.  Other impacts include IRS compliance, lost data, and the remaining migrations.
 28 RRI Rubrik; Project; 11-13-2018; 28 RRI Rubrik; Jon; Rubrik.  The Rubrik system is effectively "out of space".  Waiting for Amendment to be signed by all parties so procurement can proceed.
 28 RRI Rubrik; Project; 11-21-2018; 28 RRI Rubrik; Jon; Rubrik.  The Rubrik system is effectively "out of space".  Still waiting for Amendment to be signed by all parties so procurement can proceed.
+28 RRI Rubrik; Project; 11-28-2018; 28 RRI Rubrik; Jon; Rubrik.  The Rubrik system is effectively "out of space".  Still waiting for Amendment to be signed by all parties so procurement can proceed.
 none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initiative, (RRI). Virtual Firewalling
 29 RRI Virtual Firewall; Project; 06-27-2018; 29 RRI Virtual Firewall; Dan; Virtual Firewalling.  Aaron joining in this effort.  He is building pfSense test environment. 
 29 RRI Virtual Firewall; Project; 07-03-2018; 29 RRI Virtual Firewall; Team; Virtual Firewalling.  Work continues.
@@ -1064,6 +1057,7 @@ none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initi
 29 RRI Virtual Firewall; Project; 11-14-2018; 29 RRI Virtual Firewall; Jon; Process finalized to use the C2 pfSense technical tool to re-purpose Vshield rules.  Work started on implementing pfSense firewall replacements.  ERP has already been implemented along with 2 other small firewalls.  We are planning to meet to proceed with further planning and schedule VMWare Upgrade.
 29 RRI Virtual Firewall; Project; 11-20-2018; 29 RRI Virtual Firewall; Jon; Work continues.  Focus is on small "low hanging fruit".
 29 RRI Virtual Firewall; Project; 11-21-2018; 29 RRI Virtual Firewall; Dan; Case opened with VMWare to plan Upgrade.  We are still looking at possible dates.
+29 RRI Virtual Firewall; Project; 11-28-2018; 29 RRI Virtual Firewall; Jon; Work continues.  2 more Firewalls should be in place this week.  Contingencies being considered for the more complicated firewalls.
 none; Initiative; 06-25-2018; 2 RRI; Paul; Resource Refresh Initiative, (RRI).
 2 RRI; Note; 07-03-2018; 2 RRI; Paul; The Resource Refresh Initiative has the following projects: Migrations, Rubrik, Virtual Firewalling, VMWARE Upgrade, and Data Mover.
 none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiative, (RRI). Migration Plan
@@ -1109,6 +1103,7 @@ none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiat
 20 RRI Migration Plan; Project; 11-07-2018; 20 RRI Migration Plan; Dan; ANR migration planned for Friday, 11/9.  
 20 RRI Migration Plan; Project; 11-11-2018; 20 RRI Migration Plan; Dan; ANR migration has been successfully completed.  The remaining major migrations are: TAX, AHS, and ERP.  These will all require new Rubrik backup capacity.
 20 RRI Migration Plan; Project; 11-14-2018; 20 RRI Migration Plan; Dan; Work continues to plan pending on Rubrik procurement.
+20 RRI Migration Plan; Project; 11-28-2018; 20 RRI Migration Plan; Dan; Work continues to plan pending on Rubrik procurement.
 none; Project; 06-25-2018; 21 RRI Data Mover Migration; Paul; RRI Data Mover Migration.  This project will proceed to decommission NL VNX's (at EOL) and move data from NL to Tech Vault (TV).
 21 RRI Data Mover Migration; Project; 08-13-2018; 21 RRI Data Mover Migration; Dan; Dan and C2 have planned to test replication from NL to TV.
 21 RRI Data Mover Migration; Project; 08-15-2018; 21 RRI Data Mover Migration; Paul; Loaner disks on order with DELL/EMC.  Status should be available today.
