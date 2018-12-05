@@ -29,7 +29,10 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 11/21 973 -|-
 11/26 978 -|-
 11/27 979 -|-
-
+11/28 980 -|-
+12/03 986 -|-
+12/04 987 -|-
+12/05 988 -|-
 
 8:00 
 
@@ -183,8 +186,26 @@ Software vendor quote list:
 ---------------<Software vendor >------------------------------------------------------
 
 11/30/2018
+12/03/2018
+
+-DR meeting with Dean...
+
+-Reorg plan for Mark
+  +Dylan
+  +Dan
+  +Jon
+  
+-EDU Grant $ plan  
+-JUD DR Follow-up
+  +4 node
+  +Speak with Dan
+  +Speak with Jon
+  
+-Set meeting up with Dean.
 
 
+
+-list for Mark...  -done
 -WIKI, Who's Who, Who's What doc...
 -Rubrik
 -Seamus CAB
@@ -856,6 +877,7 @@ none; Project; 06-13-2018; 11 Cloud OPS; Team; Routine operation work on the Pri
 11 Cloud OPS; Project; 11-19-2018; 11 Cloud OPS; Team; Team working on a VMWARE reported issue Landesk 107399 regarding V-Motion, VMware ticket 18993028411 has been created.
 11 Cloud OPS; Project; 11-21-2018; 11 Cloud OPS; Paul; MS Azure team has made some progress on addressing the case REG:118091218994576 regarding admin access roles and enrollment configuration with CDWG, usage data.  MS is now working 2 cases internally.  Work continues.
 11 Cloud OPS; Project; 11-25-2018; 11 Cloud OPS; Dan; Successfully applied storage firmware upgrade during Maintenance window.
+11 Cloud OPS; Project; 12-03-2018; 11 Cloud OPS; Aaron; Tracking down drive replacement in legacy environment.
 none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 07-04-2018; 10 Cloud Staffing; Paul; Amendment to contract for C2 migration tool still routing for signature.
 10 Cloud Staffing; Project; 07-09-2018; 10 Cloud Staffing; Paul; Staffing is at more normal levels.
@@ -882,6 +904,7 @@ none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 11-05-2018; 10 Cloud Staffing; Paul; Cloud team staffing back to normal levels.  Inbox and project activity level is high.
 10 Cloud Staffing; Project; 11-13-2018; 10 Cloud Staffing; Paul; Cloud team staffing back to normal levels.  Inbox and project activity level remains high.
 10 Cloud Staffing; Project; 11-26-2018; 10 Cloud Staffing; Paul; Six month review for Aaron has taken place.  Performance evaluation being completed.
+10 Cloud Staffing; Project; 11-27-2018; 10 Cloud Staffing; Paul; Six month review for Aaron completed.
 none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 09-10-2018; 12 Procurement; Paul; Meeting with Dylan to address necessary Symantec procurement and other AOT infrastructure need over the next year.
 12 Procurement; Project; 09-11-2018; 12 Procurement; Paul; Meeting planned with CTO to suggest proposed process to include AOT forward and seek approval.
@@ -909,6 +932,9 @@ none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 11-19-2018; 12 Procurement; Paul; Splunk purchased approved by BGS.  PO generated.  Waiting to hear from vendor.
 12 Procurement; Project; 11-21-2018; 12 Procurement; Paul; Procurement of budgeted M&O for DELL/EMC Storage (DD's, DPS VNX, & Disk Retention) is waiting for response from to other vendors.
 12 Procurement; Project; 11-28-2018; 12 Procurement; Paul; C2 re-quoting M&O for DELL/EMC Storage (DD's, DPS VNX, & Disk Retention).
+12 Procurement; Project; 11-29-2018; 12 Procurement; Paul; PO's for Storage M&O for DELL/EMC Storage (DD's, DPS VNX, & Disk Retention) have been created.
+12 Procurement; Project; 12-01-2018; 12 Procurement; Paul; Waiting on Netgate/pfSense ruling regarding "Rider".
+12 Procurement; Project; 12-05-2018; 12 Procurement; Paul; Rubrik Amendment completely signed. According to CFO waiting on ADS Secretary for final approval.
 none; Project; 06-27-2018; 13 TAX DR plan; Team; Meet with TAX.  TAX to come back with slimmed down DR design.  
 13 TAX DR plan; Project; 06-27-2018; 13 TAX DR plan; Team; Next meeting planned for 2nd week July.
 13 TAX DR plan; Project; 07-03-2018; 13 TAX DR plan; Team; Data book and Narrative completed.  Waiting for CFO feedback.  
@@ -926,6 +952,7 @@ none; Project; 06-27-2018; 13 TAX DR plan; Team; Meet with TAX.  TAX to come bac
 13 TAX DR plan; Project; 09-25-2018; 13 TAX DR plan; Paul; Discussed with Kelly R.  Tax desires a subset of production.  Plan has been developed but not fully vetted internally.  Kelly will try to engage new director Dean and connect with the Cloud team.  Tax would expect any DR solution to be ready by March 2019.
 13 TAX DR plan; Project; 09-25-2018; 13 TAX DR plan; Paul; No response from TAX on DR.  Issue seems to have been lost in the shuffle.  Will plan to engage in two weeks.
 13 TAX DR plan; Project; 11-14-2018; 13 TAX DR plan; Paul; Waiting till after migration to reach out again to TAX and commence discussion regarding CapEx funds for DR.
+13 TAX DR plan; Project; 12-05-2018; 13 TAX DR plan; Paul; Meeting scheduled to discuss solution and TAX's funding contribution.
 none; Project; 06-27-2018; 14 AHS Encrypted Storage; Dan; Meet with C2.  Meet with Shared Service to discuss File Service in the future after Data Movers retired.
 14 AHS Encrypted Storage; Project; 06-26-2018; 14 AHS Encrypted Storage; Dan; Reviewing materials to present to CTO.
 14 AHS Encrypted Storage; Project; 07-03-2018; 14 AHS Encrypted Storage; Dan; May be option for DPS and Body-Cams?
@@ -960,7 +987,8 @@ none; Project; 06-25-2018; 15 JUD; Paul; Meet with JUD again.  Reviewed slimmed 
 15 JUD; Project; 11-07-2018; 15 JUD; Paul; Meeting scheduled with JUD to discussing funding for the Disaster Recovery capabilities as designed in the plan.
 15 JUD; Project; 11-14-2018; 15 JUD; Paul; Meeting scheduled with JUD on 11/15 to discussing funds for the DR capabilities as designed in the plan.  JUD is targeting February for testing and implementing DR at Secondary site.
 15 JUD; Project; 11-15-2018; 15 JUD; Paul; Meet with JUD.  They are interested.  Need to prepare a document to outline proposal.  Working on this now.  Need to schedule meeting with ADS CFO and JUD CFO.  Targeting next week.
-15 JUD; Project; 11-28-2018; 15 JUD; Paul; Second meeting with JUD held.  It included ADS CFO.  JUD checking into mechanism.  Wants us to quoute VxRail for a 4 node configuration that would support their DR.  Meetind being sceduled for next Monday.
+15 JUD; Project; 11-28-2018; 15 JUD; Paul; Second meeting with JUD held.  It included ADS CFO.  JUD checking into mechanism.  Wants us to quote VxRail for a 4 node configuration that would support their DR.  Meeting being scheduled for next Monday.
+15 JUD; Project; 12-04-2018; 15 JUD; Paul; Third meeting with JUD held.  Rescheduling for when JUD CFO is available.  4-node quote produced.
 none; Project; 06-25-2018; 16 CFO; Paul; Meet with CFO again.  Working on JUD, ERP, TAX, justification.
 16 CFO; Project; 06-27-2018; 16 CFO; Paul; Meet with CFO again.  Working on Pre-bill for Private Cloud.
 16 CFO; Project; 06-25-2018; 16 CFO; Paul; Working on Metrics.
@@ -1011,6 +1039,8 @@ none; Project; 06-25-2018; 17 CTO Issues; Paul; Meet with CTO again.  Working on
 17 CTO Issues; Project; 11-20-2018; 17 CTO Issues; Paul; Efforts will continue on the "Consolidation Plan" (to include Data Center?), "Data Plan", and ERP DR plan.
 17 CTO Issues; Project; 11-21-2018; 17 CTO Issues; Paul; Disaster Recovery (DR) Plan/Assessment being developed to assess possible scenarios for Disaster Recovery as requested by JUD, ERP, and TAX.  Plan is to review with team and CTO in the next 7 days.  Meeting planned.
 17 CTO Issues; Project; 11-27-2018; 17 CTO Issues; Paul; Meeting with CTO and TAX held.  CTO will push BGS for update on Rubrik Amendment.
+17 CTO Issues; Project; 12-04-2018; 17 CTO Issues; Paul; DR Meetings with JUD, ERP, and TAX have been planned.  Meeting with EDU planned to review utlization of grant money.
+17 CTO Issues; Project; 12-05-2018; 17 CTO Issues; Paul; Rubrik Amendment completely signed. According to CFO waiting on ADS Secretary for final approval.  Will reach out to TAX once ship date has been determined.
 none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RRI). Rubrik
 28 RRI Rubrik; Project; 06-27-2018; 28 RRI Rubrik; Dan; Rubrik.  Joe working with ANR and Linux admin to test Self-Service and Rubrik client.  Following-up with Joe this week.  Joe working with Aaron.
 28 RRI Rubrik; Project; 07-03-2018; 28 RRI Rubrik; Dan; Rubrik.  Meeting set with DPS to prepare and cut-over.
@@ -1034,6 +1064,7 @@ none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RR
 28 RRI Rubrik; Project; 11-13-2018; 28 RRI Rubrik; Jon; Rubrik.  The Rubrik system is effectively "out of space".  Waiting for Amendment to be signed by all parties so procurement can proceed.
 28 RRI Rubrik; Project; 11-21-2018; 28 RRI Rubrik; Jon; Rubrik.  The Rubrik system is effectively "out of space".  Still waiting for Amendment to be signed by all parties so procurement can proceed.
 28 RRI Rubrik; Project; 11-28-2018; 28 RRI Rubrik; Jon; Rubrik.  The Rubrik system is effectively "out of space".  Still waiting for Amendment to be signed by all parties so procurement can proceed.
+28 RRI Rubrik; Project; 12-05-2018; 28 RRI Rubrik; Jon; Rubrik.  The Rubrik system is effectively "out of space".  Seeing backups fail.  Rubrik Amendment completely signed. According to CFO waiting on ADS Secretary for final approval.
 none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initiative, (RRI). Virtual Firewalling
 29 RRI Virtual Firewall; Project; 06-27-2018; 29 RRI Virtual Firewall; Dan; Virtual Firewalling.  Aaron joining in this effort.  He is building pfSense test environment. 
 29 RRI Virtual Firewall; Project; 07-03-2018; 29 RRI Virtual Firewall; Team; Virtual Firewalling.  Work continues.
