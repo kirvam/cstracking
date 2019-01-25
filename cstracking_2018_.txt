@@ -999,8 +999,9 @@ flexibility
 ------------< consolidation report -------------------
 
 CLOUD LOG
----<2019-01-25>---
-
+---<09-25-2018>---
+none; Initiative; 06-13-2018; 1 Operations; Team; Routine operation work on the Private Cloud.
+1 Operations; Note; 07-03-2018; 1 Operations; Team; Landesk busy.
 none; Project; 06-13-2018; 11 Cloud OPS; Team; Routine operation work on the Private Cloud.
 11 Cloud OPS; Project; 07-03-2018; 11 Cloud OPS; Team; Landesk busy.
 11 Cloud OPS; Project; 07-05-2018; 11 Cloud OPS; Dan/Joe; Rubrik issue solved.  More training planned with ANR and team.
@@ -1076,10 +1077,10 @@ none; Project; 06-13-2018; 11 Cloud OPS; Team; Routine operation work on the Pri
 11 Cloud OPS; Project; 01-22-2019; 11 Cloud OPS; Dan; Team focused on ERP DR, Landesk 200510.<br>ERP's initial request for NEW was larger than the list to tear down, OLD.<br>
 11 Cloud OPS; Project; 01-23-2019; 11 Cloud OPS; Team; Team also crtitcal Landesk 111514 for AHS<br>Issue related to backups to Data Movers<br>
 11 Cloud OPS; Project; 01-23-2019; 11 Cloud OPS; Paul; Microsoft Case # REG:118091218994576 regarding Azure reporting and billing is still unresolved.<br>EMail sent to Jon Huber.<br>
+11 Cloud OPS; Project; 01-24-2019; 11 Cloud OPS; Dan; ERP DR, Landesk 200510.<br>The team appears to have delivered everything per request.<br>Waiting for one follow-up questions to be answered.<br>
 11 Cloud OPS; Project; 01-24-2019; 11 Cloud OPS; Paul; Microsoft Case # REG:118091218994576 regarding Azure reporting and billing.<br>Microsoft now predicting January 26th as the current ETA.<br>We shall see.  This is going on month 7.<br>
 11 Cloud OPS; Project; 01-24-2019; 11 Cloud OPS; Paul; Failed SQL backups for AHS, Landesk 208747.<br>Reviewing logs.<br>Working with AHS.<br>Not clear what issue is?<br>Not issue found with Data Mover yet?<br>Email sent to Heintz to look into.<br>Looks to be related to Windows SMB or Network.<br> 
-11 Cloud OPS; Project; 01-24-2019; 11 Cloud OPS; Dan; ERP DR, Landesk 200510.<br>The team appears to have delivered everything per request.<br>Waiting for one follow-up questions to be answered.<br>
-11 Cloud OPS; Project; 01-25-2019; 11 Cloud OPS; Paul; Failed SQL backups for AHS, Landesk 208747.<br>No failures last night.<br>Cloud Services (CS)and C2 staff Augmentation fully enaged with AHS and partners.<br>Brent made change to SessTimeout regkey (increase to 300) of the LanMan service SQL boxes.<br>Waiting for Logs to be analyzed by DELL/EMC.<br>
+11 Cloud OPS; Project; 01-25-2019; 11 Cloud OPS; Paul; Failed SQL backups for AHS, Landesk 208747.<br>No failures last night since Brent maded changes to timeout.<br>Cloud Services (CS)and C2 staff Augmentation fully enaged with AHS and partners.<br>Brent made change to SessTimeout regkey (increase to 300) of the LanMan service on SQL boxes.<br>Waiting for Logs to be analyzed by DELL/EMC.<br>
 none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 07-04-2018; 10 Cloud Staffing; Paul; Amendment to contract for C2 migration tool still routing for signature.
 10 Cloud Staffing; Project; 07-09-2018; 10 Cloud Staffing; Paul; Staffing is at more normal levels.
@@ -1150,52 +1151,95 @@ none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 01-11-2019; 12 Procurement; Paul; Current lead times have been shared by C2.  VXRail has a current ESD of 2/18.  Isilon DR (A200) has a current ESD of 1/21. Isilon Production (H400) has a current ESD of 1/16.
 12 Procurement; Project; 01-14-2019; 12 Procurement; Paul; Support for pfSense firewalls by Netgate has been secured.<br>Jon has configured for support.<br>60 licenses purchased to support the 52 needed plus some growth.
 12 Procurement; Project; 01-15-2019; 12 Procurement; Paul; C2 provided lead times.<br>Estimated Arrivals<br>Isilon A200, 1/16<br>Isilon H400, 1/21<br>VxRail, 1/13 <br>
-12 Procurement; Project; 01-15-2019; 12 Procurement; Paul; Working on M&O procurement for AOT servers with Dylan.<br>
-none; Project; 06-27-2018; 23 RRI DR plan; Team; Meet with TAX.  TAX to come back with slimmed down DR design.  
-23 RRI DR plan; Project; 06-27-2018; 23 RRI DR plan; Team; Next meeting planned for 2nd week July.
-23 RRI DR plan; Project; 07-03-2018; 23 RRI DR plan; Team; Data book and Narrative completed.  Waiting for CFO feedback.  
-23 RRI DR plan; Project; 07-09-2018; 23 RRI DR plan; Paul; Still waiting for CFO feedback.  Expect to hear from this week.
-23 RRI DR plan; Project; 07-16-2018; 23 RRI DR plan; Paul; Still waiting for CFO feedback.  Expected to hear this week during meeting on Tuesday.
-23 RRI DR plan; Project; 07-24-2018; 23 RRI DR plan; Paul; CFO requested quote from C2.  This has been done.  Given CFO's impending departure, approval for procurement will be continue directly through the CTO. 
-23 RRI DR plan; Project; 07-30-2018; 23 RRI DR plan; Paul; Engaged with Kelly at TAX.  They are working on it.
-23 RRI DR plan; Project; 07-31-2018; 23 RRI DR plan; Paul; Discussed CapEx with Kate, CFO.
-23 RRI DR plan; Project; 08-15-2018; 23 RRI DR plan; Paul; Preparing for meeting with CTO and CFO.  Using ABC form.  Should be submitted this week.
-23 RRI DR plan; Project; 08-22-2018; 23 RRI DR plan; Paul; ABC delayed.  Hoping for this week due to high levels of activity.
-23 RRI DR plan; Project; 08-27-2018; 23 RRI DR plan; Paul; Still waiting on materials from TAX which identify the server resources desired for a DR solution.
-23 RRI DR plan; Project; 08-29-2018; 23 RRI DR plan; Paul; ABC completed and shared with CTO.  CTO has offered feedback concerning "due diligence".  Working though these now.  To be delivered next week.
-23 RRI DR plan; Project; 09-10-2018; 23 RRI DR plan; Paul; No word yet from Tax about a possible design.
-23 RRI DR plan; Project; 09-10-2018; 23 RRI DR plan; Paul; Sent email reminder request for DR plan.
-23 RRI DR plan; Project; 09-25-2018; 23 RRI DR plan; Paul; Discussed with Kelly R.  Tax desires a subset of production.  Plan has been developed but not fully vetted internally.  Kelly will try to engage new director Dean and connect with the Cloud team.  Tax would expect any DR solution to be ready by March 2019.
-23 RRI DR plan; Project; 09-25-2018; 23 RRI DR plan; Paul; No response from TAX on DR.  Issue seems to have been lost in the shuffle.  Will plan to engage in two weeks.
-23 RRI DR plan; Project; 11-14-2018; 23 RRI DR plan; Paul; Waiting till after migration to reach out again to TAX and commence discussion regarding CapEx funds for DR.
-23 RRI DR plan; Project; 12-05-2018; 23 RRI DR plan; Paul; Meeting scheduled to discuss solution and TAX's funding contribution.
-23 RRI DR plan; Project; 12-12-2018; 23 RRI DR plan; Paul; TAX DR/Funding Meeting re-scheduled at Dean's request for next week.
-23 RRI DR plan; Project; 01-09-2019; 23 RRI DR plan; Paul; TAX DR/Funding Meeting today.
-23 RRI DR plan; Project; 01-09-2019; 23 RRI DR plan; Paul; Meet with TAX.  DR likely for late summer 2019.  TAX need to finalize design.  CS needs  to help with cost model.  Plan needs to be fleshed out.  Sending BIA to TAX.
-23 RRI DR plan; Project; 01-09-2019; 23 RRI DR plan; Paul; Meet with TAX.  DR likely for late summer 2019.  TAX need to finalize design.  CS needs  to help with cost model.  Plan needs to be fleshed out.  Sending BIA to TAX.
-23 RRI DR plan; Project; 01-24-2019; 23 RRI DR plan; Paul; Project re-named to 23 RRI DR plan.<br>This will include all the eforts for DR, VxRail, TAX, ERP, and JUD.<br>
-23 RRI DR plan; Project; 01-25-2019; 23 RRI DR plan; Dan; Dan is the lead on the VxRail project.<br>VxRail has been delievered been racked at NL.<br>
-none; Project; 06-27-2018; 24 RRI Isilon; Dan; Meet with C2.  Meet with Shared Service to discuss File Service in the future after Data Movers retired.
-24 RRI Isilon; Project; 06-26-2018; 24 RRI Isilon; Dan; Reviewing materials to present to CTO.
-24 RRI Isilon; Project; 07-03-2018; 24 RRI Isilon; Dan; May be option for DPS and Body-Cams?
-24 RRI Isilon; Project; 07-09-2018; 24 RRI Isilon; Dan; Research to include examination of commercial cloud on-line storage and any implication to networking as possible Data Mover replacement.
-24 RRI Isilon; Project; 07-09-2018; 24 RRI Isilon; Dan; Research continues with EA Keith.
-24 RRI Isilon; Project; 08-09-2018; 24 RRI Isilon; Dan; Focus will continue after migration.  Targeting January 2019.
-24 RRI Isilon; Project; 08-22-2018; 24 RRI Isilon; Dan; Meeting with C2 to discuss Isilon held today, 8/22.
-24 RRI Isilon; Project; 08-29-2018; 24 RRI Isilon; Paul; Planning meeting with CTO.
-24 RRI Isilon; Project; 09-24-2018; 24 RRI Isilon; Paul; This issue is being raised by Shared Services as they proceed with their SharePoint file management strategy and plans.  Meeting planned for week of 9/30.  We have numbers are looking to get approval from CTO.
-24 RRI Isilon; Project; 10-02-2018; 24 RRI Isilon; Paul; Discussed with Shared Services as they proceed with their SharePoint file management strategy and plans.  No solution has been decided upon.  Any savings dependent on depreciation of current Data Movers and the capacity of the storage solution chosen.
-24 RRI Isilon; Project; 10-23-2018; 24 RRI Isilon; Paul; Meeting for 10/24 has been scheduled to review this project especially in light of the current VNX1 bill.
-24 RRI Isilon; Project; 10-31-2018; 24 RRI Isilon; Paul; Email sent to Andrew Laing to research funding options as discussed with CTO.  No word yet.
-24 RRI Isilon; Project; 11-05-2018; 24 RRI Isilon; Paul; Still waiting to hear from Andrew Laing and AHS regarding funding options.
-24 RRI Isilon; Project; 11-06-2018; 24 RRI Isilon; Paul; Meeting scheduled to review with CTO.
-24 RRI Isilon; Project; 11-13-2018; 24 RRI Isilon; Paul; Meeting with C2 and CTO held.  C2 looking to give State 30 more days before procurement of Isilon.
-24 RRI Isilon; Project; 11-19-2018; 24 RRI Isilon; Paul; DELL/EMC agrees to provide 30 more days of support for the VNX's.  State agrees to purchase the Isilon solution.  According to Nick at C2 "...confirmation from Dell/EMC that support is being extended on VNX01 and VNX02 (Serial #s, APM00111001134, APM00113201724) as described below."
-24 RRI Isilon; Project; 11-20-2018; 24 RRI Isilon; Paul; Identifying and making adjustment in Private Cloud budget to support procurement.  Planning meeting with CTO and CFO.
-24 RRI Isilon; Project; 11-20-2018; 24 RRI Isilon; Paul; Isilon has been submitted for PAT review.
-24 RRI Isilon; Project; 01-08-2019; 24 RRI Isilon; Paul; Isilon has been ordered.  Planning will commence soon once lead time is published.
-24 RRI Isilon; Project; 01-14-2019; 24 RRI Isilon; Aaron; Aaron is lead<br>Estimated Arrivals<br>Isilon A200, 1/16<br>Isilon H400, 1/21<br>
-24 RRI Isilon; Project; 01-24-2019; 24 RRI Isilon; Aaron; The project heading has been renamed to 24 RRI Isilon.<br>This project will address the Isilon implemtnaiton and the VNX01, VNX02, and Data Mover replacement.<br>
+none; Project; 06-27-2018; 13 TAX DR plan; Team; Meet with TAX.  TAX to come back with slimmed down DR design.  
+13 TAX DR plan; Project; 06-27-2018; 13 TAX DR plan; Team; Next meeting planned for 2nd week July.
+13 TAX DR plan; Project; 07-03-2018; 13 TAX DR plan; Team; Data book and Narrative completed.  Waiting for CFO feedback.  
+13 TAX DR plan; Project; 07-09-2018; 13 TAX DR plan; Paul; Still waiting for CFO feedback.  Expect to hear from this week.
+13 TAX DR plan; Project; 07-16-2018; 13 TAX DR plan; Paul; Still waiting for CFO feedback.  Expected to hear this week during meeting on Tuesday.
+13 TAX DR plan; Project; 07-24-2018; 13 TAX DR plan; Paul; CFO requested quote from C2.  This has been done.  Given CFO's impending departure, approval for procurement will be continue directly through the CTO. 
+13 TAX DR plan; Project; 07-30-2018; 13 TAX DR plan; Paul; Engaged with Kelly at TAX.  They are working on it.
+13 TAX DR plan; Project; 07-31-2018; 13 TAX DR plan; Paul; Discussed CapEx with Kate, CFO.
+13 TAX DR plan; Project; 08-15-2018; 13 TAX DR plan; Paul; Preparing for meeting with CTO and CFO.  Using ABC form.  Should be submitted this week.
+13 TAX DR plan; Project; 08-22-2018; 13 TAX DR plan; Paul; ABC delayed.  Hoping for this week due to high levels of activity.
+13 TAX DR plan; Project; 08-27-2018; 13 TAX DR plan; Paul; Still waiting on materials from TAX which identify the server resources desired for a DR solution.
+13 TAX DR plan; Project; 08-29-2018; 13 TAX DR plan; Paul; ABC completed and shared with CTO.  CTO has offered feedback concerning "due diligence".  Working though these now.  To be delivered next week.
+13 TAX DR plan; Project; 09-10-2018; 13 TAX DR plan; Paul; No word yet from Tax about a possible design.
+13 TAX DR plan; Project; 09-10-2018; 13 TAX DR plan; Paul; Sent email reminder request for DR plan.
+13 TAX DR plan; Project; 09-25-2018; 13 TAX DR plan; Paul; Discussed with Kelly R.  Tax desires a subset of production.  Plan has been developed but not fully vetted internally.  Kelly will try to engage new director Dean and connect with the Cloud team.  Tax would expect any DR solution to be ready by March 2019.
+13 TAX DR plan; Project; 09-25-2018; 13 TAX DR plan; Paul; No response from TAX on DR.  Issue seems to have been lost in the shuffle.  Will plan to engage in two weeks.
+13 TAX DR plan; Project; 11-14-2018; 13 TAX DR plan; Paul; Waiting till after migration to reach out again to TAX and commence discussion regarding CapEx funds for DR.
+13 TAX DR plan; Project; 12-05-2018; 13 TAX DR plan; Paul; Meeting scheduled to discuss solution and TAX's funding contribution.
+13 TAX DR plan; Project; 12-12-2018; 13 TAX DR plan; Paul; TAX DR/Funding Meeting re-scheduled at Dean's request for next week.
+13 TAX DR plan; Project; 01-09-2019; 13 TAX DR plan; Paul; TAX DR/Funding Meeting today.
+13 TAX DR plan; Project; 01-09-2019; 13 TAX DR plan; Paul; Meet with TAX.  DR likely for late summer 2019.  TAX need to finalize design.  CS needs  to help with cost model.  Plan needs to be fleshed out.  Sending BIA to TAX.
+none; Project; 06-27-2018; 14 AHS Encrypted Storage; Dan; Meet with C2.  Meet with Shared Service to discuss File Service in the future after Data Movers retired.
+14 AHS Encrypted Storage; Project; 06-26-2018; 14 AHS Encrypted Storage; Dan; Reviewing materials to present to CTO.
+14 AHS Encrypted Storage; Project; 07-03-2018; 14 AHS Encrypted Storage; Dan; May be option for DPS and Body-Cams?
+14 AHS Encrypted Storage; Project; 07-09-2018; 14 AHS Encrypted Storage; Dan; Research to include examination of commercial cloud on-line storage and any implication to networking as possible Data Mover replacement.
+14 AHS Encrypted Storage; Project; 07-09-2018; 14 AHS Encrypted Storage; Dan; Research continues with EA Keith.
+14 AHS Encrypted Storage; Project; 08-09-2018; 14 AHS Encrypted Storage; Dan; Focus will continue after migration.  Targeting January 2019.
+14 AHS Encrypted Storage; Project; 08-22-2018; 14 AHS Encrypted Storage; Dan; Meeting with C2 to discuss Isilon held today, 8/22.
+14 AHS Encrypted Storage; Project; 08-29-2018; 14 AHS Encrypted Storage; Paul; Planning meeting with CTO.
+14 AHS Encrypted Storage; Project; 09-24-2018; 14 AHS Encrypted Storage; Paul; This issue is being raised by Shared Services as they proceed with their SharePoint file management strategy and plans.  Meeting planned for week of 9/30.  We have numbers are looking to get approval from CTO.
+14 AHS Encrypted Storage; Project; 10-02-2018; 14 AHS Encrypted Storage; Paul; Discussed with Shared Services as they proceed with their SharePoint file management strategy and plans.  No solution has been decided upon.  Any savings dependent on depreciation of current Data Movers and the capacity of the storage solution chosen.
+14 AHS Encrypted Storage; Project; 10-23-2018; 14 AHS Encrypted Storage; Paul; Meeting for 10/24 has been scheduled to review this project especially in light of the current VNX1 bill.
+14 AHS Encrypted Storage; Project; 10-31-2018; 14 AHS Encrypted Storage; Paul; Email sent to Andrew Laing to research funding options as discussed with CTO.  No word yet.
+14 AHS Encrypted Storage; Project; 11-05-2018; 14 AHS Encrypted Storage; Paul; Still waiting to hear from Andrew Laing and AHS regarding funding options.
+14 AHS Encrypted Storage; Project; 11-06-2018; 14 AHS Encrypted Storage; Paul; Meeting scheduled to review with CTO.
+14 AHS Encrypted Storage; Project; 11-13-2018; 14 AHS Encrypted Storage; Paul; Meeting with C2 and CTO held.  C2 looking to give State 30 more days before procurement of Isilon.
+14 AHS Encrypted Storage; Project; 11-19-2018; 14 AHS Encrypted Storage; Paul; DELL/EMC agrees to provide 30 more days of support for the VNX's.  State agrees to purchase the Isilon solution.  According to Nick at C2 "...confirmation from Dell/EMC that support is being extended on VNX01 and VNX02 (Serial #s, APM00111001134, APM00113201724) as described below."
+14 AHS Encrypted Storage; Project; 11-20-2018; 14 AHS Encrypted Storage; Paul; Identifying and making adjustment in Private Cloud budget to support procurement.  Planning meeting with CTO and CFO.
+14 AHS Encrypted Storage; Project; 11-20-2018; 14 AHS Encrypted Storage; Paul; Isilon has been submitted for PAT review.
+14 AHS Encrypted Storage; Project; 01-08-2019; 14 AHS Encrypted Storage; Paul; Isilon has been ordered.  Planning will commence soon once lead time is published.
+14 AHS Encrypted Storage; Project; 01-14-2019; 14 AHS Encrypted Storage; Aaron; Aaron is lead<br>Estimated Arrivals<br>Isilon A200, 1/16<br>Isilon H400, 1/21<br>
+none; Project; 06-25-2018; 15 JUD; Paul; Meet with JUD again.  Reviewed slimmed down DR design.  Reviewing justification with CFO.
+15 JUD; Project; 06-27-2018; 15 JUD; Paul; Reviewing justification with CFO.
+15 JUD; Project; 06-27-2018; 15 JUD; Dan; Meet with C2 to size VxRails solution.
+15 JUD; Project; 07-09-2018; 15 JUD; Paul; Still waiting for CFO feedback.  Expect to hear from this week.
+15 JUD; Project; 07-13-2018; 15 JUD; Paul; Still waiting for CFO feedback.  Expect to hear from this week.
+15 JUD; Project; 07-16-2018; 15 JUD; TEAM; Team building JUD's new environment, Landesk #186798.  There may be dependencies with building out network in new versus old environment.  May have to migrate JUD sooner than later.  Meeting with JUD this week to discuss, 7/18. 
+15 JUD; Project; 07-25-2018; 15 JUD; TEAM; Team building JUD's new environment, Landesk #186798.  Work continues.
+15 JUD; Project; 07-31-2018; 15 JUD; Jon; Team still working on JUD's new environment, Landesk #186798.  Jon working on pfSense.
+15 JUD; Project; 08-13-2018; 15 JUD; Jon; Team still working on JUD's new environment, Landesk #186798.  Many current work efforts depending on Security.  Jon has been diligently supporting JUD.  Current planning deals with DMZ build-out.
+15 JUD; Project; 08-22-2018; 15 JUD; Jon; Team still working on JUD's new environment, Landesk #186798.
+15 JUD; Project; 08-22-2018; 15 JUD; Paul; JUD's new environment case closed.  Requesting updated timeline.
+15 JUD; Project; 09-19-2018; 15 JUD; Paul; Follow-up questions regarding timeline have been sent.
+15 JUD; Project; 09-19-2018; 15 JUD; Paul; Updated timeline.
+15 JUD; Project; 10-23-2018; 15 JUD; Paul; Need to inform JUD, no DR is possible till after consolidation report and June 2019.
+15 JUD; Project; 11-07-2018; 15 JUD; Paul; Meeting scheduled with JUD to discussing funding for the Disaster Recovery capabilities as designed in the plan.
+15 JUD; Project; 11-14-2018; 15 JUD; Paul; Meeting scheduled with JUD on 11/15 to discussing funds for the DR capabilities as designed in the plan.  JUD is targeting February for testing and implementing DR at Secondary site.
+15 JUD; Project; 11-15-2018; 15 JUD; Paul; Meet with JUD.  They are interested.  Need to prepare a document to outline proposal.  Working on this now.  Need to schedule meeting with ADS CFO and JUD CFO.  Targeting next week.
+15 JUD; Project; 11-28-2018; 15 JUD; Paul; Second meeting with JUD held.  It included ADS CFO.  JUD checking into mechanism.  Wants us to quote VxRail for a 4 node configuration that would support their DR.  Meeting being scheduled for next Monday.
+15 JUD; Project; 12-04-2018; 15 JUD; Paul; Third meeting with JUD held.  Rescheduling for when JUD CFO is available.  4-node quote produced.
+15 JUD; Project; 12-07-2018; 15 JUD; Paul; Meeting held. JUD not interested in investing if they don't get dedicated equipment.  Through several email conversations with Jeff and Jesse they are aware they may have to wait for next fiscal year (JUL 2019) for DR if they don't assist in funding now.  
+15 JUD; Project; 01-08-2019; 15 JUD; Paul; DR planning work to commence with JUD once VxRail delivery date published.
+15 JUD; Project; 01-14-2019; 15 JUD; Paul; Waiting for VxRail to arrive.
+none; Project; 06-25-2018; 16 CFO; Paul; Meet with CFO again.  Working on JUD, ERP, TAX, justification.
+16 CFO; Project; 06-27-2018; 16 CFO; Paul; Meet with CFO again.  Working on Pre-bill for Private Cloud.
+16 CFO; Project; 06-25-2018; 16 CFO; Paul; Working on Metrics.
+16 CFO; Project; 06-25-2018; 16 CFO; Paul; Working on contract activity.
+16 CFO; Project; 06-25-2018; 16 CFO; Paul; Preparing for final bills.
+16 CFO; Project; 06-25-2018; 16 CFO; Paul; Preparing discussions concerning DPS Gear End of Life in 2019.  Will require Cap ex if they cannot be included in new environment.
+16 CFO; Project; 07-16-2018; 16 CFO; Paul; Still waiting for CFO feedback.  Expected to hear this week during meeting on Tuesday.
+16 CFO; Project; 07-24-2018; 16 CFO; Paul; CFO requested quote from C2.  This has been done.  Given CFO's impending departure, approval for procurement will be continue directly through the CTO.
+16 CFO; Project; 07-25-2018; 16 CFO; Paul; Will create final Cloud bills and forward to Kate.
+16 CFO; Project; 07-31-2018; 16 CFO; Paul; Meet and discussed the following with Kate, CFO: DR CapEx and ABC, Final Bills, Tour, and Follow-up meeting.
+16 CFO; Project; 08-13-2018; 16 CFO; Paul; Follow-up meeting being planned.  Scripts being run to create final bill for CFO.
+16 CFO; Project; 08-22-2018; 16 CFO; Paul; Working to finalize bill.  Weekly meeting with CFO scheduled.
+16 CFO; Project; 08-29-2018; 16 CFO; Paul; Work to finalize SLA bills continues.  Friday meeting with CFO scheduled.
+16 CFO; Project; 08-30-2018; 16 CFO; Paul; Continue to work to finalize SLA bills continues.  Meeting with CFO very successful.  Presented PPT of Cloud Operation and Cloud Services.
+16 CFO; Project; 09-06-2018; 16 CFO; Paul; Discussed with CFO approach to procurement of Symantec licenses for AOT in the short term.
+16 CFO; Project; 09-10-2018; 16 CFO; Paul; Work to finalize SLA bills continues.  Meeting scheduled for 9/21.
+16 CFO; Project; 09-19-2018; 16 CFO; Paul; Continue to work to finalize SLA bills.
+16 CFO; Project; 09-21-2018; 16 CFO; Paul; CFO unavailable for meeting on 9/21.  Work continues finalize SLA bills.  This will now include charge back for AOT purchases.
+16 CFO; Project; 10-02-2018; 16 CFO; Paul; Meet with CFO.  Working to integrate AOT budget into Private Cloud per CFO.  Work continues to finalize SLA bills.  Have not gotten feedback from CFO yet.  Scheduled meeting for Thursday.  It is my understanding that SLA Bills are due 10/10.  If the CFO wants significant re-work we may not have time.  Just giving you a heads up.  Remember we have moved half of all our customers to the new environment which does not have a unified billing process.
+16 CFO; Project; 10-03-2018; 16 CFO; Paul; Working to develop Data Mover bills per Angela.  Since staff turnover, we have to re-learn this skill.  We are hoping to have for Angela late this week.
+16 CFO; Project; 10-05-2018; 16 CFO; Paul; Data Mover report, Private Cloud (VPC) budget, and AOT Expense list provide to CFO and Shared Services (SS) Deputy as requested.  At this time there are NO known deliverables or pending requests from the CFO or SS Deputy with regard to the 2020 budget, SLA BILL, or AOT Procumbent Process.
+16 CFO; Project; 10-23-2018; 16 CFO; Paul; Meet with CFO discussed Rubrik being "out of space" and reviewed MEMO.  Also discussed JUD Bespoke charges.
+16 CFO; Project; 10-31-2018; 16 CFO; Paul; Meet with CFO discussed Rubrik being "out of space" and need for more devices.  Have shared materials.
+16 CFO; Project; 11-06-2018; 16 CFO; Paul; Meet with CFO and CTO to clarify and re-allocate Private Cloud Budget to meet the CapEx and budgetary funding for the pending Rubrik capacity and Isilon (the Data Mover replacement).  Developed MEMO to explain budgetary adjustments and have shared with CTO and CFO.  IT appears MEMO accepted as is.
+16 CFO; Project; 11-19-2018; 16 CFO; Paul; More re-allocation of Private Cloud Budget will be required to cover Isilon and any DR solution.  Work is being taken to identify funds.
+16 CFO; Project; 12-07-2018; 16 CFO; Paul; Meet with CFO, CTO, and SEC.  We discussed 2019 Cloud Budget.  Found some extra funding ($635K), some to be applied to VxRail 4-node solution ($282K).  Will continue to improve "burn rate" tool and work with CTO and CFO.
 none; Project; 06-25-2018; 17 CTO Issues; Paul; Meet with CTO again.  Working on JUD, ERP, TAX, justification.
 17 CTO Issues; Project; 06-25-2018; 17 CTO Issues; Paul; DPS Gear End of Life in 2019.  Will require Cap ex if they cannot be included in new environment.
 17 CTO Issues; Project; 07-31-2018; 17 CTO Issues; Paul; Developing rationale and preparing for meeting with CTO to gain approval from ADS SEC.
@@ -1287,6 +1331,8 @@ none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initi
 29 RRI Virtual Firewall; Project; 01-24-2019; 29 RRI Virtual Firewall; Jon; Jon, Security, and JUD will be testing the JUD pfSense VPN (replacing the "Always on VPN") this week<br>It is almost ready for production.<br>  
 29 RRI Virtual Firewall; Project; 01-25-2019; 29 RRI Virtual Firewall; Jon; Jon finishing up pfsense firewall for AGO.<br>RDP access for Jay is the remaining hurdle.<br>
 29 RRI Virtual Firewall; Project; 01-25-2019; 29 RRI Virtual Firewall; Team; Aaron and Paul re-allocate more time to project.<br>Aaron to continue supporting Jon as he leads effort.<br>Paul to backstop and support Aaron.<br>
+none; Initiative; 06-25-2018; 2 RRI; Paul; Resource Refresh Initiative, (RRI).
+2 RRI; Note; 07-03-2018; 2 RRI; Paul; The Resource Refresh Initiative has the following projects: Migrations, Rubrik, Virtual Firewalling, VMWARE Upgrade, and Data Mover.
 none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiative, (RRI). Migration Plan
 20 RRI Migration Plan; Project; 07-03-2018; 20 RRI Migration Plan; Paul; Meetings planned for other agencies: AGR, AGO, and VVH.  More meetings being planned for DPS, BGS, EDU, VLC, and SAS.
 20 RRI Migration Plan; Project; 07-04-2018; 20 RRI Migration Plan; Dan; Migrations meetings being planned for E911, DLC, and EDU.
@@ -1338,7 +1384,22 @@ none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiat
 20 RRI Migration Plan; Project; 01-11-2019; 20 RRI Migration Plan; Paul; Current lead times have been shared by C2.  VXRail has a current ESD of 2/18.  Isilon DR (A200) has a current ESD of 1/21. Isilon Production (H400) has a current ESD of 1/16.
 20 RRI Migration Plan; Project; 01-14-2019; 20 RRI Migration Plan; Paul; Technical meeting with TAX planned for 1/22.<br>TAX data being ingested in the Rubrik devices now.<br>
 20 RRI Migration Plan; Project; 01-22-2019; 20 RRI Migration Plan; Paul; Meeting moved to Thursday 1/24.<br>
-20 RRI Migration Plan; Project; 01-25-2019; 20 RRI Migration Plan; Paul; Meeting moved again to Monday 1/28.<br>
+none; Project; 06-25-2018; 21 RRI Data Mover Migration; Paul; RRI Data Mover Migration.  This project will proceed to decommission NL VNX's (at EOL) and move data from NL to Tech Vault (TV).
+21 RRI Data Mover Migration; Project; 08-13-2018; 21 RRI Data Mover Migration; Dan; Dan and C2 have planned to test replication from NL to TV.
+21 RRI Data Mover Migration; Project; 08-15-2018; 21 RRI Data Mover Migration; Paul; Loaner disks on order with DELL/EMC.  Status should be available today.
+21 RRI Data Mover Migration; Project; 08-21-2018; 21 RRI Data Mover Migration; Paul; Paperwork signed and forward to Kelsey of DELL/EMC for loaner disks.  The cost is $23K.  Due to compliance we will purchase in 2019.
+21 RRI Data Mover Migration; Project; 09-05-2018; 21 RRI Data Mover Migration; Paul; Still waiting for drives.  Planning next data mover migrations.
+21 RRI Data Mover Migration; Project; 09-10-2018; 21 RRI Data Mover Migration; Paul; Data Mover project is moving slower than anticipated due to some scheduling and technical issues.  Have informed CTO to that a significant expense is expected in November due to this delay.  Currently securing quotes.
+21 RRI Data Mover Migration; Project; 09-19-2018; 21 RRI Data Mover Migration; Paul; DELL/EMC is about to or has shipped needed drives.
+21 RRI Data Mover Migration; Project; 10-02-2018; 21 RRI Data Mover Migration; Dan; DELL/EMC drives have arrived.
+21 RRI Data Mover Migration; Project; 10-10-2018; 21 RRI Data Mover Migration; Paul; Shared Service is planning meeting to discuss this issue.  They are interested in understanding options vis-a-vis Data Movers in light of their SharePoint plan.  Discussed with Angela, Deputy.
+21 RRI Data Mover Migration; Project; 11-07-2018; 21 RRI Data Mover Migration; Paul; Waiting for decisions on Isilon Data and Consolidation Plan.
+21 RRI Data Mover Migration; Project; 11-07-2018; 21 RRI Data Mover Migration; Paul; Waiting for decisions extending date for procurement.
+21 RRI Data Mover Migration; Project; 11-21-2018; 21 RRI Data Mover Migration; Paul; Planning continues to prepare for procurement.  30 day extension from DELL/EMC approved.
+21 RRI Data Mover Migration; Project; 12-12-2018; 21 RRI Data Mover Migration; Paul; Isilon ABC submitted to PAT.
+21 RRI Data Mover Migration; Project; 01-08-2019; 21 RRI Data Mover Migration; Paul; Planning restarted while awaiting Isilon delivery.  Initial meeting held with Angela to start process.
+none; Initiative; 06-25-2018; 3 Special Projects; Team; Special Projects
+3 Special Projects; Note; 07-13-2018; 3 Special Projects; Team; Special Projects contains: CRM project, Proof of Concept (POC) and DR-BC projects.
 none; Project; 06-25-2018; 32 CRM Project; Mike; CRM project, Proof of Concept (POC).
 32 CRM Project; Project; 07-13-2018; 32 CRM Project; Mike; Engaging Salesforce and other States in knowledge transfer sessions.
 32 CRM Project; Project; 07-13-2018; 32 CRM Project; Mike; Planning continues.
@@ -1358,7 +1419,14 @@ none; Project; 08-20-2018; 33 DR-BC Project; Ken; DR-BC project.
 33 DR-BC Project; Project; 01-08-2019; 33 DR-BC Project; Ken; I have been reviewing and gathering notes on Agency COOP plans. I have been identifying Agency COOP reps and sent out intro email. I have scheduled to meet with 5 Agency COOP leaders this week and next to translate essential functions into system requirements. 
 33 DR-BC Project; Project; 01-14-2019; 33 DR-BC Project; Ken; Started to Engage agencies.<br>Going well so far.<br>
 
----<2019-01-25>---
+
+
+
+---<10-03-2018>---
+---<09-25-2018>---
+
+---<10-03-2018>---
+---<09-25-2018>---
 git clone https://github.com/kirvam/db_sqlite_app_block_table.git
 
 
