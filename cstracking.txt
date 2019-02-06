@@ -51,6 +51,11 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 01/10/2019 1024 -|-
 01/11/2019 1025 -|-
 01/23/2019 1037 -|-
+01/25/2019 1039 -|-
+01/28/2019 1042 -|-
+01/28/2019 1043 -|-
+01/30/2019 1045 -|-
+02/06/2019 1052 -|-
 
 
 8:00 
@@ -72,19 +77,27 @@ TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/3
 03:00
 
 04:00
---------------------------------<MS EA>---------
 
+-------< ERP Upgrade Coverage >---------------------------------------------------
+Day/Date:	Primary/Secondary/Tertiary
+THU, 1/31:	Dan 802-595-2010/Jon 802-279-4469
+FRI, 2/01:	Jon 802-279-4469/Dan 802-595-2010
+SAT, 2/02:	Aaron 802-793-8682/Dan 802-595-2010/Ken 802-595-1641
+SUN, 2/03:	Jon 802-279-4469/Micheal 802-793-8132
+MON, 2/04:	Aaron 802-793-8682/Ken 802-595-1641
+
+
+----< wish list>-------------------
 -CTO had me share the following wish list with the SEC who was meeting the GOV:
  #1.  4 - HCI VxRack nodes:  $437,512  -This will allow AHS to fully migrate!
  #2.  2 - Additional Rubrik devices:  $485,000  -This will accommodate backup capacity requirements in parallel with building a DATA PLAN to reduce overall growth.
  #3.  2 - VxRail Disaster Recovery Nodes:  $85,000 -This will accommodate DR for TAX!
  #4.  2 - Dedicated 1 GB Circuits to Equinex in NJ: $80,000 (ESTIMATED)  -This will support IaaS in AWS, Google, AZuer etc.  See attached design from 2016.
 
-
-
 --------------------------------------------
 
 
+--------------------------------<MS EA>---------
 -Check against Budget!!!
 Vermont Enterprise Agreement Renewal
  
@@ -127,8 +140,7 @@ WinSvrExtConn ALNG SA MVL
  $                2,926.98  <<< What is this?
 9 
 non-emp access to Windows Server environment - what is this??
-
---------------------------------
+--------------------------------<MS EA>---------
 
 
 --------------------------------------------------
@@ -138,10 +150,10 @@ VNX04 - https://10.216.14.14
 --------------------------------------------------
 ?Ccc@/;!9d;L
 
-8uQOxb18ygchZPIHUtFLEecz 
-2YLzbjdJg94UQ2B1b6wrJXPr 
-
-YGC2F9hKh5kVwh8N1TnHSbml:0102
+4 - 8uQOxb18ygchZPIHUtFLEecz 
+1 - 2YLzbjdJg94UQ2B1b6wrJXPr 
+2 - YGC2F9hKh5kVwh8N1TnHSbml
+:0102
 
 nas_fs -query:type=vpfs -format:"%-30s %s %15s KB\n" -fields:BackupOf,VolumeName,size|sort|awk 'BEGIN {printf("%30s %30s %20s\n","Filesystem","Ckpt savvol","Size in MB ")} {printf("%30s %30s %20s\n", $1,$2,$3); i=i+$3} END { printf("%30s%30s %20s\n","Sum:"," ", i) }'
 
@@ -271,8 +283,19 @@ AOT Customer #   2481002018
 01/07/2019
 01/08/2019
 01/16/2019
+01/29/2019
+02/06/2019
 
-
+-CAPACITY script
+-VMWare Upgrade CAB request??
+-2020 ADJ, 2021 ADJ budgets
+-CVO Azure analysis
+-pfSense
+-Log TAX outage with report server, Landesk 112185.
+-Reach out to AHS:
+   +DOC
+   +DAIL
+   
 -Right Sizing Reports???
 -COOP exercise?
 -JUD decommissioning report...
@@ -284,14 +307,12 @@ AOT Customer #   2481002018
   +Infrastructure Plan
 -Performance review for Ken and Michael..
 
-
-
 -clean up EA domain
 -reply to Tavis...  -Done
--Tax DR  -meeting after TAX migration...
--TAX Migration
--Firewall replacement project?
--Review commercial servers and servvices being used..
+-Tax DR  -meeting after TAX migration...  
+-TAX Migration  -cancelled
+
+-Review commercial servers and services being used..
 
 -Cloud Service team in any "on-boarding" and "off-boarding" procedures... email..  -Done
 -VMWare Upgrade CAB request??
@@ -1080,6 +1101,13 @@ none; Project; 06-13-2018; 11 Cloud OPS; Team; Routine operation work on the Pri
 11 Cloud OPS; Project; 01-24-2019; 11 Cloud OPS; Paul; Failed SQL backups for AHS, Landesk 208747.<br>Reviewing logs.<br>Working with AHS.<br>Not clear what issue is?<br>Not issue found with Data Mover yet?<br>Email sent to Heintz to look into.<br>Looks to be related to Windows SMB or Network.<br> 
 11 Cloud OPS; Project; 01-24-2019; 11 Cloud OPS; Dan; ERP DR, Landesk 200510.<br>The team appears to have delivered everything per request.<br>Waiting for one follow-up questions to be answered.<br>
 11 Cloud OPS; Project; 01-25-2019; 11 Cloud OPS; Paul; Failed SQL backups for AHS, Landesk 208747.<br>No failures last night.<br>Cloud Services (CS)and C2 staff Augmentation fully enaged with AHS and partners.<br>Brent made change to SessTimeout regkey (increase to 300) of the LanMan service SQL boxes.<br>Waiting for Logs to be analyzed by DELL/EMC.<br>
+11 Cloud OPS; Project; 01-29-2019; 11 Cloud OPS; Team; Failed SQL backups for AHS, Landesk 208747.<br>Still no failures.<br>Plan is to analyze DELL/EMC report and then reconvene with AHS to discuss.<br>Should happen next week.<br>
+11 Cloud OPS; Project; 01-30-2019; 11 Cloud OPS; Team; Tax report server is down, TAX-GTDBP2.<br>Team is focusing on restoring it to normal operations.<br>Landesk 112185.<br>
+11 Cloud OPS; Project; 01-30-2019; 11 Cloud OPS; Team; Tax report server restored TAX-GTDBP2.<br>Landesk 112185.<br>Root caused being researched.<br>Issue may be user error.<br>
+11 Cloud OPS; Project; 01-31-2019; 11 Cloud OPS; Team; ERP Upgraded started.<br>See Staffing.<br>
+11 Cloud OPS; Project; 02-05-2019; 11 Cloud OPS; Team; ERP Upgraded concluded.<br>No issues.<br>After hours coverage approved.<br>Contrates to the ERP Upgrade team.<br>
+11 Cloud OPS; Project; 02-05-2019; 11 Cloud OPS; Jon; JUD VPN is operational.<br>JUD is using.<br>Some testing this taking place.<br>
+11 Cloud OPS; Project; 02-05-2019; 11 Cloud OPS; Jon; Onbase Server successfully migrated to VxRAck Cloud at Tech Vault.<br>The pfSense Firewalls for this projected have been validated.<br>This supports the VHC Onbase project.<br>More servers to be migrated soon.<br>
 none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 07-04-2018; 10 Cloud Staffing; Paul; Amendment to contract for C2 migration tool still routing for signature.
 10 Cloud Staffing; Project; 07-09-2018; 10 Cloud Staffing; Paul; Staffing is at more normal levels.
@@ -1109,7 +1137,9 @@ none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 11-27-2018; 10 Cloud Staffing; Paul; Six month review for Aaron completed.
 10 Cloud Staffing; Project; 01-07-2019; 10 Cloud Staffing; Team; In-box activity high.
 10 Cloud Staffing; Project; 01-07-2019; 10 Cloud Staffing; Team; In-box activity high.<br>Onbase project effort.<br>ERP DR effort.
-10 Cloud Staffing; Project; 01-07-2019; 10 Cloud Staffing; Team; In-box activity high.<br>Team short handed.<br>
+10 Cloud Staffing; Project; 01-15-2019; 10 Cloud Staffing; Team; In-box activity high.<br>Team short handed.<br>
+10 Cloud Staffing; Project; 01-31-2019; 10 Cloud Staffing; Team; Team supporting ERP Upgrade.<br>Team schedule to cover over the weekend.<br><br>Day/Date: Primary/Secondary/Tertiary<br>THU, 1/31: Dan 802-595-2010/Jon 802-279-4469<br>FRI, 2/01: Jon 802-279-4469/Dan 802-595-2010<br>SAT, 2/02: Aaron 802-793-8682/Dan 802-595-2010/Ken 802-595-1641<br>SUN, 2/03: Jon 802-279-4469/Michael 802-793-8132<br>MON, 2/04: Aaron 802-793-8682/Ken 802-595-1641<br>
+10 Cloud Staffing; Project; 02-05-2019; 10 Cloud Staffing; Team; Team has properly coded time for the ERP Upgrade.<br>
 none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 09-10-2018; 12 Procurement; Paul; Meeting with Dylan to address necessary Symantec procurement and other AOT infrastructure need over the next year.
 12 Procurement; Project; 09-11-2018; 12 Procurement; Paul; Meeting planned with CTO to suggest proposed process to include AOT forward and seek approval.
@@ -1151,6 +1181,8 @@ none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 01-14-2019; 12 Procurement; Paul; Support for pfSense firewalls by Netgate has been secured.<br>Jon has configured for support.<br>60 licenses purchased to support the 52 needed plus some growth.
 12 Procurement; Project; 01-15-2019; 12 Procurement; Paul; C2 provided lead times.<br>Estimated Arrivals<br>Isilon A200, 1/16<br>Isilon H400, 1/21<br>VxRail, 1/13 <br>
 12 Procurement; Project; 01-15-2019; 12 Procurement; Paul; Working on M&O procurement for AOT servers with Dylan.<br>
+12 Procurement; Project; 01-29-2019; 12 Procurement; Paul; Working on M&O procurement for AOT servers with Dylan.<br>Still waiting for the return of all quotes from the 3 respective vendors.<br>
+12 Procurement; Project; 02-04-2019; 12 Procurement; Paul; M&O procurement for AOT servers sent to Purchasing for AOT.<br>Landesk 209961.
 none; Project; 06-27-2018; 23 RRI DR plan; Team; Meet with TAX.  TAX to come back with slimmed down DR design.  
 23 RRI DR plan; Project; 06-27-2018; 23 RRI DR plan; Team; Next meeting planned for 2nd week July.
 23 RRI DR plan; Project; 07-03-2018; 23 RRI DR plan; Team; Data book and Narrative completed.  Waiting for CFO feedback.  
@@ -1175,6 +1207,7 @@ none; Project; 06-27-2018; 23 RRI DR plan; Team; Meet with TAX.  TAX to come bac
 23 RRI DR plan; Project; 01-09-2019; 23 RRI DR plan; Paul; Meet with TAX.  DR likely for late summer 2019.  TAX need to finalize design.  CS needs  to help with cost model.  Plan needs to be fleshed out.  Sending BIA to TAX.
 23 RRI DR plan; Project; 01-24-2019; 23 RRI DR plan; Paul; Project re-named to 23 RRI DR plan.<br>This will include all the eforts for DR, VxRail, TAX, ERP, and JUD.<br>
 23 RRI DR plan; Project; 01-25-2019; 23 RRI DR plan; Dan; Dan is the lead on the VxRail project.<br>VxRail has been delievered been racked at NL.<br>
+23 RRI DR plan; Project; 01-30-2019; 23 RRI DR plan; Dan; Waiting for competeletion of TAX migration before continuing.<br>Email sent to JUD to set expectations.<br>We hope to add them to the VxRail infrastructure some time in March.<br>
 none; Project; 06-27-2018; 24 RRI Isilon; Dan; Meet with C2.  Meet with Shared Service to discuss File Service in the future after Data Movers retired.
 24 RRI Isilon; Project; 06-26-2018; 24 RRI Isilon; Dan; Reviewing materials to present to CTO.
 24 RRI Isilon; Project; 07-03-2018; 24 RRI Isilon; Dan; May be option for DPS and Body-Cams?
@@ -1228,6 +1261,13 @@ none; Project; 06-25-2018; 17 CTO Issues; Paul; Meet with CTO again.  Working on
 17 CTO Issues; Project; 01-14-2019; 17 CTO Issues; Paul; Cloud Capacity given remaining migration customers has been EXCEEDED.<br>TAX, ERP, and a portion of AHS will fit in the existing VxRack environment.<br>VDOL, CVO, and the remaining AHS servers will need to wait for new capacity which is budgeted for FY2020.<br>TAX will also require additional VxRail capacity at the secondary site for DR.
 17 CTO Issues; Project; 01-19-2019; 17 CTO Issues; Paul; Shared most pressing needs with CTO.<br>4 HCI VxRack nodes, $437K<br>2 Additional Rubrik devices, $485K<br>2 VxRail Disaster Recovery Nodes, $85K<br>2 Dedicated 1 GB Circuits to Equinex in NJ, $80K EST.
 17 CTO Issues; Project; 01-22-2019; 17 CTO Issues; Dan; CTO and team produced PPT.<br>
+17 CTO Issues; Project; 01-25-2019; 17 CTO Issues; Dan; VxRack Capacity has been reached.<br>More capacity needs to be purcashed to fit AHS.<br>The plan is for this summer.<br>
+17 CTO Issues; Project; 01-28-2019; 17 CTO Issues; Paul; Cloud Services Team Priorities:<br>-Operations<br>-Vsheild replacement with pfSense<br>-TAX Migration<br>-VMWARE Upgrade<br>-AHS Migrations<br>-VxRail, DR Implementaion<br>-Isilon, Data Mover replacement<br>-ERP and JUD DR<br>
+17 CTO Issues; Project; 01-30-2019; 17 CTO Issues; Paul; CTO meeting with AOT about moving CVO project to Azure.<br>
+17 CTO Issues; Project; 01-31-2019; 17 CTO Issues; Paul; CTO Strategy discussion held with Jim W.<br>Regular meeting to be established.<br>Topcs:<br>-Data Center Consolidation.<br>-Cloud App and infrastructure Consolidation.<br>-Shift to Operational costs away from Capital Expenditures.<br>
+17 CTO Issues; Project; 02-01-2019; 17 CTO Issues; Paul; Vion Meeting and Demo.<br>Next steps:<br>-Setup proof-of concept.<br>
+17 CTO Issues; Project; 02-05-2019; 17 CTO Issues; Paul; AOT Meeting with Gentax held.<br>Gentax has proposed a Hosted solution.<br>AOT teams positively inclined toward this new direction.<br>
+17 CTO Issues; Project; 02-06-2019; 17 CTO Issues; Paul; Effort to analyze and compare Gentax option with a State lead Azure option started.<br>Microsoft has been engaged to start the process of a "zero dollar" setup of an Azure GOV instance.<br>Carl of MS contacted and working on.<br>MS has offered help.<br>
 none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RRI). Rubrik
 28 RRI Rubrik; Project; 06-27-2018; 28 RRI Rubrik; Dan; Rubrik.  Joe working with ANR and Linux admin to test Self-Service and Rubrik client.  Following-up with Joe this week.  Joe working with Aaron.
 28 RRI Rubrik; Project; 07-03-2018; 28 RRI Rubrik; Dan; Rubrik.  Meeting set with DPS to prepare and cut-over.
@@ -1287,6 +1327,9 @@ none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initi
 29 RRI Virtual Firewall; Project; 01-24-2019; 29 RRI Virtual Firewall; Jon; Jon, Security, and JUD will be testing the JUD pfSense VPN (replacing the "Always on VPN") this week<br>It is almost ready for production.<br>  
 29 RRI Virtual Firewall; Project; 01-25-2019; 29 RRI Virtual Firewall; Jon; Jon finishing up pfsense firewall for AGO.<br>RDP access for Jay is the remaining hurdle.<br>
 29 RRI Virtual Firewall; Project; 01-25-2019; 29 RRI Virtual Firewall; Team; Aaron and Paul re-allocate more time to project.<br>Aaron to continue supporting Jon as he leads effort.<br>Paul to backstop and support Aaron.<br>
+29 RRI Virtual Firewall; Project; 01-30-2019; 29 RRI Virtual Firewall; Team; Aaron training Paul to create firewalls and gather rules.<br><a href="https://vermontgov.sharepoint.com/:x:/r/sites/ADS/EACS/internal/_layouts/15/Doc.aspx?sourcedoc=%7B3A8F999B-778E-4EFA-84C6-1210E8A2D323%7D&file=pfSense%20conversion%20status.xlsx&action=default&mobileredirect=true" style="color:rgb(255,0,0)">pfSense Conversion Status</a><br>
+29 RRI Virtual Firewall; Project; 02-05-2019; 29 RRI Virtual Firewall; Jon; JUD VPN working.<br>Firewalls for OnBase has been validated.<br>
+29 RRI Virtual Firewall; Project; 02-06-2019; 29 RRI Virtual Firewall; Team; Work continues on Vsheild replacement, pfSense firewall creation effort.<br><a href="https://vermontgov.sharepoint.com/:x:/r/sites/ADS/EACS/internal/_layouts/15/Doc.aspx?sourcedoc=%7B3A8F999B-778E-4EFA-84C6-1210E8A2D323%7D&file=pfSense%20conversion%20status.xlsx&action=default&mobileredirect=true" style="color:rgb(255,0,0)">pfSense Conversion Status</a><br>
 none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiative, (RRI). Migration Plan
 20 RRI Migration Plan; Project; 07-03-2018; 20 RRI Migration Plan; Paul; Meetings planned for other agencies: AGR, AGO, and VVH.  More meetings being planned for DPS, BGS, EDU, VLC, and SAS.
 20 RRI Migration Plan; Project; 07-04-2018; 20 RRI Migration Plan; Dan; Migrations meetings being planned for E911, DLC, and EDU.
@@ -1339,6 +1382,9 @@ none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiat
 20 RRI Migration Plan; Project; 01-14-2019; 20 RRI Migration Plan; Paul; Technical meeting with TAX planned for 1/22.<br>TAX data being ingested in the Rubrik devices now.<br>
 20 RRI Migration Plan; Project; 01-22-2019; 20 RRI Migration Plan; Paul; Meeting moved to Thursday 1/24.<br>
 20 RRI Migration Plan; Project; 01-25-2019; 20 RRI Migration Plan; Paul; Meeting moved again to Monday 1/28.<br>
+20 RRI Migration Plan; Project; 01-28-2019; 20 RRI Migration Plan; Team; AHS, efforts are being focused on low hanging fruit, small departments.<br>Working to move DOC, 1 server and DAIL, 4 servers.<br>
+20 RRI Migration Plan; Project; 01-30-2019; 20 RRI Migration Plan; Team; Meet with TAX.<br>We may not be able to move TAX as planned, 2/15.<br>Team is working through issues.<br>We should know by next week.<br>Tax is aware.<br>Challenges include DigiKey and Database size.<br>
+20 RRI Migration Plan; Project; 02-06-2019; 20 RRI Migration Plan; Paul; <p style="color:rgb(255,0,0)">Tax leadership was decided to delay TAX migration till May or June of 2019.</p><br>Planning to continue in weekly meeting.<br>
 none; Project; 06-25-2018; 32 CRM Project; Mike; CRM project, Proof of Concept (POC).
 32 CRM Project; Project; 07-13-2018; 32 CRM Project; Mike; Engaging Salesforce and other States in knowledge transfer sessions.
 32 CRM Project; Project; 07-13-2018; 32 CRM Project; Mike; Planning continues.
@@ -1348,6 +1394,7 @@ none; Project; 06-25-2018; 32 CRM Project; Mike; CRM project, Proof of Concept (
 32 CRM Project; Project; 11-14-2018; 32 CRM Project; Mike; MTX/C2 (the vendor engaged to help us get off the ground correctly) are on the ground (mainly remote) and helping me build the basic Vermont foundation (the Case and Account object are default SalesForce).  Starting DAIL home inspection kickoff next Monday
 32 CRM Project; Project; 01-06-2019; 32 CRM Project; Mike; Work sessions continue to be held.
 32 CRM Project; Project; 01-05-2019; 32 CRM Project; Mike; The DAIL Inspection Salesforce pilot is on track for initial release in early February.<br>We held the kickoff for the AOT TBR (Task Bid Request) system Salesforce pilot Monday (our second Salesforce pilot)<br>.
+32 CRM Project; Project; 01-03-2019; 32 CRM Project; Mike; Work continues.<br>Nothing major to report.<br>
 none; Project; 08-20-2018; 33 DR-BC Project; Ken; DR-BC project.
 33 DR-BC Project; Project; 08-29-2018; 33 DR-BC Project; Ken; I have been reviewing and gathering notes on Agency coop plans  and assembling a spreadsheet about ¾ done reviewing COOP plans, and ½ on the Spreadsheet. I have been identifying Agency COOP reps to meet with to translate essential functions to systems that will be needed in a continuity situation.
 33 DR-BC Project; Project; 09-10-2018; 33 DR-BC Project; Ken; Ken attending State run BC table top exercises this week.
@@ -1357,6 +1404,7 @@ none; Project; 08-20-2018; 33 DR-BC Project; Ken; DR-BC project.
 33 DR-BC Project; Project; 01-06-2019; 33 DR-BC Project; Ken; Work continues on updating the ADS COOP Plan (waiting for Org Chart from Kristy, have emailed twice to no avail.
 33 DR-BC Project; Project; 01-08-2019; 33 DR-BC Project; Ken; I have been reviewing and gathering notes on Agency COOP plans. I have been identifying Agency COOP reps and sent out intro email. I have scheduled to meet with 5 Agency COOP leaders this week and next to translate essential functions into system requirements. 
 33 DR-BC Project; Project; 01-14-2019; 33 DR-BC Project; Ken; Started to Engage agencies.<br>Going well so far.<br>
+33 DR-BC Project; Project; 01-30-2019; 33 DR-BC Project; Ken; Working on updating the ADS COOP Plan (Still waiting for Org Chart from Kristy).<br>Reviewing and gathering notes on Agency coop plans. I have been identifying Agency COOP reps and sent out intro email.<br>Have met with  Agency COOP leaders from AGR, ACCD and AOA to translate essential functions into system requirements.<br>Met with Rick Steventon and Michael Harrington to discuss working with Tom Tomasi on VDOL COOP planning.<br>Reaching out to Tom, more to follow.<br>
 
 ---<2019-01-25>---
 git clone https://github.com/kirvam/db_sqlite_app_block_table.git
@@ -1440,3 +1488,45 @@ Name        | Location | Model   | File Software Version |  Block Software Versi
 eagmcsvnx01 |  NL      | VNX5700 |  7.1.80-8             |  05.32.000.5.221   	
 eagmcsvnx02 |  NL      | VNX5700 |  7.1.80-8             |  -Not showing, not clear why?
 eagmcsvnx04 |  TV      | VNX5800 |  8.1.9-155            |  05.33.009.5.155
+
+------------------------------------
+
+Hi XXXX,
+
+We are working to try to make some progress in migrating some of AHS' servers to Tech Vault.  Toward this aim we have identified some smaller agencies that look to be very straight forward to move.
+
+XXX's server XXX looks to be one of them:
+
+Would you have time today to discuss in the weekly AHS Migration meeting?
+
+Sincerely,
+
+-Paul
+
+----------------------------------------
+
+Hi You'all,
+
+This meeting is to discuss with CTO and Cloud Services team current Capacity challenges with Private Cloud (PC) and AOT Private Cloud (APC).
+
+-Background
+  +18 months later
+-Impact of migrating TAX, AHS, and ERP.
+  +just fitting this will be too tight or not enough?
+  +review Dan's tool.
+-Impact of AOT proposed CVO build to PC capacity..
+  +will require additional Nodes or storage either way in PC or at AOT Private Cloud (APC)  
+  +funding
+  +details:
+    -18 month prediction never included additions:  have added: VDOL, JUD Odyssey, ERP Upgrade (26 TB)
+    -delays in migrating..  double paying for legacy..
+-DPS infrastructure refresh
+-FY2020 CAPEX
+
+Make sense?
+
+
+Sincerely,
+
+-Paul
+
