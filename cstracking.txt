@@ -1,62 +1,18 @@
-TODAY 8/13, 8/15, 8/17, 8/20, 8/22, 8/23,  8/24 884, 8/27, 8/28, 8/29, 8/30, 8/31 891,  9/1, 9/4, 9/5, 9/6, 9/7 898 9/8 
-9/9 9/10 901 -|-
 
-9/13 904 -|-
-9/17 908 -|-
-9/18 909 -|-
-9/19 910 -|-
-9/20 911 -|-
-9/21 912 -|-
-9/25 916 -|-
-9/26 917 -|-
-10/11 932 -|-
-10/12 933 -|-
-10/22 943 -|-
-10/23 944 -|-
-10/24 945 -|-
-10/29 950 -|-
-10/30 951 -|-
-10/31 952 -|-
-11/01 953 -|-
-11/02 954 -|-
-11/06 958 -|-
-11/07 959 -|-
-11/13 965 -|-
-11/14 966 -|-
-11/15 967 -|-
-11/19 971 -|-
-11/20 972 -|-
-11/21 973 -|-
-11/26 978 -|-
-11/27 979 -|-
-11/28 980 -|-
-12/03 986 -|-
-12/04 987 -|-
-12/05 988 -|-
-12/10 993 -|-
-12/18 1001 -|-
-12/21 1004 -|-
-12/26 1009 -|-
-12/27 1010 -|-
-12/28 1011 -|-
-12/30 1013 -|-
-12/31 1014 -|-
-01/01/2019 1015 -|-
-01/02/2019 1016 -|-
-01/03/2019 1017 -|-
-01/04/2019 1018 -|-
-01/07/2019 1021 -|-
-01/08/2019 1022 -|-
-01/09/2019 1023 -|-
-01/10/2019 1024 -|-
-01/11/2019 1025 -|-
-01/23/2019 1037 -|-
-01/25/2019 1039 -|-
-01/28/2019 1042 -|-
-01/28/2019 1043 -|-
-01/30/2019 1045 -|-
-02/06/2019 1052 -|-
-
+03/02/2019 1095 -|-
+03/03/2019 1096 -|-
+03/04/2019 1097 -|-
+03/05/2019 1098 -|-
+03/06/2019 1099 -|-
+03/07/2019 2000 -|-
+03/08/2019 2001 -|-
+03/09/2019 2002 -|-
+03/10/2019 2003 -|-
+03/11/2019 2004 -|-
+03/12/2019 2005 -|-
+03/13/2019 2006 -|-
+03/14/2019 2007 -|-
+03/20/2019 2013 -|-
 
 8:00 
 
@@ -97,7 +53,7 @@ MON, 2/04:	Aaron 802-793-8682/Ken 802-595-1641
 --------------------------------------------
 
 
---------------------------------<MS EA>---------
+--------------------------------<MS EA 2018 - 2019 >------------------------------------------------------------------------------------------
 -Check against Budget!!!
 Vermont Enterprise Agreement Renewal
  
@@ -140,7 +96,7 @@ WinSvrExtConn ALNG SA MVL
  $                2,926.98  <<< What is this?
 9 
 non-emp access to Windows Server environment - what is this??
---------------------------------<MS EA>---------
+--------------------------------<MS EA 2018 - 2019 >---------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------
@@ -150,6 +106,7 @@ VNX04 - https://10.216.14.14
 --------------------------------------------------
 ?Ccc@/;!9d;L
 
+SSH
 4 - 8uQOxb18ygchZPIHUtFLEecz 
 1 - 2YLzbjdJg94UQ2B1b6wrJXPr 
 2 - YGC2F9hKh5kVwh8N1TnHSbml
@@ -279,35 +236,176 @@ AOT Customer #   2481002018
 
 ---------------<Software vendor >------------------------------------------------------
 
-01/04/2019
-01/07/2019
-01/08/2019
-01/16/2019
-01/29/2019
-02/06/2019
 
--CAPACITY script
--VMWare Upgrade CAB request??
--2020 ADJ, 2021 ADJ budgets
--CVO Azure analysis
+03/14/2019
+
+-------------<snip>-----------------------------
+What is status with VDI?
+
+-------------<snip>-----------------------------
+
+-Prioritize!
+
+---<snip>---
+-Migrate DII
+-DOC & DAIL
+-AHS Net Design 
+-Asset list
+-VNX M&O
+-VMWARE UPGRADE
+
+
+Note:
+
+VxRack
+  192 TB
+ -153 TB
+----------
+     39 TB
+
+
+TAX 30
+AHS 52
+
+OnBase 6 TB
+---<snip>---
+
+-CAB Request...  -Done
+-DEC Appliance to Lane.
+
+-Dan Martin case.
+-AHS network design
+
+-Approve invoices
+
+-Frewall cut-over
+  +VCGI
+  
+-DOC
+  +get standard rules together share with AHS
+  +get list of locations
+  +meet with Bryan, See below..
+-DAIL
+  +servers:
+    -2012 ahs-dailappprod  IIS  not internet facing
+    -2012 AHS-DAIL-APPTEST  IIS  not internet facing
+    -REMOVE: xxxxAHS-DIALSQL
+   
+-CAP Findings repsonses
+
+-Isilon Project:
+  +Plan
+  +Meetings
+  
+-Update Weekly Report ***  -Done
+
+-Review Jim's RFP and ABC by Friday!  -Done
+
+-Send CFO preview of VDI bill.
+-Ask CTO about Accounting.
+  +Review Private Cloud Asset list then,
+  +Make record of Cloud Depreciation hardware fund ($)
+
+
+  +get standard rules together share with AHS
+  +get list of locations
+  +setup meeting with Bryan, Darin, David,& Brent to define Network
+    -Prepare for this..
+    
+-Review Emily email...***  
+-CAPS closure of findings...***
+-Resource Plan
+
+-VxRack Expansion OR AHS move to Azure...***
+
+-Monthly/Quarterly Billing Process  -Work on this..***
+  -Capture
+  -Mark-up
+  -Create Report
+  -Publish Report to CFO
+    +CFO submits to customer
+  -Match usage to Cloud invoice
+
+-VMWARE upgrade***
+
+-Asset list
+
+-ACCD bill adjustment  -Done!
+  +Waiting to hear from CFO?
+
+-VDI "reduced" bill "heads-up"!  -Need to work on!!  Try submit to CFO to approve for next billing cycle.
+
+-Meet with Safford???
+
+-Server report to SECURITY
+
+-PSB Firewall???
+
+-AHS Migrations:
+  +AHS Point of Contact, Brian I.
+  +DAIL
+  +DOC
+
+-Tax Post-Morten report ***  -Done!
+
+-Cloud Equipment Assets: ***
+  +organize:
+    -component stack
+    -Asset list
+    -Asset tags
+
+-Meet with Mark on Tech Vault Azure?  -Needs to be defined?  -Done
+  +https://www.tgvt.net/v5/  
+  
+-CVO Project
+  +Meet with Mark on CVO? 
+  +Options analysis
+-VION Project
+  +POC
+  
+-VNX02, coverage issue with moving.. from VNX01..
+-C2 Accounting versus contract...
 -pfSense
 -Log TAX outage with report server, Landesk 112185.
 -Reach out to AHS:
    +DOC
    +DAIL
-   
--Right Sizing Reports???
--COOP exercise?
--JUD decommissioning report...
 -Reach back out to JUD Regarding DR???
   +VDI decommisioning( 1/2 year is end of March).
   +VxRail
 -Consolidation Plan (vision)
   +Data Plan
   +Infrastructure Plan
--Performance review for Ken and Michael..
+-Isilon
+-VxRail
+-Reach out to AHS:
+   +DOC
+   +DAIL
 
--clean up EA domain
+-What about coding impact to budget:
+  Rubrik
+  ----<snip>------
+	Please code as follows:
+	
+	513032	Hardware-Rep&Maint-Storage	 $241,500.00 
+	522276	Purchased Hardware-Storage	 $221,214.02
+	-----------------------------------------------------
+	TOTAL                                    $462,714.02
+  ----<snip>------
+
+-Order cables for us...  -Done
+
+-CAPACITY script  -Working
+-VMWare Upgrade CAB request??  -???
+-2020 ADJ, 2021 ADJ budgets  -Mark missed it?
+
+-Right Sizing Reports???
+-COOP exercise?
+-JUD decommissioning report...
+
+-Performance review for Ken and Michael..  -done
+
+-clean up EA domain, Users
 -reply to Tavis...  -Done
 -Tax DR  -meeting after TAX migration...  
 -TAX Migration  -cancelled
@@ -1108,6 +1206,22 @@ none; Project; 06-13-2018; 11 Cloud OPS; Team; Routine operation work on the Pri
 11 Cloud OPS; Project; 02-05-2019; 11 Cloud OPS; Team; ERP Upgraded concluded.<br>No issues.<br>After hours coverage approved.<br>Contrates to the ERP Upgrade team.<br>
 11 Cloud OPS; Project; 02-05-2019; 11 Cloud OPS; Jon; JUD VPN is operational.<br>JUD is using.<br>Some testing this taking place.<br>
 11 Cloud OPS; Project; 02-05-2019; 11 Cloud OPS; Jon; Onbase Server successfully migrated to VxRAck Cloud at Tech Vault.<br>The pfSense Firewalls for this projected have been validated.<br>This supports the VHC Onbase project.<br>More servers to be migrated soon.<br>
+11 Cloud OPS; Project; 02-10-2019; 11 Cloud OPS; Jon; DEV environment moving Friday, 2/15.<br>The PROD is moving next week.<br>
+11 Cloud OPS; Project; 02-11-2019; 11 Cloud OPS; Dan; Dan replacing power suppy for the VNX's.<br>Should be complete by Friday, 2/25.<br>
+11 Cloud OPS; Project; 02-13-2019; 11 Cloud OPS; Paul; List of servers within Private Cloud has been provided to Gabriel of Security upon request.<br>This is pursuant to the Ivanti project.<br>Had discussion about IRS1075.<br>Team is collaborting with Security.<br>
+11 Cloud OPS; Project; 02-13-2019; 11 Cloud OPS; Paul; Microsoft Case # REG:118091218994576 regarding Azure reporting and billing.<br><font color="red">Usage is now appearing</font><br>Have requsted MS waive expenses relate to GOV assets that were unknown to ADS after the cut-over.<br>MS working on this.<br>
+11 Cloud OPS; Project; 02-22-2019; 11 Cloud OPS; Paul; Landesk 211814.<br>Completed Landesk ticket for Taco-Meter<br>Josiah all set.<br>Azure Commit fro Enrollment 5746504 will be at zero dollars in May.<br>Have discussed with CTO.<br>
+11 Cloud OPS; Project; 02-25-2019; 11 Cloud OPS; Jon; Jon continues to support Onbase Server project.<br>Current issues are Load-balancing seem to have been resolved for the most part.<br>Next step will be to migrate TEST and DEV SQL servers.<br>Then the planning full migration of the servers to Tech Vault.<br>
+11 Cloud OPS; Project; 02-27-2019; 11 Cloud OPS; Paul; Microsoft Case # REG:118091218994576.<br>Currently confirming the waiver of costs from the old Azure GOV.<br>Asking help for new Power BI connection issue.<br>
+11 Cloud OPS; Project; 02-27-2019; 11 Cloud OPS; Paul; <a style="color:rgb(255,0,0)">VxRack:<br>CPU 43% FREE<br>MEM 34%<br>DISK -28% (OVER PRESCRIBED)<br></a>
+11 Cloud OPS; Project; 02-28-2019; 11 Cloud OPS; Paul; Working to automate monthly reports for Security.<br>Working with Gabriel of Security.<br>
+11 Cloud OPS; Project; 03-01-2019; 11 Cloud OPS; Dan; Rubrik Update successfully applied.<br>Dan is monitoring any projected compression improvements.<br>
+11 Cloud OPS; Project; 03-01-2019; 11 Cloud OPS; Jon; Much progress has been made on the Onbase project.<br>All but Production has been migrated.<br>Date has been set for that move, 3/15.<br>
+11 Cloud OPS; Project; 03-13-2019; 11 Cloud OPS; Paul; Starting annual review of Asset list.<br>Current list has been received by Accounting.<br>Should be complete by April.<br>
+11 Cloud OPS; Project; 03-13-2019; 11 Cloud OPS; Paul; All C2 invoices have been properly approved.<br>Follow-up email has been sent to C2 and CTO.<br>CFO working on approving.<br>Despite inquiries it is not clear when CFO will complete approval process.<br>
+11 Cloud OPS; Project; 03-15-2019; 11 Cloud OPS; Dan; <a style="color:rgb(255,0,0)">Onbase Migration is being executed.<br>It should conclude over the weekend.<br>Dan is spearheading.<br>He is working with EAS.<br>Please note approved Overtime will be incurred.<br>
+11 Cloud OPS; Project; 03-18-2019; 11 Cloud OPS; Dan; As you know the Onbase Migration was not successful.<br>It was our understanding that this decision was made due to insurmountable challenges with the application as determined by the Onbase team based upon their developed testing plan.<br>For the most part, when and if a Rollback is requested the Cloud Team will work with our partners to execute this decision until Rollback has been completed successfully.  We did this.<br>It is our understanding that the Rollback was complicated by the fact that validation of the migration required using live data in the Production System necessitating the restore of the SQL database.<br>It was our understanding that the decision to do this was made in coordination and consultation with AHS leadership and that appropriate communication was being handle by the Onbase project team.<br>The Cloud team is currently engaged with AHS to assist in resolving any issues and to re-schedule the migration.<br>Although rare, this is the only second Rollback of any migration, we do plan for this eventuality because sometimes it is necessary.<br>
+11 Cloud OPS; Project; 03-20-2019; 11 Cloud OPS; Paul; Draft report for 3/12 Outage submitted to Angela.<br>Outage added to CS Outage Log.<br>Report: <a style="color:rgb(17,177,0)" href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/Cloud_Services_Incident_TOR_switch_Outage_03_12_2019_.docx?d=wd3e7d35dac404e36b9ccd9667f9299ca" ">Cloud_Services_Incident_TOR_switch_Outage_03_12_2019_</a><br>Log: <a style="color:rgb(17,177,0)" href="https://vermontgov.sharepoint.com/:x:/r/sites/ADS/EACS/internal/_layouts/15/Doc.aspx?sourcedoc=%7B7164ADBD-B338-4CD6-BC3F-F80BE48F01C6%7D&file=Metrics_Outage.xlsx&action=default&mobileredirect=true">Metrics_Outage</a><br>
 none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 07-04-2018; 10 Cloud Staffing; Paul; Amendment to contract for C2 migration tool still routing for signature.
 10 Cloud Staffing; Project; 07-09-2018; 10 Cloud Staffing; Paul; Staffing is at more normal levels.
@@ -1140,6 +1254,13 @@ none; Project; 06-13-2018; 10 Cloud Staffing; Team; Staffing.
 10 Cloud Staffing; Project; 01-15-2019; 10 Cloud Staffing; Team; In-box activity high.<br>Team short handed.<br>
 10 Cloud Staffing; Project; 01-31-2019; 10 Cloud Staffing; Team; Team supporting ERP Upgrade.<br>Team schedule to cover over the weekend.<br><br>Day/Date: Primary/Secondary/Tertiary<br>THU, 1/31: Dan 802-595-2010/Jon 802-279-4469<br>FRI, 2/01: Jon 802-279-4469/Dan 802-595-2010<br>SAT, 2/02: Aaron 802-793-8682/Dan 802-595-2010/Ken 802-595-1641<br>SUN, 2/03: Jon 802-279-4469/Michael 802-793-8132<br>MON, 2/04: Aaron 802-793-8682/Ken 802-595-1641<br>
 10 Cloud Staffing; Project; 02-05-2019; 10 Cloud Staffing; Team; Team has properly coded time for the ERP Upgrade.<br>
+10 Cloud Staffing; Project; 02-12-2019; 10 Cloud Staffing; Team; Ken's Performance Evaluation has been completed and he is signing today.<br>Will route once received.<br>
+10 Cloud Staffing; Project; 02-12-2019; 10 Cloud Staffing; Team; Performance Evaluations for Ken and Michael have been completed.<br>Docuemnts have been signed and submitted to leadership.<br>
+10 Cloud Staffing; Project; 02-14-2019; 10 Cloud Staffing; Team; Currently sorting out issues related to "WRKOT" missing for recent team member(s) pay.<br>Issue reported.<br>CFO's group looking into.<br>
+10 Cloud Staffing; Project; 02-25-2019; 10 Cloud Staffing; Team; Missing time from reported payroll issue found in COMP TIME<br>Issue resolved.<br>
+10 Cloud Staffing; Project; 03-11-2019; 10 Cloud Staffing; Paul; Caitlin of DHR fixed record of Performance Evaluations for Cloud Services (CS) team including Dan and Jon.<br>DHR system now reflects the correct status namely no missed evaluations with all staff current.<br>
+10 Cloud Staffing; Project; 03-11-2019; 10 Cloud Staffing; Team; Will be short-staffed lower toward end of this this week.<br>
+10 Cloud Staffing; Project; 03-18-2019; 10 Cloud Staffing; Team; Short-staffed this this week.<br>
 none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 09-10-2018; 12 Procurement; Paul; Meeting with Dylan to address necessary Symantec procurement and other AOT infrastructure need over the next year.
 12 Procurement; Project; 09-11-2018; 12 Procurement; Paul; Meeting planned with CTO to suggest proposed process to include AOT forward and seek approval.
@@ -1182,7 +1303,13 @@ none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
 12 Procurement; Project; 01-15-2019; 12 Procurement; Paul; C2 provided lead times.<br>Estimated Arrivals<br>Isilon A200, 1/16<br>Isilon H400, 1/21<br>VxRail, 1/13 <br>
 12 Procurement; Project; 01-15-2019; 12 Procurement; Paul; Working on M&O procurement for AOT servers with Dylan.<br>
 12 Procurement; Project; 01-29-2019; 12 Procurement; Paul; Working on M&O procurement for AOT servers with Dylan.<br>Still waiting for the return of all quotes from the 3 respective vendors.<br>
-12 Procurement; Project; 02-04-2019; 12 Procurement; Paul; M&O procurement for AOT servers sent to Purchasing for AOT.<br>Landesk 209961.
+12 Procurement; Project; 02-04-2019; 12 Procurement; Paul; M&O procurement for AOT servers sent to Purchasing for AOT.<br>Landesk 209961.<br>
+12 Procurement; Project; 02-08-2019; 12 Procurement; Paul; Procuring cables for Isilon.<br>Landesk 209788.<br>
+12 Procurement; Project; 02-14-2019; 12 Procurement; Paul; Assisting Dylan/AOT with renewal of subscription for a Sensor software.<br>Purchasing rules are an impediment.<br>Subscription may run out before this is resolved.<br>There is only one vendor for this.<br>
+12 Procurement; Project; 02-25-2019; 12 Procurement; Paul; Waiting for cables for Isilon project.<br>Have asked to expedite.<br>Landesk 209788.<br>
+12 Procurement; Project; 02-26-2019; 12 Procurement; Paul; C2 invoice payments for VxRail and Isilon pending Acceptance of the work.<br>$281,897.71  VxRail, $483,580.36  Isilon<br>VxRail is acceptance is expected by 3/1.<br>Isilon is expected 3/15.<br>
+12 Procurement; Project; 02-27-2019; 12 Procurement; Paul; Have asked CTO to let me speak as his proxy on issues of expediting and vendor relations.<br>
+12 Procurement; Project; 03-18-2019; 12 Procurement; Paul; Working on quotes for the following:<br>VNX M&O extension.<br>Top of Rack (TOR) switches.<br>VxRack capacity.<br>Rubrik Capacity.<br>
 none; Project; 06-27-2018; 23 RRI DR plan; Team; Meet with TAX.  TAX to come back with slimmed down DR design.  
 23 RRI DR plan; Project; 06-27-2018; 23 RRI DR plan; Team; Next meeting planned for 2nd week July.
 23 RRI DR plan; Project; 07-03-2018; 23 RRI DR plan; Team; Data book and Narrative completed.  Waiting for CFO feedback.  
@@ -1208,6 +1335,9 @@ none; Project; 06-27-2018; 23 RRI DR plan; Team; Meet with TAX.  TAX to come bac
 23 RRI DR plan; Project; 01-24-2019; 23 RRI DR plan; Paul; Project re-named to 23 RRI DR plan.<br>This will include all the eforts for DR, VxRail, TAX, ERP, and JUD.<br>
 23 RRI DR plan; Project; 01-25-2019; 23 RRI DR plan; Dan; Dan is the lead on the VxRail project.<br>VxRail has been delievered been racked at NL.<br>
 23 RRI DR plan; Project; 01-30-2019; 23 RRI DR plan; Dan; Waiting for competeletion of TAX migration before continuing.<br>Email sent to JUD to set expectations.<br>We hope to add them to the VxRail infrastructure some time in March.<br>
+23 RRI DR plan; Project; 02-05-2019; 23 RRI DR plan; Dan; TAX cancelled till May/June.<br>Work focusing on implemetation of VxRail quipment.<br>Working with DELL/EMC.<br>
+23 RRI DR plan; Project; 02-26-2019; 23 RRI DR plan; Dan; VxRail equipment should be in place this week for testing.<br>Dan working with C2 and DELL/EMC.<br>This should pave way for C2 invoice to be paid.<br>
+23 RRI DR plan; Project; 03-20-2019; 23 RRI DR plan; Dan; VxRail equipment is installed.<br>Communication has been made to JUD.<br> Waiting for JUD(Brad) to submit Landesk Case to commence.<br>
 none; Project; 06-27-2018; 24 RRI Isilon; Dan; Meet with C2.  Meet with Shared Service to discuss File Service in the future after Data Movers retired.
 24 RRI Isilon; Project; 06-26-2018; 24 RRI Isilon; Dan; Reviewing materials to present to CTO.
 24 RRI Isilon; Project; 07-03-2018; 24 RRI Isilon; Dan; May be option for DPS and Body-Cams?
@@ -1229,6 +1359,10 @@ none; Project; 06-27-2018; 24 RRI Isilon; Dan; Meet with C2.  Meet with Shared S
 24 RRI Isilon; Project; 01-08-2019; 24 RRI Isilon; Paul; Isilon has been ordered.  Planning will commence soon once lead time is published.
 24 RRI Isilon; Project; 01-14-2019; 24 RRI Isilon; Aaron; Aaron is lead<br>Estimated Arrivals<br>Isilon A200, 1/16<br>Isilon H400, 1/21<br>
 24 RRI Isilon; Project; 01-24-2019; 24 RRI Isilon; Aaron; The project heading has been renamed to 24 RRI Isilon.<br>This project will address the Isilon implemtnaiton and the VNX01, VNX02, and Data Mover replacement.<br>
+24 RRI Isilon; Project; 02-08-2019; 24 RRI Isilon; Aaron; Cables on order.<br>Meetings being held with DELL/EMC.<br>
+24 RRI Isilon; Project; 02-26-2019; 24 RRI Isilon; Aaron; Meetings  held with DELL/EMC 2/22.<br>
+24 RRI Isilon; Project; 03-11-2019; 24 RRI Isilon; Dan; Work continues with C2 and DELL/EMC on the Isilon.<br>Significant configuration taking place this week.<br>
+24 RRI Isilon; Project; 03-20-2019; 24 RRI Isilon; Dan; Work continues with C2 and DELL/EMC on the Isilon.<br>Targetting completion by EOD of month.<br>Initial CAB request is has been submitted.<br>
 none; Project; 06-25-2018; 17 CTO Issues; Paul; Meet with CTO again.  Working on JUD, ERP, TAX, justification.
 17 CTO Issues; Project; 06-25-2018; 17 CTO Issues; Paul; DPS Gear End of Life in 2019.  Will require Cap ex if they cannot be included in new environment.
 17 CTO Issues; Project; 07-31-2018; 17 CTO Issues; Paul; Developing rationale and preparing for meeting with CTO to gain approval from ADS SEC.
@@ -1268,6 +1402,11 @@ none; Project; 06-25-2018; 17 CTO Issues; Paul; Meet with CTO again.  Working on
 17 CTO Issues; Project; 02-01-2019; 17 CTO Issues; Paul; Vion Meeting and Demo.<br>Next steps:<br>-Setup proof-of concept.<br>
 17 CTO Issues; Project; 02-05-2019; 17 CTO Issues; Paul; AOT Meeting with Gentax held.<br>Gentax has proposed a Hosted solution.<br>AOT teams positively inclined toward this new direction.<br>
 17 CTO Issues; Project; 02-06-2019; 17 CTO Issues; Paul; Effort to analyze and compare Gentax option with a State lead Azure option started.<br>Microsoft has been engaged to start the process of a "zero dollar" setup of an Azure GOV instance.<br>Carl of MS contacted and working on.<br>MS has offered help.<br>
+17 CTO Issues; Project; 02-06-2019; 17 CTO Issues; Paul; Meeting held with Microsoft Jon Huber on pricing for CVO in Azure.<br>Meeting being scheduled with CTO.<br>Further comparison of all options being developed.<br>
+17 CTO Issues; Project; 02-14-2019; 17 CTO Issues; Paul; Initial CVO analysis given to CTO.<br>CTO reviewing.<br><a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/CVO_Quick_Comparison_.xlsx?d=w32a7ddc168fb402ca5b7dd393c9f28cc" style="color:rgb(255,0,0)">Quick CVO Analysis</a><br>
+17 CTO Issues; Project; 02-25-2019; 17 CTO Issues; Paul; <a style="color:rgb(255,0,0)">Waiting for AOT repsonse or decision about options for CVO.</a><br>
+17 CTO Issues; Project; 03-11-2019; 17 CTO Issues; Paul; <a style="color:rgb(255,0,0)">Meet with CTO to review:<br>VMARE Upgrade.<br>VNX M&O.<br>VxRack Capacity.<br>DPS re-fresh.</a><br>
+17 CTO Issues; Project; 03-12-2019; 17 CTO Issues; Paul; <a style="color:rgb(255,0,0)">Working with C2 to try to identify way to extend VNX support.<br>Extended support negotiated will expire well before AHS and TAX is able to be migrated.<br>Have sent email to Nick.</a><br>
 none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RRI). Rubrik
 28 RRI Rubrik; Project; 06-27-2018; 28 RRI Rubrik; Dan; Rubrik.  Joe working with ANR and Linux admin to test Self-Service and Rubrik client.  Following-up with Joe this week.  Joe working with Aaron.
 28 RRI Rubrik; Project; 07-03-2018; 28 RRI Rubrik; Dan; Rubrik.  Meeting set with DPS to prepare and cut-over.
@@ -1295,6 +1434,14 @@ none; Project; 06-25-2018; 28 RRI Rubrik; Paul; Resource Refresh Initiative, (RR
 28 RRI Rubrik; Project; 12-07-2018; 28 RRI Rubrik; Jon; Rubrik.  The Rubrik PO seems imminent.
 28 RRI Rubrik; Project; 01-06-2019; 28 RRI Rubrik; Dan; Rubrik.  Rubrik gear is currently being installed.  Barring anything unforeseen, should be operational in the next 5 days.
 28 RRI Rubrik; Project; 01-14-2019; 28 RRI Rubrik; Dan; Rubrik.  After firewall corrections the Rubrik gear has been successfully installed and replication is running properly.<br>  Ingestion of TAX data is now happening.
+28 RRI Rubrik; Project; 02-25-2019; 28 RRI Rubrik; Dan; Rubrik.  <a style="color:rgb(255,0,0)">Rubrik: 261.9 TB USED<br> 38.1 TB FREE<br> 12.7% FREE<br></a>
+28 RRI Rubrik; Project; 02-27-2019; 28 RRI Rubrik; Dan; Rubrik.  <a style="color:rgb(255,0,0)">Rubrik: Planned Upgrade during scheduled Cloud Maintenance Window.<br>This has been long awaited.<br>This upgrade should improve compression.<br></a>
+28 RRI Rubrik; Project; 03-13-2019; 28 RRI Rubrik; Team; Rubrik.  <a style="color:rgb(255,0,0)">The Rubrik Upgrade is NOT yet showing improved compression.<br>Usage is 263 TB of 300 TB which is up from and average of 260 TB as seen before the upgrade.<br></a>
+28 RRI Rubrik; Project; 03-19-2019; 28 RRI Rubrik; Dan; Rubrik.  <a style="color:rgb(255,0,0)">The Rubrik Upgrade is NOT yet showing improved compression.<br>A support case has been created and submitted to Rubrik.<br>Rubrik has acknowledged and has elevated the issue.<br>
+none; Project; 03-01-2019; 27 RRI VMWARE Upgrade; Paul; Resource Refresh Initiative, (RRI). VMWARE Upgrade.
+27 RRI VMWARE Upgrade; Project; 03-02-2019; 27 RRI VMWARE Upgrade; Team; With the Conclusion of building all the pfSense Firewalls, the pace of planning of VMWARE upgrade is increasing.<br>We have opened VMWARE case to assist with the planning.<br><a style="color:rgb(255,0,0)">The Upgrade of VMWARE will address the IRS 1075 Critical Finding which identified the VMWARE version not being supported.<br>It is important to remember that TAX has put off their migration till May/June.<br>TAX has been aware since DEC 2018.<br>AHS which has some sytems that adheres to IRS 1075 compliance.  Based upon the current pace AHS will not be fully moved until SEP 2019.<br>Currenlty Stephanie Manosh of AHS is trying to coordinate the closing of the IRS findings by April 2019.<br>  
+27 RRI VMWARE Upgrade; Project; 03-13-2019; 27 RRI VMWARE Upgrade; Team; Planning continues.<br>Still need to determine if DELL/EMC will charge extra fee as threatened.<br>
+27 RRI VMWARE Upgrade; Project; 03-20-2019; 27 RRI VMWARE Upgrade; Dan; Planning continues.<br>Waiting for pfSense cut-over dependency.<br>Working with C2 to identify extra expenses.<br>
 none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initiative, (RRI). Virtual Firewalling
 29 RRI Virtual Firewall; Project; 06-27-2018; 29 RRI Virtual Firewall; Dan; Virtual Firewalling.  Aaron joining in this effort.  He is building pfSense test environment. 
 29 RRI Virtual Firewall; Project; 07-03-2018; 29 RRI Virtual Firewall; Team; Virtual Firewalling.  Work continues.
@@ -1330,6 +1477,11 @@ none; Project; 06-25-2018; 29 RRI Virtual Firewall; Paul; Resource Refresh Initi
 29 RRI Virtual Firewall; Project; 01-30-2019; 29 RRI Virtual Firewall; Team; Aaron training Paul to create firewalls and gather rules.<br><a href="https://vermontgov.sharepoint.com/:x:/r/sites/ADS/EACS/internal/_layouts/15/Doc.aspx?sourcedoc=%7B3A8F999B-778E-4EFA-84C6-1210E8A2D323%7D&file=pfSense%20conversion%20status.xlsx&action=default&mobileredirect=true" style="color:rgb(255,0,0)">pfSense Conversion Status</a><br>
 29 RRI Virtual Firewall; Project; 02-05-2019; 29 RRI Virtual Firewall; Jon; JUD VPN working.<br>Firewalls for OnBase has been validated.<br>
 29 RRI Virtual Firewall; Project; 02-06-2019; 29 RRI Virtual Firewall; Team; Work continues on Vsheild replacement, pfSense firewall creation effort.<br><a href="https://vermontgov.sharepoint.com/:x:/r/sites/ADS/EACS/internal/_layouts/15/Doc.aspx?sourcedoc=%7B3A8F999B-778E-4EFA-84C6-1210E8A2D323%7D&file=pfSense%20conversion%20status.xlsx&action=default&mobileredirect=true" style="color:rgb(255,0,0)">pfSense Conversion Status</a><br>
+29 RRI Virtual Firewall; Project; 02-10-2019; 29 RRI Virtual Firewall; Jon; Jon leading on efforts for Onbase and JUD VPN.<br>Aaron and Paul continue training.<br><a href="https://vermontgov.sharepoint.com/:x:/r/sites/ADS/EACS/internal/_layouts/15/Doc.aspx?sourcedoc=%7B3A8F999B-778E-4EFA-84C6-1210E8A2D323%7D&file=pfSense%20conversion%20status.xlsx&action=default&mobileredirect=true" style="color:rgb(255,0,0)">pfSense Conversion Status</a><br>
+29 RRI Virtual Firewall; Project; 02-26-2019; 29 RRI Virtual Firewall; Team; Progress has slowed with Onbase project.  E911 and PSB should be completed this week.<br><a href="https://vermontgov.sharepoint.com/:x:/r/sites/ADS/EACS/internal/_layouts/15/Doc.aspx?sourcedoc=%7B3A8F999B-778E-4EFA-84C6-1210E8A2D323%7D&file=pfSense%20conversion%20status.xlsx&action=default&mobileredirect=true" style="color:rgb(255,0,0)">pfSense Conversion Status</a><br>
+29 RRI Virtual Firewall; Project; 03-05-2019; 29 RRI Virtual Firewall; Jon; All Firewalls have been built.<br>Adding the rules and some minor configuration remains.<br>Will be working to map a plan next week to finish all the effort.<br>Jon deserves much credit for leading this.<br><a href="https://vermontgov.sharepoint.com/:x:/r/sites/ADS/EACS/internal/_layouts/15/Doc.aspx?sourcedoc=%7B3A8F999B-778E-4EFA-84C6-1210E8A2D323%7D&file=pfSense%20conversion%20status.xlsx&action=default&mobileredirect=true" style="color:rgb(255,0,0)">pfSense Conversion Status</a><br>
+29 RRI Virtual Firewall; Project; 03-13-2019; 29 RRI Virtual Firewall; Team; Meetings to plan cut-over to pfSense have been scheduled with E911, VCGI, and PSB.<br><a href="https://vermontgov.sharepoint.com/:x:/r/sites/ADS/EACS/internal/_layouts/15/Doc.aspx?sourcedoc=%7B3A8F999B-778E-4EFA-84C6-1210E8A2D323%7D&file=pfSense%20conversion%20status.xlsx&action=default&mobileredirect=true" style="color:rgb(255,0,0)">pfSense Conversion Status</a><br>
+29 RRI Virtual Firewall; Project; 03-13-2019; 29 RRI Virtual Firewall; Team; Meeting VCGI today<br><a href="https://vermontgov.sharepoint.com/:x:/r/sites/ADS/EACS/internal/_layouts/15/Doc.aspx?sourcedoc=%7B3A8F999B-778E-4EFA-84C6-1210E8A2D323%7D&file=pfSense%20conversion%20status.xlsx&action=default&mobileredirect=true" style="color:rgb(17,177,0)">pfSense Conversion Status</a><br>
 none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiative, (RRI). Migration Plan
 20 RRI Migration Plan; Project; 07-03-2018; 20 RRI Migration Plan; Paul; Meetings planned for other agencies: AGR, AGO, and VVH.  More meetings being planned for DPS, BGS, EDU, VLC, and SAS.
 20 RRI Migration Plan; Project; 07-04-2018; 20 RRI Migration Plan; Dan; Migrations meetings being planned for E911, DLC, and EDU.
@@ -1385,6 +1537,11 @@ none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiat
 20 RRI Migration Plan; Project; 01-28-2019; 20 RRI Migration Plan; Team; AHS, efforts are being focused on low hanging fruit, small departments.<br>Working to move DOC, 1 server and DAIL, 4 servers.<br>
 20 RRI Migration Plan; Project; 01-30-2019; 20 RRI Migration Plan; Team; Meet with TAX.<br>We may not be able to move TAX as planned, 2/15.<br>Team is working through issues.<br>We should know by next week.<br>Tax is aware.<br>Challenges include DigiKey and Database size.<br>
 20 RRI Migration Plan; Project; 02-06-2019; 20 RRI Migration Plan; Paul; <p style="color:rgb(255,0,0)">Tax leadership was decided to delay TAX migration till May or June of 2019.</p><br>Planning to continue in weekly meeting.<br>
+20 RRI Migration Plan; Project; 02-06-2019; 20 RRI Migration Plan; Team; Team focusing on DAIL and DOC.<br>Initial meeting with DOC and DAIL have been held.<br>Team preparing to engage the AHS POC Brian I.<br>
+20 RRI Migration Plan; Project; 02-26-2019; 20 RRI Migration Plan; Team; Team preparing to engage the AHS POC Brian I.<br>He is out this week.<br>
+20 RRI Migration Plan; Project; 02-27-2019; 20 RRI Migration Plan; Team; Team preparing to meet DLC.<br>Need to remove remaining DLC servers from National Life.<br>
+20 RRI Migration Plan; Project; 03-11-2019; 20 RRI Migration Plan; Team; Team preparing to hold 2nd planning meeting with DOC and DAIL to finalize their migration<br>AHS POC Brian to attend and facilitate the process from the AHS side.<br>
+20 RRI Migration Plan; Project; 03-20-2019; 20 RRI Migration Plan; Team; Work continues with AHS.<br>Meeting being planned to assist AHS in making a decision regarding approach to their Network Design.<br>Cloud Team is drafting 2 proposals for their consideration.<br>Should be meeting within the next 7 days.<br>
 none; Project; 06-25-2018; 32 CRM Project; Mike; CRM project, Proof of Concept (POC).
 32 CRM Project; Project; 07-13-2018; 32 CRM Project; Mike; Engaging Salesforce and other States in knowledge transfer sessions.
 32 CRM Project; Project; 07-13-2018; 32 CRM Project; Mike; Planning continues.
@@ -1405,6 +1562,12 @@ none; Project; 08-20-2018; 33 DR-BC Project; Ken; DR-BC project.
 33 DR-BC Project; Project; 01-08-2019; 33 DR-BC Project; Ken; I have been reviewing and gathering notes on Agency COOP plans. I have been identifying Agency COOP reps and sent out intro email. I have scheduled to meet with 5 Agency COOP leaders this week and next to translate essential functions into system requirements. 
 33 DR-BC Project; Project; 01-14-2019; 33 DR-BC Project; Ken; Started to Engage agencies.<br>Going well so far.<br>
 33 DR-BC Project; Project; 01-30-2019; 33 DR-BC Project; Ken; Working on updating the ADS COOP Plan (Still waiting for Org Chart from Kristy).<br>Reviewing and gathering notes on Agency coop plans. I have been identifying Agency COOP reps and sent out intro email.<br>Have met with  Agency COOP leaders from AGR, ACCD and AOA to translate essential functions into system requirements.<br>Met with Rick Steventon and Michael Harrington to discuss working with Tom Tomasi on VDOL COOP planning.<br>Reaching out to Tom, more to follow.<br>
+33 DR-BC Project; Project; 02-25-2019; 33 DR-BC Project; Ken; Spearheading with Paul Proof of Concept (POC) with Tech Vault for Azure Auto Site Recovery (ASR).<br>Emailing Tech Vault to nail down agenda and dates.<br>
+none; Project; 03-08-2019; 35 Tech Vault POC; Ken; Tech Vault Azure Hybrid Cloud Proof of Concept (POC).
+35 Tech Vault POC; Project; 03-08-2010; 35 Tech Vault POC; Team; Ken and I meet with Tech Vault team.<br>Tech Vault is working to establish 50 MB circuit with a provider for the POC.<br>Circuit should be up for 120 days.<br>Tech Vault having trouble getting it for free.<br>They will report back as soon as they know more.<br>We are now waiting on Tech Vault.<br>Design here: <a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/TV_Poc_.pdf" style="color:rgb(255,0,0)"> Design Doc</a> 
+35 Tech Vault POC; Project; 03-13-2010; 35 Tech Vault POC; Team; Still witing to hear back from Tech Vault.<br>Pending issue is identifying ISP that would support at no cost.<br>
+35 Tech Vault POC; Project; 03-13-2010; 35 Tech Vault POC; Team; Still witing to hear back from Tech Vault.<br>Pending issue is identifying ISP that would support at no cost.<br>Sent follow-up email to check-in<br>
+
 
 ---<2019-01-25>---
 git clone https://github.com/kirvam/db_sqlite_app_block_table.git
