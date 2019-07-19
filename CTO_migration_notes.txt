@@ -1,0 +1,77 @@
+
+
+$281,897.71 VxRail, $483,580.36 Isilon
+VxRail is acceptance is expected by 3/1.
+Isilon is expected 3/15.
+
+
+Hi Mark,
+
+As discussed here is a more detailed Migration project update.
+
+Currently most customer have moved or will be moved shortly.  
+
+A small collection of EAS managed servers and DLC will be moved very soon once date set.
+
+EAS Managed:
+  -DII, 46, Non-vShield
+  -BGS, 12,
+  -VLC, 1,
+
+DLC 1,
+ 
+After this he most significant customers remaining in the National Life Legacy environment are:
+-AHS
+-TAX
+-ERP[DHR]
+
+ERP(DHR) can problem move any time.  -Dan is verifying now. 
+Tax is ready as soon as we are with VxRack gear in late June 2019.
+
+
+
+Challenges
+AHS:  
+-Lack of human resources and sklls to adddress firewall rules and networking designs.
+-Lack of defined initial point of contact.  They have appointed staffer, however they are still getting up to speed.
+
+TAX:
+-We did not have enough Rubrik capacity in FALL of 2018 to move.  This was due to the following:
+  +Delays in project which extended past the orginal VxRack sizing timeline.
+  +Unforseen, unreported, and unexpected resource requirements for ERP Upgrade.
+  +JUD's change of heart when it came to funding their DR project.
+-At this point TAX and the Cloud team are well prepared to move the 30 TB's
+
+Organic growth of current customers.  There is needs to be more effort to deal with the "Demand Side" to restrain growth.
+
+Managing VDOL after expansion of VxRack
+
+OnBase requirement for 6 more TBs in september.
+
+
+
+
+
+
+Messaging:
++Cooperation
++
+
+
+Sincerely,
+
+-Paul
+
+------------------------------------
+
+NOTES
+
+Make IT boring again!
+
+#1.  Have have an M&O expense to be paid.  It represents a significant savings fomr last year.
+
+VNX5700(*1134)  $139,719.45
+VNX5700(*1724)  $111,513.40
+
+
+

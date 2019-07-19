@@ -1,0 +1,5 @@
+Name              ResourceGroup    Priority    SourcePortRanges    SourceAddressPrefixes    SourceASG    Access    Protocol    Direction    DestinationPortRanges    DestinationAddressPrefixes    DestinationASG
+----------------  ---------------  ----------  ------------------  -----------------------  -----------  --------  ----------  -----------  -----------------------  ----------------------------  ----------------
+SSH               ExpressRG        300         *                   *                        None         Allow     TCP         Inbound      22                       *                             None
+HTTPS             ExpressRG        320         *                   *                        None         Allow     TCP         Inbound      443                      *                             None
+Port_Back_to_SOV  ExpressRG        1000        *                   *                        None         Allow     *           Outbound     *                        10.0.0.0/8                    None

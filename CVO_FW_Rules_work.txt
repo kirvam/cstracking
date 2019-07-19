@@ -1,0 +1,105 @@
+
+
+
+az network nsg rule create 
+--name Open500Range
+--nsg-name eag-lin-net-test01-nsg
+--priority 330
+--resource-group ExpressRG
+--access Allow
+--description Open500Range
+--destination-address-prefixes 0.0.0.0/0
+--destination-port-ranges 5000-5002
+--direction Inbound
+--protocol TCP
+--source-address-prefixes 10.0.0.0/9 10.128.0.0/10
+--source-port-ranges '*'
+
+
+10.246.0.10
+
+FCR
+UPD
+az network nsg rule create 
+--name SolarWindsUPD
+--nsg-name aot-cvo-fcr-nsg
+--priority 1060
+--resource-group aot-cvo-8cf29616 
+--access Allow
+--description SolarWindsUPD
+--destination-address-prefixes 10.251.0.0/27
+--destination-port-ranges 53 161 514 1434
+--direction Inbound
+--protocol UDP 
+--source-address-prefixes 10.246.0.10
+--source-port-ranges '*'
+
+az network nsg rule create --name SolarWindsUPD --nsg-name aot-cvo-fcr-nsg --priority 1060 --resource-group aot-cvo-8cf29616  --access Allow --description SolarWindsUPD --destination-address-prefixes 10.251.0.0/27 --destination-port-ranges 53 161 514 1434 --direction Inbound --protocol UDP --source-address-prefixes 10.246.0.10 --source-port-ranges '*'
+
+TCP
+az network nsg rule create 
+--name SolarWindsTCP
+--nsg-name aot-cvo-fcr-nsg
+--priority 1070
+--resource-group aot-cvo-8cf29616 
+--access Allow
+--description SolarWindsTCP
+--destination-address-prefixes 10.251.0.0/27
+--destination-port-ranges 22 25 80 135 443 465 587 1024-65535
+--direction Inbound
+--protocol TCP 
+--source-address-prefixes 10.246.0.10
+--source-port-ranges '*'
+
+az network nsg rule create --name SolarWindsTCP --nsg-name aot-cvo-fcr-nsg --priority 1070 --resource-group aot-cvo-8cf29616 --access Allow --description SolarWindsTCP --destination-address-prefixes 10.251.0.0/27 --destination-port-ranges 22 25 80 135 443 465 587 1024-65535 --direction Inbound --protocol TCP --source-address-prefixes 10.246.0.10 --source-port-ranges '*'
+
+SUMMARY
+FCR
+az network nsg rule create --name SolarWindsUPD --nsg-name aot-cvo-fcr-nsg --priority 1060 --resource-group aot-cvo-8cf29616  --access Allow --description SolarWindsUPD --destination-address-prefixes 10.251.0.0/27 --destination-port-ranges 53 161 514 1434 --direction Inbound --protocol UDP --source-address-prefixes 10.246.0.10 --source-port-ranges '*'
+az network nsg rule create --name SolarWindsTCP --nsg-name aot-cvo-fcr-nsg --priority 1070 --resource-group aot-cvo-8cf29616 --access Allow --description SolarWindsTCP --destination-address-prefixes 10.251.0.0/27 --destination-port-ranges 22 25 80 135 443 465 587 1024-65535 --direction Inbound --protocol TCP --source-address-prefixes 10.246.0.10 --source-port-ranges '*'
+
+
+FILES
+az network nsg rule create --name SolarWindsUPD --nsg-name aot-cvo-files-nsg --priority 1060 --resource-group aot-cvo-8cf29616  --access Allow --description SolarWindsUPD --destination-address-prefixes 10.251.0.0/27 --destination-port-ranges 53 161 514 1434 --direction Inbound --protocol UDP --source-address-prefixes 10.246.0.10 --source-port-ranges '*'
+az network nsg rule create --name SolarWindsTCP --nsg-name aot-cvo-files-nsg --priority 1070 --resource-group aot-cvo-8cf29616 --access Allow --description SolarWindsTCP --destination-address-prefixes 10.251.0.0/27 --destination-port-ranges 22 25 80 135 443 465 587 1024-65535 --direction Inbound --protocol TCP --source-address-prefixes 10.246.0.10 --source-port-ranges '*'
+
+
+TEST
+az network nsg rule create --name SolarWindsUPD --nsg-name aot-cvo-test-nsg --priority 1060 --resource-group aot-cvo-8cf29616  --access Allow --description SolarWindsUPD --destination-address-prefixes 10.251.0.0/27 --destination-port-ranges 53 161 514 1434 --direction Inbound --protocol UDP --source-address-prefixes 10.246.0.10 --source-port-ranges '*'
+az network nsg rule create --name SolarWindsTCP --nsg-name aot-cvo-test-nsg --priority 1070 --resource-group aot-cvo-8cf29616 --access Allow --description SolarWindsTCP --destination-address-prefixes 10.251.0.0/27 --destination-port-ranges 22 25 80 135 443 465 587 1024-65535 --direction Inbound --protocol TCP --source-address-prefixes 10.246.0.10 --source-port-ranges '*'
+
+
+
+LOW PORTS
+22  TCP
+25  TCP
+80  TCP
+135  TCP
+443  TCP
+465  TCP
+587  TCP
+
+HIGH PORTS
+  >> 1024
+  
+1433 TCP
+1801  TCP
+
+  4369  TCP
+  
+5671  TCP
+17777  TCP
+17778  TCP
+17799  TCP
+
+  25672  TCP
+  
+  >> 65535
+
+
+
+UDP PORTS
+53  UDP
+161  UDP
+514  UDP
+1434  UDP

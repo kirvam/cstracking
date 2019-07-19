@@ -1,0 +1,244 @@
+
+
+CVO/Azure Notes
+
+
+#1.  CVO Routing
+How to fix issues where SOV staff can't reach CVO environment?
+
+This may be due to a route or firewall rule in:
+-CVO infrastructure
+-EAG Common Infrastructure
+
+
+Subscription>
+  Resources>
+   SOV_ON_PREM
+   
+   Select Configuration  -Add Network
+
+   
+#2.  Change IP of NIC   
+Go to NIC device.
+Go to IP configurations.
+Select you device to the right in the list.
+
+ 
+#3.  Add DNS
+-For Server
+Go to NIC device
+Go to DNS Servers
+
+Turn off Inherit from virtual network.
+Add DNS Servers.
+
+Example:  Added AOT for CVO
+10.240.64.22
+10.240.64.23
+10.240.64.24
+10.240.64.25
+
+
+-For Network
+Go to Network
+Go to DNS Servers
+
+Turn off Inherit from virtual network.
+Add DNS Servers.
+
+Example:  Added AOT for CVO
+10.240.64.22
+10.240.64.23
+10.240.64.24
+10.240.64.25
+
+
+-Document CVO VPN configuration and commands
+-Document CVO NSG configuration
+
+
+#4.  Apply Network Security Group (NSG)
+
+If an NSG is applied to a NIC or interface it canno tbe added to another without disassociating it.
+
+To "Associate" got to created NSG
+
+#5.  How to Manage NSG rules:
+
+List Rules:
+bash-4.4# az network nsg rule list --nsg-name eag-lin-net-test01-nsg --resource-group ExpressRG --output table
+Name              ResourceGroup    Priority    SourcePortRanges    SourceAddressPrefixes    SourceASG    Access    Protocol    Direction    DestinationPortRanges    DestinationAddressPrefixes    DestinationASG
+----------------  ---------------  ----------  ------------------  -----------------------  -----------  --------  ----------  -----------  -----------------------  ----------------------------  ----------------
+SSH               ExpressRG        300         *                   *                        None         Allow     TCP         Inbound      22                       *                             None
+HTTPS             ExpressRG        320         *                   *                        None         Allow     TCP         Inbound      443                      *                             None
+Port_Back_to_SOV  ExpressRG        1000        *                   *                        None         Allow     *           Outbound     *                        10.0.0.0/8                    None
+bash-4.4#
+
+Create:
+az network nsg rule create --name
+                           --nsg-name
+                           --priority
+                           --resource-group
+                           [--access {Allow, Deny}]
+                           [--description]
+                           [--destination-address-prefixes]
+                           app group  [--destination-asgs]
+                           [--destination-port-ranges]
+                           [--direction {Inbound, Outbound}]
+                           [--protocol {*, Esp, Icmp, Tcp, Udp}]
+                           [--source-address-prefixes]
+                           app group  [--source-asgs]
+                           [--source-port-ranges]
+                           [--subscription]
+
+Create:
+az network nsg rule create --name Open500Range \
+--nsg-name eag-lin-net-test01-nsg \
+--priority 330 \
+--resource-group ExpressRG \
+--access Allow \
+--description Open500Range \
+--destination-address-prefixes 0.0.0.0/0 \
+--destination-port-ranges 5000-5002 \
+--direction Inbound \
+--protocol TCP \
+--source-address-prefixes 10.0.0.0/9 10.128.0.0/10 10.192.0.0/11 10.224.0.0/12 10.240.0.0/13 10.248.0.0/15 10.250.0.0/16 10.251.0.0/23 10.252.0.0/14 159.105.194.0/24 168.63.129.16/32 \
+--source-port-ranges '*' \
+
+az network nsg rule create --name Open5000Range --nsg-name eag-lin-net-test01-nsg --resource-group ExpressRG --priority 330 --access Allow --description Open500Range --destination-address-prefixes 0.0.0.0/0 --destination-port-ranges 5000 5001 5002 5003 5004 5005 --direction Inbound --protocol TCP --source-address-prefixes 10.0.0.0/9 10.128.0.0/10 10.192.0.0/11 10.224.0.0/12 10.240.0.0/13 10.248.0.0/15 10.250.0.0/16 10.251.0.0/23 10.252.0.0/14 159.105.194.0/24 168.63.129.16/32 --source-port-ranges '*'
+
+Delete Rule from NSG:
+bash-4.4# az network nsg rule delete --nsg-name eag-lin-net-test01-nsg --resource-group ExpressRG -n Open500Range
+
+
+
+Update:
+az network nsg rule update [--access {Allow, Deny}]
+                           [--add]
+                           [--description]
+                           [--destination-address-prefixes]
+                           [--destination-asgs]
+                           [--destination-port-ranges]
+                           [--direction {Inbound, Outbound}]
+                           [--force-string]
+                           [--ids]
+                           [--name]
+                           [--nsg-name]
+                           [--priority]
+                           [--protocol {*, Esp, Icmp, Tcp, Udp}]
+                           [--remove]
+                           [--resource-group]
+                           [--set]
+                           [--source-address-prefixes]
+                           [--source-asgs]
+                           [--source-port-ranges]
+                           [--subscription]
+                           
+Update:                           
+az network nsg rule update --access Allow 
+
+
+
+
+#6.  Creating SolarWinds rules:
+
+just about every interesting low port and 1025-65535 TCP!
+SW server is at 10.246.0.10 so you can narrow down...
+
+URL:
+https://documentation.solarwinds.com/en/Success_Center/orionplatform/Content/core-solarwinds-port-requirements.htm#SAM
+
+
+-Headings from Export xls
+Name
+Priority
+Source	
+Expanded Source Address Prefixes
+Source Ports
+Destination
+Expanded Destination Address Prefixes
+Destination Ports
+Protocol
+Access	
+Direction
+NSG Name
+
+-Example Values from Export xls:
+SSH_22	
+3000	
+0.0.0.0/0		
+0-65535	
+10.251.0.39/32		
+22-22	
+TCP	
+Allow	
+Inbound	
+aot-cvo-test-nsg
+
+Command Example of Tags and Values
+az network nsg rule create 
+--name Open500Range
+--nsg-name eag-lin-net-test01-nsg
+--priority 330
+--resource-group ExpressRG
+--access Allow
+--description Open500Range
+--destination-address-prefixes 0.0.0.0/0
+--destination-port-ranges 5000-5002
+--direction Inbound
+--protocol TCP
+--source-address-prefixes 10.0.0.0/9 10.128.0.0/10
+--source-port-ranges '*'
+
+The SAM w/ WMI docs say you need 1025-65535 TCP open for the RPC calls anyway, so they are already in the list, (as long as that’s TCP.)
+
+
+SolarWinds 1025-65535 TCP
+
+SW server is at 10.246.0.10 so you can narrow down the attack surface that way.
+
+LOW PORTS
+22  TCP
+25  TCP
+80  TCP
+135  TCP
+443  TCP
+465  TCP
+587  TCP
+
+HIGH PORTS
+  >> 1024
+  
+1433 TCP
+1801  TCP
+
+  4369  TCP
+  
+5671  TCP
+17777  TCP
+17778  TCP
+17799  TCP
+
+  25672  TCP
+  
+  >> 65535
+
+
+
+UDP PORTS
+53  UDP
+161  UDP
+514  UDP
+1434  UDP
+
+
+
+
+ 
+
+#7.
+	
+   
+ 
+
+   

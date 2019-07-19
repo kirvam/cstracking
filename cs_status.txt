@@ -1,0 +1,57 @@
+
+
+Hi Mark,
+
+As requested I am providing a report on the current status of the Private Cloud Resource Refresh Initiative and its subsequent projects namely,
+
+#1.  Replace Vsheild with pfSense
+
+Current:
+-All the necessary pfSense firewall pairs for each customer have been have been created, 26 pairs in total.
+-The Cloud Services (CS) team is now working with each customer to confirm and finalize the installation of firewall rules.
+-Current customers to be cut-over include EAS, E911, & VCGI.
+-NO new infratsructure resources are required to complete this project.
+
+Important:
+-We are encountrering many challenges with customers who are not familiar with their firewall rules or the needs of their applications.
+-AHS, has just recently designated a specific resourse as a point of contact with for Firewall rules and Networking.
+-The pace of this is dependent on the responsiveness of customers.
+-Upgrade of VMWARE requires this to be completed for all customers already migrated to VxRack.
+-Lastest details can be found here:
+https://vermontgov.sharepoint.com/sites/ADS/EACS/internal/Documents/pfSense%20conversion%20status.xlsx?d=w3a8f999b778e4efa84c61210e8a2d323
+
+
+#2.  Replace Backup Infrastructure with modern Rubrik solution
+
+Current:
+-Additional Rubrik devices will be needed to migrate and backup the remaining customers that still reside in the legacy environment at National Life.
+
+Important:
+-It is important to remember that Rubrik provide the mechanism which allows for migration from Legacy (NL) to VxRack (TV).
+-Rubrik capacity must always be greate than Storage Utlization in VxRack.
+-Rubrik growth must mirror VxRack storage growth.
+
+
+#3.  Refresh Private Cloud Infratructure
+     +Upgrade VMWARE 5.5 in VxRack to 6.01+.
+      Current:
+      -The target date for this is between May and June 2019.
+     
+     Important:
+      -This is dependent on all customer in the VxRack infrastructure to be "cut-over" to pfSense.
+      -There is great concersn about this.
+    
+     +Replace End of Life (EOL) VNX Storage equipment which hold Private Cloud Storage and File Services (Data Movers).
+      Current:
+      -Isilon infrastructure has been implemented.
+      -Final development of a plan to migrate customers to Isilon from Data Movers (old VNX storage) is ongoing soon to be finsished.
+          
+     +Migrate customers to Hyper-Converged VxRack at Tech Vault (TV).
+      Current:
+      -Almost csutomers have been migrated.  (DLC does have a few non-prodcution servers that can be migrated soon.)
+      -The last major cusotmers are:
+        AHS
+        ERP[DHR]
+        TAX
+      -
+  

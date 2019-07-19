@@ -38,35 +38,6 @@
 06/03/2019 1188 -|-
 06/05/2019 1190 -|-
 06/06/2019 1191 -|-
-06/07/2019 1192 -|-
-06/11/2019 1196 -|-
-06/17/2019 1202 -|-
-06/18/2019 1203 -|-
-06/21/2019 1206 -|-
-07/10/2019 1225 -|-
-07/17/2019 1232 -|-
-07/19/2019 1234 -|-
-
----<snip>---
-Emails/Timeline  -about Phase I Procurement and FY2020 Capacity Procurement
-
-
-
-5/24  PC Growth Plan PPT given to CTO and Dan G.
-
-6/13  Preparation for FY2020 Capacity Procurement
-
-6/21  Phase I Procurement Reminder
-
-6/25  FY2021 Budget and VxRack Projected Capacity -URL INCLUDED
-
-7/01  Phase I Procurement Reminder Check-in
-
-PC Growth Plan
-https://vermontgov.sharepoint.com/:p:/r/sites/ADS/EACS/_layouts/15/Doc.aspx?sourcedoc=%7B633AFC1B-74DD-4295-83BE-1EB2649F9EC0%7D&file=PC_Growth_Pan.pptx&action=edit&mobileredirect=true&cid=e95c7f6e-2b4d-484a-a415-9f41943fc2d5
-
-
----<snip>---
 
 DEMANDNBLI 
 
@@ -89,78 +60,6 @@ DEMANDNBLI
 03:00
 
 04:00
-
-
-------------------< AOE Questions: >--------------------------------------------------------
-#1.  Is HMHCO using unencrypted Amazon Elastic Block Storage (Amazon EBS)?
-#2.  Do we know the following application details:
-     A.  Number of current users, Daily or Monthly? 
-     B.  Number of transactions, Daily or Monthly? 
-     C.  Size of Data Sets/Databases?
-     D.  Compliance Requirements (FERPA)?
-
-
-Sincerely,
-
--Paul
-------------------< AOE Questions: >--------------------------------------------------------
-
-
-------------------------------------------------< MARS-E >------------------------------------------------------------------------------------------------
-
-Mark has asked me to open a ticket to find the best solution.  
-from NAVA:
-I'm currently working through the MARS-E audit retention requirements, 
-
-
-and have identified a few that likely fall on the State/Program to implement, rather than Nava, 
-since the implementation is at the Azure subscription level, 
-rather than at the Azure resource level. 
-
-Emily/Paul, please jump in if I'm wrong here, but I believe in order to meet MARS-E requirements for AU-2, Azure will need setup to:
-•	Retain at least the "Administrative" category of Activity Logs. These can only be exported once per subscription, and since the current Azure subscription has multiple projects within it, this export wouldn't be limited to the Uploader. Alternatively, the state could setup a separate subscription for just CPPh1, in which case I believe the project could have its own Activity Logs export.
-
-o	More context: The Administrative category contains the record of all create, update, delete, and action operations performed through the Azure Resource Manager. Examples of the types of events you would see in this category include "create virtual machine" and "delete network security group." Every action taken by a user or application using Resource Manager is modeled as an operation on a particular resource type. If the operation type is Write, Delete, or Action, the records of both the start and success or fail of that operation are recorded in the Administrative category. The Administrative category also includes any changes to role-based access control in a subscription.
-
-•	Retain Azure AD activity reports – pretty sure this can only be at the State level.
-
-
-Any thoughts on this, and whether I'm right in thinking the State will be responsible for setting up the retention of these audit records?
-------------------------------------------------< MARS-E >------------------------------------------------------------------------------------------------
-
-
----------------< AOE >------------------------------------
-Prod / Pre-Prod / Training
- 
-Server	vCPU	RAM	Storage	SQL Ent Licensing	Backup and Recovery	Monitoring	 
-AD	2	4	100 GB	 	CPM / S3 Cost	Datadog	 
-Web 1	8	15	300 GB	 	CPM / S3 Cost	Datadog	Windows Server 2008 R2 x64 Enterprise
-IIS
-Web 2	8	15	300 GB	 	CPM / S3 Cost	Datadog	Windows Server 2008 R2 x64 Enterprise
-IIS
-DB - ODS	8	30	1 TB	8 vCPUs	CPM / S3 Cost	Datadog	Windows Server 2008 R2 x64 Enterprise
-SQL Server 2012 Enterprise x64
-DB - RDS	8	30	1 TB	8 vCPUs	CPM / S3 Cost	Datadog	Windows Server 2008 R2 x64 Enterprise
-SQL Server 2012 Enterprise x64
-SSAS	8	30	1 TB	8 vCPUs	CPM / S3 Cost	Datadog	Windows Server 2008 R2 x64 Enterprise
-SQL Server 2012 Enterprise x64
- 
-Testing
- 
-Server	vCPU	RAM	Storage	SQL Ent Licensing	Backup and Recovery	Monitoring	 	 
-AD	2	4	100 GB	 	CPM / S3 Cost	Datadog	 	 
-Web 1	4	8	300 GB	 	CPM / S3 Cost	Datadog	Windows Server 2008 R2 x64 Enterprise
-IIS	 
-Web 2	4	8	300 GB	 	CPM / S3 Cost	Datadog	Windows Server 2008 R2 x64 Enterprise
-IIS	 
-DB - ODS	4	16	1 TB	4 vCPUs	CPM / S3 Cost	Datadog	Windows Server 2008 R2 x64 Enterprise
-SQL Server 2012 Enterprise x64	 
-DB - RDS	4	16	1 TB	4 vCPUs	CPM / S3 Cost	Datadog	Windows Server 2008 R2 x64 Enterprise
-SQL Server 2012 Enterprise x64	 
-SSAS	4	16	1 TB	4 vCPUs	CPM / S3 Cost	Datadog	Windows Server 2008 R2 x64 Enterprise
-SQL Server 2012 Enterprise x64	 
----------------< AOE >------------------------------------
-
 
 -------< ERP Upgrade Coverage >---------------------------------------------------
 Day/Date:	Primary/Secondary/Tertiary
@@ -300,6 +199,11 @@ Sincerely,
 
 -Paul
 
+
+
+
+---<snip>---
+
 --------------------------------<MS EA 2018 - 2019 >------------------------------------------------------------------------------------------
 -Check against Budget!!!
 Vermont Enterprise Agreement Renewal
@@ -353,10 +257,9 @@ aidahc4ahc9hair>
 Name          ResourceGroup     Location    Public IPs
 ------------  ----------------  --------  ---------------
 AOT-AZRODC    AOT-CVO-581A9F93  eastus
-fcr-app-vm0   AOT-CVO-581A9F93  eastus	  10.251.0.4
-fcr-app-vm1   AOT-CVO-581A9F93  eastus	  10.251.0.5
-fcr-sql-vm0   AOT-CVO-581A9F93  eastus	  10.251.0.6
-dsvs-dbfcr1161 AOT-CVO-581A9F93
+fcr-app-vm0   AOT-CVO-581A9F93  eastus	  40.117.225.27
+fcr-app-vm1   AOT-CVO-581A9F93  eastus	  40.117.229.192
+fcr-sql-vm0   AOT-CVO-581A9F93  eastus	  104.211.10.188
 file-vm0      AOT-CVO-581A9F93  eastus	  104.211.12.167
 test-app-vm0  AOT-CVO-581A9F93  eastus	  137.117.45.115
 test-app-vm1  AOT-CVO-581A9F93  eastus	  137.117.45.113
@@ -419,8 +322,28 @@ Migration_Design_Plan_v1:  https://vermontgov.sharepoint.com/sites/ADS/EACS/Docu
      VNX 5300 Inactive Renewals DPS: $338.95
      Total:   $68,025.99 
 -------------------------------------------------------------------------------------------------------------------------
+AHS Suggestion
+
+-REBOOT CHECK
+-DEVELOP TEST CHECKLISTS:
+   +per system
+   +per application
+   +identify teams
+-----------------------------------------------------------------------------------------------------
+
+WIKI, Who's Who, Who's What doc...
+
+
+-----------------------------------------------------------------------------------------------------
 Rubrik Notes
 
+-Use TechVault?
+-Objects include:
+  +NAS
+  +Plumbing servers?
+-What exactly are we trying to do?
+-What will impact do?
+-API
    https://nl-rubrik-proxy.ea.dii.state.vt.us/docs/v1/
    https://tv-rubrik-proxy.ea.dii.state.vt.us/docs/v1/
 
@@ -441,6 +364,17 @@ Rubrik Notes
   -Medium – (Default priority used) Used when 1 or more customers are experiencing a problem that has a work around 
   -Low –Used when 1 or more customers are experiencing a problem that is not affecting their work, but they would like it fixed. 
 ----< SLA Priorities >------------------------------------------------------------
+
+
+---< EDU Notes>--------------------------------------------------------------------
+-EDU grant funds which expire in December could be used to pay for "Enterprise Data environment" which has been built already.
+  +encumber funds.  
+  +extend discount next billing cycle.
+  +Contact Morgan
+    -verify sizing
+    -prepare bill
+  +State Longitudinal Data System (SLDS) at AWS could move to PC.  50% markup over AWS costs.
+---< EDU Notes>--------------------------------------------------------------------
 
 
 ------------< AOT charge >----------------------------------------------------------------------
@@ -469,6 +403,8 @@ Kelly_Ohalpin@SHI.com
 AOT Customer #   2481002018
 
 ---------------<Software vendor >------------------------------------------------------
+
+
 
 
 03/27/2019
@@ -557,6 +493,7 @@ To close this finding, please provide a screenshot of the password configuration
 
 YGC2F9hKh5kVwh8N1TnHSbml
 ----<snip>----
+
 Here’s the info on Just-in-time RDP. It’s part of Security Center, which is something you and I should probably spend some time on at some point soon:
 
 https://docs.microsoft.com/en-us/azure/security-center/security-center-just-in-time
@@ -567,41 +504,14 @@ I thought this was interesting: https://www.petri.com/microsoft-shares-interesti
 
 I’m going to look around for some ‘how-to’ articles and try it out on my subscripiont when I get a minute…
 
+
 ----<snip>----
 
----< Request for Quote Template>-----
-Hi XXX,
-
-Can you please provide quotes for the following:
-
-Qty:  X
-Product: XX
-
-Quote must contain the following:
-
-1.  Contract Number
-2.  Contact Name
-3.  Contact Phone number and email
-4.  Date Quote expires (Duration)
-5.  Itemization of
-    -Prepaid M&O
-    -physical hardware
-    -Services
-    
-We appreciate your interest in the State.
-
-
-Sincerely,
-
--Paul
-
----< Request for Quote Template>-----
-
-===================< duties >=====================================
+---< duties >---
 Duties:
 
 -Billable Projects:
-  +AOE -Migration of SDLC
+  +AOE
   +CVO
   +VDOL
   +iUs
@@ -627,20 +537,13 @@ Not my Duties (phasing out):
 -Performance Evaluations
 -Time Entry approval
 
-===================< duties >=====================================
-
-40.117.123.111  inflamer
-40.114.28.53  insurgent
-40.121.86.44  rebel
-40.76.61.42  anarchost
-
-
+---< duties >---
 
 -PMPHAIGH@SOVGOV.onmicrosoft.com
 
 AI's
 
-VNX's
+
 ?Ccc@/;!9d;L
 
 -Prioritize!
@@ -649,56 +552,11 @@ VNX's
 Today:
 
  perl par_file_vx_2019.pl CapReport_2019-05-10__16-16-17__.csv PC_USAGE >tmp.out
- 
-========================================== 
--Finish CVO
--Work with Security regarding the VPN  -Done.
--AOE report??
--Express Route Meeting
--Seamus/Nava meeting
--Weekly report
--Docker
-
--OpenVPN??
--Get organized with priorities.
--On-boarding process.
-
--Procurement email to CTO...  -Done
-  +Put in weekly
-
--CVO VPN
-
--TV_POC **
-  +Schedule Tech meeting
-  +Author Test Plan
-    -Use Case 
-    
--Nava/Sawyer
-  +Meeting 7/3, 
-  +remove users
-
-
-
-
-
-
-==========================================
- 
-
-AHS 2019 BILL
-https://vermontgov.sharepoint.com/:x:/r/sites/DII/units/Finance/Documents/Billing/FY19/SLA/FY19%20Indivdual%20SLA%20Documentation/SLA00001_19_AHS.xlsx?d=w6d0552a01b44490a834c953dd9ca8b10&csf=1
 
 
 Prioritize!
 What is the most important thing?
 What am I going to do today.  Smalll list and then just work on it.  No more no less.
-
--TV_POC for EXPRESS ROUTE
--Procurement preparation.
--CVO Meeting
--CVO LOG FLOW
--CVO DESIGN
-
 
 -Bi-Weekly meeting with CTO
 -Weekly Report
@@ -731,7 +589,7 @@ What am I going to do today.  Smalll list and then just work on it.  No more no 
   +TV POC
   +CVO
   +TAX DR???
-  +Migration Project
+  +Migration
   +Capacity
     -Reports:
       +VM Usage
@@ -778,6 +636,7 @@ The initial password is the username with "123" added on the end, please change 
 
 -Risk report.
 
+
 -CTO Weekly update...
 -New quotes from Rubrik and C2...
 -Commercial Cloud Onboaring process.***
@@ -800,8 +659,31 @@ The initial password is the username with "123" added on the end, please change 
 -Fix Budget Document
   +process -now that make uses
 
+
+-Dylan AOT quotes..  -Done
+  +3 quotes
+  +PO request submitted
+  
+-Citrix Meeting with David and Dan...  -Done, 5/23
+-OPS Plan for PC. ***  -Done
+-CVO Update. ***  -Done
+-Respond to Hunt.  -Done
+-Email to Mark  -Done
+  +List of Legacy customer "who need to be out by September 2019":
+    -ERP[DHR]
+    -TAX
+    -AHS
+-Create VNX PO  -Done
+-Create Market place charges PO  -Done
+
+
+
 -pfSense approach to Azure..
   https://social.technet.microsoft.com/wiki/contents/articles/51017.azure-custom-pfsense-on-azure-vm.aspx
+  
+-Migrate 
+  +DII??
+  +DLC
   
 -AHS migrations:
   +DOC
@@ -830,6 +712,7 @@ The initial password is the username with "123" added on the end, please change 
 	This CAB request is for situational awareness purposes.  
 	The key dependency for this upgrade will be the successful cut-over over of all VsHield firewalls to pfSense firewalls for all customers that reside in Tech Vault.
   ---<snip>---
+
 
 -Amend Presidio(Rubrik) and C2(VxRack) ****
 
@@ -1725,98 +1608,7 @@ flexibility
     +More testing and lead time (training)
 
 ------------< consolidation report -------------------
-==========================================================================================================================
-none; Project; 09-10-2018; 12 Procurement; Paul; Procurement.
-12 Procurement; Project; 06-06-2019; 12 Procurement; Paul; The CTO is now the lead for Procurement.<br>Am readyb to support effort when ready.<br>Need training on coding.<br>
-none; Project; 06-27-2018; 23 TAX DR plan; Team; Meet with TAX.  TAX to come back with slimmed down DR design.  
-23 TAX DR plan; Project; 06-27-2018; 23 RRI DR plan; Team; Next meeting planned for 2nd week July.
-23 TAX DR plan; Project; 06-11-2019; 23 RRI DR plan; Team; Project is dark till after migration plans finalized, August 2019.
-none; Project; 06-25-2018; 17 CTO Open Items; Paul; Generic placeholder for CTO Issues, Guidance, Risks, Concerns, and Action items that are not captured in a project. 
-17 CTO Open Items; Project; 06-25-2018; 17 CTO Open Items; Paul; Current:<br>-Risk: Delays in procureing capacity for Migrations due to changes in process.,<br>-Concerns: Azure billing process needs approval.
-17 CTO Open Items; Project; 06-12-2019; 17 CTO Open Items; Paul; ADS Business Office is looking for your engagement concerning AOT assets Cloud Services purchased under the plan to re-organize and procure for Dylan, 3PAR gear.<br>Have cc'd you and Dylan.<br>They would like you to discuss with CFO.<br>This is a priority for them and Finance.<br>
-17 CTO Open Items; Project; 06-12-2019; 17 CTO Open Items; Paul; FY2020 Procurement Plan quotes from C2 and Presidio recieved.<br>Forwarded to CTO.<br>
-none; Project; 04-21-2019; 31 CVO Project; Paul; CVO Project.  Tracking CVO effort.
-31 CVO Project; Project; 04-21-2019; 31 CVO Project; Team; Courtney of the FAST team has been given test resources.<br>Users are able to access via local system credentials until FAST Authentication services are built out by the FAST team in conjunction with AOT System Admin teams.<br>Here is update prvided to CTO:<br>-From the Cloud Services (CS) perspective, Courtney of the FAST team has received the test servers needed to start her work (despite her encountering some isues with her workstation and getting setup).<br>  +More resources will be made available as planned (per the list) at the appropriate time.<br>  +Email has been sent to Courtney to verify her current needs.<br>  +We continue to meet and collaborate as requested.<br>-The CS team is preparing to refine processes to automate and build out the remainder of the environment.<br>-The CS team is also working on standards, checklists, and templates to stream-line the process for subsequent projects.<br>-Currently the AOT System Admins and FAST team are currently working out how to provide Authentication Services within the environment.  As you know the Private Cloud does not provide these.<br>  +The typical FAST plan calls for DC's and a local AD to be within the environment.<br>  +Although not CS's areas of concern, in the spirit of collaboration, the CS team has offered the suggestion to configure TLS/LDAP calls to the Azure Commercial (AZC) AD which has a trust with O365 and AOT (which is within its Domain Forest).  Email sent to Courtney suggesting.<br>  -At this point the CS team humble suggests the appointment of a project manager to assist in the facilitation of the project and the coordination of the efforts along the time-line.<br>  
-31 CVO Project; Project; 05-01-2019; 31 CVO Project; Team; Seven servers have been handed over to Courtney of FAST<br>Meetings held today.<br>-Authentication solution for AzureGov has been identified, VPN, case being worked.<br>-Authentication solution for Azure Commercial has been identified, "Azure Domain Services".<br>Progress being made.<br>
-31 CVO Project; Project; 05-02-2019; 31 CVO Project; Team; Project moving ahead.<br>7 servers in the commercial (AZC) has be handed over to Courtney of FAST.<br>AUTH issue still being operationalized in AZC with AD Domain Services.<br>Work continues in to solve AUTH in the Gov (AZG).<br>
-31 CVO Project; Project; 05-08-2019; 31 CVO Project; Team; Project moving ahead, Landesk 115950.<br>Intermittent issues being encountered.<br>Update from EAS and Tim tomorrow, 5/9/2019.<br>
-31 CVO Project; Project; 05-09-2019; 31 CVO Project; Team; <a style="color:rgb(255,0,0)">Project meeting held today.<br>EAS and Tim still waiting for assistance from Microsoft in order to connect DOMAIN.<br>No ETA on resolution.<br>Issue escalated.<br></a>
-31 CVO Project; Project; 05-13-2019; 31 CVO Project; Team; <a style="color:rgb(255,0,0)">EAS and Tim have been able to get VPN working.<br>Users are now able to access.<br>However, DC's still not syncing.<br>More work still needs to be done.<br>Once resolved methodolody will be applied to CVO GOV setup and AHS SQL and other projects.<br>
-31 CVO Project; Project; 06-10-2019; 31 CVO Project; Team; Issues relating to Latency and Access are still ocurring.<br>CVO needs them to be resolved before they can full begin work in Azure.<br>Internal meeting with Networking and Security held on Monday 6/10.  Consensus was that issue in Azure.<br>This is contrary to what we and Microsoft are seeing.<br>Meeting with Microsoft to be held on Tuesday 6/11.<br>Log created to track issues:<br><a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/CVO_OutageLog.xlsx?d=w064b7c53a2af467bb9557b5283a9b69a" style="color:rgb(17,177,0)">CVO OutageLog</a><br>Stakeholders meeting being held on Wednesday 6/12 at the VTTC Bay conference room in Berlin.<br>
-31 CVO Project; Project; 06-11-2019; 31 CVO Project; Team; Leadership has decided to stop all efforts in Azure Commercial (AZC) and focus on Azure Gov (AZG).<br>Drafting new statement of work now.<br>Hope to present to CTO today.<br>
-31 CVO Project; Project; 06-11-2019; 31 CVO Project; Team; Revised more flexible design developed.<br>To be reviewed with Microsoft tomorrow during meeting.<br>
-none; Project; 06-25-2018; 20 RRI Migration Plan; Paul; Resource Refresh Initiative, (RRI). Migration Plan
-20 RRI Migration Plan; Project; 04-10-2019; 20 RRI Migration Plan; Team; AHS has agreed to a design.<br>David Fortin and Brent will be the Firewall point of Contact.<br>Brent will manage IP ranges.<br>Currently, next meeting we will focus on planning move of SQL environment, DAIL, & DOC.<br>
-20 RRI Migration Plan; Project; 05-08-2019; 20 RRI Migration Plan; Team; Waiting for repsonse from AHS on IP Ranges.<br>Also, waiting for new infrstaructure.<br>Unable to migrate anyone but TAX at this time once VMWARE upgrade is complete.<br>
-20 RRI Migration Plan; Project; 06-11-2019; 20 RRI Migration Plan; Team; Current focus is on migrating TAX.<br>Critical Path Method analysis completed.<br>Current projection is for Tax to be migrated between mid-September and August<br><a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/internal/Documents/Critical_Path_Analysis.xlsx?d=wb58ac64d27764975b0a94d21c7dcb702" style="color:rgb(17,177,0)">CPM Analysis</a><br>
-none; Project; 05-07-2019; 36 VHC BI; Paul; VHC BI<br>Project to move BI inot Azure Gov.<br>
-36 VHC BI; Project; 05-08-2019; 36 VHC BI; Paul; VHC BI<br>Meet with Kenan N.<br>He is the PM.<br>He is gathering details.<br>
-36 VHC BI; Project; 05-13-2019; 36 VHC BI; Paul; VHC BI<br>Waiting for Kenan N. of AHS<br>He is gathering details.<br>
-36 VHC BI; Project; 06-11-2019; 36 VHC BI; Paul; This seems to have gone dark.
-none; Project; 05-07-2019; 13 PC Analytics; Paul; Private Cloud Analytics <br>-Metrics<br>-Usage Reporting<br>
-13 PC Analytics; Project; 05-08-2019; 13 PC Analytic; Paul; Working on Usage Reports for CFO: <br>-VM usage<br>-Data Mover usage<br>Reviewing Growth Plan for CTO.<br>Taging project.<b>
-13 PC Analytics; Project; 05-13-2019; 13 PC Analytic; Paul; Usage Reports for delivered to office of CFO: <br>-VM usage<br>-Data Mover usage<br>Currently working on revising "Growth Plan".<br>Have completed CPM analysis of Migration plan.  Planning to review with team and CTO:<br><a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/internal/Documents/Critical_Path_Analysis.xlsx?d=wb58ac64d27764975b0a94d21c7dcb702" style="color:rgb(17,177,0)">Critical_Path_Analysis</a>
-13 PC Analytics; Project; 06-11-2019; 13 PC Analytic; Paul; Azure Monthly Billing process has been completed.<br>Documenting now.<br>Need approval from CTO for 5% Coud Services surcharge.<br>Creating new Cloud Reporting project to hold.<br>
-none; Project; 05-07-2019; 43 Capacity Planning; Paul; Cloud Capacity Planning<br>-Metrics<br>-Procuremnt Plan<br>-Usage Reporting<br>
-43 Capacity Planning; Project; 06-11-2019; 43 Capacity Planning;  Working to get quotes from:<br>-C2<br>-Presidio<br>
-none; Project; 05-07-2019; 14 Cloud Reporting; Paul; Private Cloud Reporting:  Azure Bills and Private Cloud Usage<br>
-14 Cloud Reporting; Project; 05-08-2019; 14 Cloud Reporting; Paul; Working on Usage Reports for CFO: <br>-VM usage<br>-Data Mover usage<br>Reviewing Growth Plan for CTO.<br>Taging project.<br>
-none; Project; 06-11-2019; 44 VDOL Exfil; Paul; VDOL Exfiltration to Tech Vault
-44 VDOL Exfil; Project; 06-11-2019; 44 VDOL Exfil; Paul; Initial meeting held.<br>VDOL Material shared.<br>Secondary meeting needs to be scheduled.<br> 
-none; Project; 06-11-2019; 45 VDOL iUS; Paul; VDOL iUS Project
-45 VDOL iUS; Project; 06-11-2019; 45 VDOL iUS; Paul; Initial meeting scheduled.<br>Researching open quesions about Docker.<br>Delivered test envieonment to CJ.<br>
-none; Project; 06-11-2019; 46 AOE SDLC; Paul; AOE SDLC
-46 AOE SDLC; Project; 06-11-2019; 46 AOE SDLC; Paul; Engaged and talking with Kevin of AOE.<br>Current SDLC deployment in AWS.<br>Kevin to schedule meeting with vendor.<br>There is an open qustion about whether data has been stored on Elastic Block Storage (EBS).
-none; Project; 06-11-2019; 47 Onboarding; Paul; Develop and refine Onboarding process to support strategic goals of a Hybrid Cloud.
-47 Onboarding; Project; 06-11-2019; 47 Onboarding; Paul; Development has started.<br>Slow going.<br>Many other higher priorities are taking attention.<br>
-none; Project; 03-08-2019; 35 Tech Vault POC; Ken; Tech Vault Azure Hybrid Cloud Proof of Concept (POC).
-35 Tech Vault POC; Project; 03-08-2010; 35 Tech Vault POC; Team; Ken and I meet with Tech Vault team.<br>Tech Vault is working to establish 50 MB circuit with a provider for the POC.<br>Circuit should be up for 120 days.<br>Tech Vault having trouble getting it for free.<br>They will report back as soon as they know more.<br>We are now waiting on Tech Vault.<br>Design here: <a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/TV_Poc_.pdf" style="color:rgb(255,0,0)"> Design Doc</a> 
-35 Tech Vault POC; Project; 03-13-2010; 35 Tech Vault POC; Team; Still waiting to hear back from Tech Vault.<br>Pending issue is identifying ISP that would support at no cost.<br>
-35 Tech Vault POC; Project; 03-13-2010; 35 Tech Vault POC; Team; Still waiting to hear back from Tech Vault.<br>Pending issue is identifying ISP that would support at no cost.<br>Sent follow-up email to check-in<br>
-35 Tech Vault POC; Project; 04-10-2010; 35 Tech Vault POC; Team; Still waiting to hear back from Tech Vault.<br>Tech Vault has reported that they are still working with vendor.<br>Once circuit established, it will take no more than 120 days to be stood-up.<br>
-35 Tech Vault POC; Project; 04-13-2010; 35 Tech Vault POC; Team; Jon West has confirmed that we should have a circuit in 45 days.<br>Ken and I will plan any parallel tasks and plan meeting with them.<br>We will meet to discuss soon.<br>
-35 Tech Vault POC; Project; 04-13-2010; 35 Tech Vault POC; Team; Waiting on circuits<br>
-35 Tech Vault POC; Project; 05-13-2010; 35 Tech Vault POC; Team; Still waiting on circuits<br>
-35 Tech Vault POC; Project; 05-29-2010; 35 Tech Vault POC; Team; Jon West has reported circuit is up.<br>Shared Secret Key.<br>TV needs approval for final work to plug in network connection.<br>
-35 Tech Vault POC; Project; 06-07-2010; 35 Tech Vault POC; Paul; CTO want to perform POC in Azure Gov (AZG).<br>Re-creating environment in AZG.<br>Planned completino is Wednesday 6/12.<br>
-35 Tech Vault POC; Project; 06-11-2010; 35 Tech Vault POC; Paul; Planning on how to engage Security on where they would like it to be plugged in?<br>Prepareing email for CTO.<br>
-35 Tech Vault POC; Project; 06-12-2010; 35 Tech Vault POC; Paul; Found issue with Express route config options.  -Comcast not available in menu.<br>Consulted with Jon West of TV.<br>Opened Case with Microsoft, 119061221002255.<br>Landesk ticket for Networking and Security created, #224813.<br>Cab requested created, #327.<br>
-35 Tech Vault POC; Project; 06-17-2010; 35 Tech Vault POC; Paul; Sadly, the Comcast circuit established by Tech Vault has NO physical access to the “USGov Virginia” at this time.<br>This has been reported by Microsoft, 119061221002255.<br>We are not in a position pursue usage of Azure Gov without out standing up a new circuit.<br>Seeking guidance from CTO.<br>Background:<br>-The reason Azure Commercial was chosen (and discussed 3/8 wit Tech Vault) was because the was no operation Azure Gov instance running at the time.<br>-The State’s Azure Gov instance, #7414639 only became available after 3/25 through the assistance of Jon Huber and Microsoft.<br>
 
-
-35 Tech Vault POC; Project; 06-12-2010; 35 Tech Vault POC; Paul; Found issue with Express route config options.  -Comcast not available in menu.<br>Consulted with Jon West of TV.<br>Opened Case with Microsoft, 119061221002255.<br>Landesk ticket for Networking and Security created, #224813.<br>Cab requested created, #327.<br>
-31 CVO Project; Project; 06-11-2019; 31 CVO Project; Team; Revised more flexible design developed.<br>To be reviewed with Microsoft tomorrow during meeting.<br>
-17 CTO Open Items; Project; 06-12-2019; 17 CTO Open Items; Paul; FY2020 Procurement Plan quotes from C2 and Presidio recieved.<br>Forwarded to CTO.<br>
-35 Tech Vault POC; Project; 06-17-2010; 35 Tech Vault POC; Paul; Sadly, the Comcast circuit established by Tech Vault has NO physical access to the “USGov Virginia” at this time.<br>This has been reported by Microsoft, 119061221002255.<br>We are not in a position pursue usage of Azure Gov without out standing up a new circuit.<br>Seeking guidance from CTO.<br>Background:<br>-The reason Azure Commercial was chosen (and discussed 3/8 wit Tech Vault) was because the was no operation Azure Gov instance running at the time.<br>-The State’s Azure Gov instance, #7414639 only became available after 3/25 through the assistance of Jon Huber and Microsoft.<br>
-
-
-31 CVO Project; Project; 06-19-2019; 31 CVO Project; Team; After getting validation of the newer common infrastructure design to support a unified VPN, the Cloud Services (CS) team is currently still working to complete the re-building of the CVO environment in GOV.<br>Toward that end we have configured a new VPN gateway in Azure Gov (AZG) and have requested that Security move the old connection to accommodate, Landesk # 225587.<br>We are hoping to be testing by Fir day (6/21) if not sooner.<br>We are still working to schedule a Microsoft onsite visit.  Currently, it looks like July 2nd.<br>
-35 Tech Vault POC; Project; 06-18-2010; 35 Tech Vault POC; Paul; Further research by John West of TV has revealed we can use the Equinex drop down choice.<br>We have implemented Express Route and have shared the Service Key with TV.<br>Work continues discussing with partners, Networking and Security.<br>Meeting planned for Friday, 6/21.<br>See Landesk #224813 and CAB #327.<br>
-
-
-31 CVO Project; Project; 07-09-2019; 31 CVO Project; Team; Check-in meeting for leadership being held today.<br>Today the Cloud Service (CS) team is testing Authentication to the CVO environment in coordination with the FAST team.  The CS team is also working on review of Firewall rules and monitoring.<br>The current goal is to be able to hand over the environment to the FAST time by Friday, 7/12.<br>These updates are posted daily to the "MS Teams" site.<br>
-35 Tech Vault POC; Project; 07-10-2010; 35 Tech Vault POC; Paul; Meeting held.<br>Stephen W. from Networking has been working with John West.<br>Follow-up Meeting to be held today.<br>Once plugged in, The CS team will finish configuration in Azure Gov.<br>Working to get Test plan finished by today.<br>
-46 AOE SDLC; Project; 07-10-2010; 46 AOE SDLC; Paul; Meeting held with vendor.<br>Internal meeting held.<br>Following Docuement revewed:<br><a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/AOE_Edfusion_Suggested_Path_.docx?d=w197b7948a22740b69d70d20f53c2a338" style="color:rgb(17,177,0)">  AOE_Edfusion_Suggested_Path_</a>
-13 PC Analytics; Project; 06-11-2019; 13 PC Analytic; Paul; Azure bills (AZC and AZG) for June 2019 have been created and posted.<br><a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/Azure_Commercial_JUNE_2019.xlsx?d=wf0dafbdbc339408688b3a1505146e575" style="color:rgb(17,177,0)">  Azure_Commercial_JUNE_2019</a><br><a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/Azure_Gov_JUNE_2019.xlsx?d=w3f9dd4756c804dfc91f64252af722668" style="color:rgb(17,177,0)">  Azure_Gov_JUNE_2019</a><br>
-
-
-
-13 PC Analytics; Project; 06-11-2019; 13 PC Analytic; Paul; Azure bills (AZC and AZG) for June 2019 have been created and posted.<br><a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/Azure_Commercial_JUNE_2019.xlsx?d=wf0dafbdbc339408688b3a1505146e575" style="color:rgb(17,177,0)">  Azure_Commercial_JUNE_2019</a><br><a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/Azure_Gov_JUNE_2019.xlsx?d=w3f9dd4756c804dfc91f64252af722668" style="color:rgb(17,177,0)">  Azure_Gov_JUNE_2019</a><br>
-
-
-
-
-31 CVO Project; Project; 07-10-2019; 31 CVO Project; Team; Check-in meeting with AOT leaderhisp including Michael Smith was held.<br>Will continue to have weekly phone meetings for the next 2 to 3 weeks as needed.<br>Have asked FAST team to start testing access.<br>FAST team is unavailable till next week, 7/15.<br>FAST team will want to test for 2 to 3 weeks after they start testing next week.<br>
-31 CVO Project; Project; 07-12-2019; 31 CVO Project; Paul; SolarWind firewall rules created.<br>EAS can now complete SolarWinds configuration.<br>CS team has setup temporary monitor as well.<br>Have communicated with FAST team.<br>
-35 Tech Vault POC; Project; 07-10-2010; 35 Tech Vault POC; Paul; Another meeting held and another planned for 7/16 to try to work through issues related to ExpressRoute.<br>Networking working with John West to test cables.<br>There is some confusion on this.<br> 
-46 AOE SDLC; Project; 07-12-2010; 46 AOE SDLC; Paul; Internal meeting held.<br>Docuement revewed:<br><a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/AOE_Edfusion_Suggested_Path_.docx?d=w197b7948a22740b69d70d20f53c2a338" style="color:rgb(17,177,0)">  AOE_Edfusion_Suggested_Path_</a><br>Waigint for Kevin of AOE.
-
-31 CVO Project; Project; 07-17-2019; 31 CVO Project; Paul; Check-in meeting with Courtney of FAST today and larger leadership check-in later in the PM<br>EAS is finishing up SolarWinds configuration.<br>
-35 Tech Vault POC; Project; 07-17-2010; 35 Tech Vault POC; Paul; Email threads indicate Circuit is up.<br>Will verify with Networking and John West.<br>
-46 AOE SDLC; Project; 07-17-2010; 46 AOE SDLC; Paul; Second meeting planned.<br>Document:<br><a href="https://vermontgov.sharepoint.com/sites/ADS/EACS/Documents/AOE_Edfusion_Suggested_Path_.docx?d=w197b7948a22740b69d70d20f53c2a338" style="color:rgb(17,177,0)">  AOE_Edfusion_Suggested_Path_</a><br>Waiting for Kevin of AOE.
-
-
-===========================================================================================================================
 CLOUD LOG
 ---<2019-01-25>---
 
